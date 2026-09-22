@@ -667,3 +667,20 @@ body {
     }
 
 }
+/* ================= OPENING BPL PHOTO ================= */
+
+.opening-banner {
+    width: 100%;
+    background: #111827;
+    text-align: center;
+    overflow: hidden;
+}
+
+.opening-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
