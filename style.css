@@ -1,6 +1,10 @@
 /* =========================================================
-   BPL WEBSITE — MAIN STYLESHEET
+   BADH KA JHOPDA PREMIER LEAGUE
+   BPL - Main Website Styles
    ========================================================= */
+
+
+/* ================= GLOBAL RESET ================= */
 
 * {
     margin: 0;
@@ -14,8 +18,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7fb;
-    color: #1f2937;
+    background: #f3f4f6;
+    color: #111827;
     line-height: 1.6;
 }
 
@@ -24,6 +28,7 @@ body {
 
 .site-header {
     position: relative;
+
     background-image:
         linear-gradient(
             rgba(17, 24, 39, 0.72),
@@ -77,21 +82,23 @@ body {
     font-size: 22px;
 
     flex-shrink: 0;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 
-/* TITLE */
+/* HEADER TITLE */
 
 .logo-area h1 {
     font-size: 32px;
     line-height: 1.2;
 
     text-shadow:
-        2px 2px 5px rgba(0,0,0,0.8);
+        2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 
-/* TAGLINE */
+/* HEADER TAGLINE */
 
 .logo-area p {
     color: #ffffff;
@@ -101,29 +108,49 @@ body {
     font-size: 17px;
 
     text-shadow:
-        2px 2px 4px rgba(0,0,0,0.8);
+        2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
 
 /* ================= NAVIGATION ================= */
 
 .navbar {
-    background: #1f2937;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    padding: 12px 4%;
+    background: #111827;
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0;
 }
 
 .navbar a {
+    display: block;
+
     color: white;
+
     text-decoration: none;
-    padding: 9px 13px;
-    border-radius: 6px;
-    font-size: 14px;
+
+    padding: 15px 18px;
+
+    font-size: 15px;
+    font-weight: 600;
+
     transition: 0.3s;
 }
 
@@ -133,376 +160,389 @@ body {
 }
 
 
-/* ================= OPENING BANNER ================= */
-
-
-.opening-banner {
-    ...
-}
-
-.opening-banner img {
-    ...
-}
-
-
-/* ================= HERO ================= */
+/* ================= HERO SECTION ================= */
 
 .hero {
     min-height: 430px;
-    background: linear-gradient(
-        135deg,
-        #111827,
-        #374151
-    );
+
+    background:
+        linear-gradient(
+            rgba(17, 24, 39, 0.85),
+            rgba(17, 24, 39, 0.85)
+        );
+
+    color: white;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;
-    color: white;
 
-    padding: 70px 20px;
+    padding: 60px 20px;
 }
 
 .hero-content {
     max-width: 900px;
 }
 
-.small-title {
-    color: #f59e0b;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 12px;
-}
-
 .hero h2 {
-    font-size: clamp(35px, 6vw, 65px);
-    line-height: 1.1;
-    margin-bottom: 18px;
+    font-size: 48px;
+
+    margin-bottom: 15px;
+
+    font-weight: 800;
 }
 
-.hero-subtitle {
+.hero p {
     font-size: 20px;
+
+    margin-bottom: 25px;
+
     color: #e5e7eb;
-    max-width: 700px;
-    margin: 0 auto 30px;
 }
 
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.btn {
+.hero-button {
     display: inline-block;
+
     background: #f59e0b;
+
     color: #111827;
+
     text-decoration: none;
-    padding: 12px 24px;
+
+    padding: 12px 25px;
+
     border-radius: 8px;
-    font-weight: bold;
+
+    font-weight: 700;
+
     transition: 0.3s;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-}
+.hero-button:hover {
+    background: #ffffff;
 
-.secondary-btn {
-    background: white;
+    transform: translateY(-2px);
 }
 
 
 /* ================= COMMON SECTION ================= */
 
-.section {
-    padding: 75px 6%;
-    max-width: 1300px;
-    margin: auto;
+section {
+    padding: 60px 6%;
 }
 
-.section-heading {
+.section-title {
     text-align: center;
-    margin-bottom: 45px;
-}
 
-.section-label {
-    color: #d97706;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-}
+    font-size: 32px;
 
-.section-heading h2 {
-    font-size: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
+
     color: #111827;
 }
 
-.section-heading p {
+.section-subtitle {
+    text-align: center;
+
     color: #6b7280;
+
+    margin-top: -20px;
+
+    margin-bottom: 30px;
 }
 
 
-/* ================= SEASONS ================= */
+/* ================= SEASON CARDS ================= */
 
-.season-grid {
+.seasons-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
     gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
 }
 
 .season-card {
     background: white;
-    padding: 35px;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    position: relative;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+    border-top: 5px solid #f59e0b;
+}
+
+.season-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.12);
 }
 
 .season-card h3 {
-    font-size: 28px;
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+}
+
+.season-card p {
+    color: #4b5563;
+
     margin-bottom: 8px;
 }
 
-.season-date {
-    font-weight: bold;
-    color: #d97706;
-    margin-bottom: 15px;
-}
-
-.season-status {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
-.completed .season-status {
-    background: #dcfce7;
-    color: #166534;
-}
-
-.upcoming .season-status {
-    background: #fef3c7;
-    color: #92400e;
-}
-
-.season-result {
-    margin-top: 15px;
-    padding: 10px 14px;
-    background: #f9fafb;
-    border-radius: 8px;
-}
-
-.season-result strong {
-    display: block;
-    color: #6b7280;
-    font-size: 12px;
-}
-
-.season-result span {
-    font-weight: bold;
-}
-
-.coming-soon {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #d97706;
+.season-card strong {
+    color: #111827;
 }
 
 
-/* ================= CHAMPION ================= */
+/* ================= CHAMPION SECTION ================= */
 
 .champion-section {
-    padding: 70px 6%;
     background: #111827;
-}
 
-.champion-card {
-    max-width: 850px;
-    margin: auto;
-    text-align: center;
     color: white;
+
+    text-align: center;
 }
 
-.trophy {
-    font-size: 65px;
-    margin-bottom: 15px;
+.champion-section h2 {
+    color: white;
+
+    font-size: 34px;
+
+    margin-bottom: 25px;
 }
 
-.champion-card h2 {
-    font-size: 48px;
-    margin: 8px 0;
+.champion-box {
+    max-width: 700px;
+
+    margin: auto;
+
+    background: #1f2937;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    border: 2px solid #f59e0b;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.champion-card p:not(.section-label) {
-    color: #d1d5db;
-}
-
-.champion-date {
-    margin-top: 15px;
+.champion-box h3 {
     color: #f59e0b;
-    font-weight: bold;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.champion-box p {
+    color: #e5e7eb;
+
+    font-size: 18px;
 }
 
 
-/* ================= TEAMS ================= */
+/* ================= TEAM CARDS ================= */
 
-.team-grid {
+.teams-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
 }
 
 .team-card {
     background: white;
-    padding: 28px;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
-    position: relative;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #f59e0b;
+
     transition: 0.3s;
 }
 
 .team-card:hover {
-    transform: translateY(-5px);
-}
-
-.team-number {
-    color: #9ca3af;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 8px;
+    transform: translateY(-4px);
 }
 
 .team-card h3 {
-    font-size: 23px;
+    font-size: 22px;
+
     margin-bottom: 15px;
+
+    color: #111827;
 }
 
 .team-card p {
     margin: 7px 0;
+
     color: #4b5563;
 }
 
-.team-achievement {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.champion-tag {
-    background: #fef3c7;
-    color: #92400e;
-}
-
-.runner-tag {
-    background: #e5e7eb;
-    color: #374151;
+.team-card strong {
+    color: #111827;
 }
 
 
 /* ================= AWARDS ================= */
 
-.awards-section {
-    max-width: 1400px;
-}
-
-.awards-grid {
+.awards-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
     gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
 }
 
 .award-card {
     background: white;
-    padding: 30px 20px;
+
+    padding: 25px;
+
     text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    border-top: 4px solid #f59e0b;
+
+    transition: 0.3s;
 }
 
-.award-icon {
-    font-size: 42px;
-    margin-bottom: 12px;
+.award-card:hover {
+    transform: translateY(-4px);
 }
 
 .award-card h3 {
     font-size: 18px;
-    margin-bottom: 8px;
-}
 
-.award-card h4 {
-    font-size: 17px;
+    margin-bottom: 10px;
+
+    color: #6b7280;
 }
 
 .award-card p {
-    color: #6b7280;
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #111827;
 }
 
 
 /* ================= CAPTAIN TABLE ================= */
 
-.captain-table-wrapper {
+.table-container {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
     overflow-x: auto;
 }
 
 .captain-table {
     width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
-}
 
-.captain-table th,
-.captain-table td {
-    padding: 15px 18px;
-    text-align: left;
-    border-bottom: 1px solid #e5e7eb;
+    border-collapse: collapse;
+
+    background: white;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .captain-table th {
     background: #111827;
+
     color: white;
+
+    padding: 14px;
+
+    text-align: left;
 }
 
-.captain-table tr:last-child td {
-    border-bottom: none;
+.captain-table td {
+    padding: 14px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    color: #374151;
+}
+
+.captain-table tr:hover {
+    background: #f9fafb;
 }
 
 
 /* ================= SPONSORS ================= */
 
-.sponsor-grid {
+.sponsors-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
     gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
 }
 
 .sponsor-card {
     background: white;
-    padding: 30px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
     text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .sponsor-card h3 {
-    font-size: 19px;
+    color: #111827;
+
     margin-bottom: 8px;
 }
 
@@ -514,135 +554,174 @@ body {
 /* ================= WINNERS ================= */
 
 .winners-section {
-    text-align: center;
+    background: #f9fafb;
 }
 
-.winner-card {
-    max-width: 700px;
+.winner-box {
+    max-width: 800px;
+
     margin: auto;
-    background: #111827;
-    color: white;
-    padding: 35px;
-    border-radius: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
 
-.winner-trophy {
-    font-size: 60px;
-}
-
-.winner-card h2 {
-    font-size: 35px;
-}
-
-.winner-card span {
-    color: #f59e0b;
-    font-weight: bold;
-}
-
-.runner-card {
-    max-width: 500px;
-    margin: 20px auto 0;
     background: white;
-    padding: 25px;
+
+    padding: 35px;
+
     border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border: 2px solid #f59e0b;
 }
 
-.runner-card p {
-    color: #6b7280;
+.winner-box h3 {
+    font-size: 30px;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+}
+
+.winner-box p {
+    color: #4b5563;
+
+    font-size: 18px;
 }
 
 
 /* ================= GALLERY ================= */
 
-.gallery-grid {
+.gallery-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
     gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
 }
 
-.gallery-placeholder {
-    min-height: 220px;
-    background: white;
-    border: 2px dashed #d1d5db;
-    border-radius: 15px;
+.gallery-item {
+    background: #e5e7eb;
+
+    min-height: 200px;
+
+    border-radius: 12px;
 
     display: flex;
-    flex-direction: column;
+
     align-items: center;
+
     justify-content: center;
 
+    text-align: center;
+
     color: #6b7280;
+
+    overflow: hidden;
 }
 
-.gallery-placeholder span {
-    font-size: 50px;
-    margin-bottom: 10px;
+.gallery-item img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
 }
 
 
 /* ================= CONTACT ================= */
 
 .contact-section {
+    background: #111827;
+
+    color: white;
+
     text-align: center;
+}
+
+.contact-section h2 {
+    color: white;
+}
+
+.contact-section p {
+    color: #d1d5db;
+
+    margin-bottom: 10px;
 }
 
 
 /* ================= FOOTER ================= */
 
-.footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 35px 20px;
-}
+footer {
+    background: #030712;
 
-.footer h3 {
-    margin-bottom: 8px;
-}
-
-.footer p {
     color: #9ca3af;
-    margin: 5px 0;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    font-size: 14px;
+}
+
+footer strong {
+    color: #f59e0b;
 }
 
 
-/* ================= RESPONSIVE ================= */
+/* ================= GENERAL BUTTON ================= */
 
-@media (max-width: 900px) {
+.btn {
+    display: inline-block;
 
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    padding: 10px 20px;
 
-    .awards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    background: #f59e0b;
 
-    .sponsor-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    color: #111827;
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    text-decoration: none;
 
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
 }
 
+.btn:hover {
+    background: #111827;
+
+    color: white;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width: 650px) {
 
+    /* HEADER */
+
     .site-header {
         min-height: 240px;
+
         padding: 30px 5%;
+
+        background-position: center;
     }
 
     .logo-area {
         align-items: center;
+
+        gap: 12px;
     }
 
     .logo-area h1 {
@@ -651,78 +730,162 @@ body {
 
     .logo-area p {
         font-size: 14px;
+
+        margin-top: 4px;
     }
 
     .logo-circle {
         width: 55px;
         height: 55px;
+
         font-size: 17px;
+
         flex-shrink: 0;
     }
+
+
+    /* NAVIGATION */
 
     .navbar {
         position: static;
     }
 
-    .navbar a {
-        font-size: 12px;
-        padding: 7px 9px;
+    .navbar ul {
+        flex-direction: column;
+
+        width: 100%;
     }
+
+    .navbar li {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 11px 10px;
+
+        border-bottom: 1px solid #374151;
+    }
+
+
+    /* HERO */
 
     .hero {
-        min-height: 360px;
-        padding: 50px 18px;
+        min-height: 350px;
+
+        padding: 45px 15px;
     }
 
-    .hero-subtitle {
-        font-size: 16px;
+    .hero h2 {
+        font-size: 32px;
     }
 
-    .section {
-        padding: 55px 5%;
+    .hero p {
+        font-size: 17px;
     }
 
-    .section-heading h2 {
-        font-size: 30px;
+
+    /* SECTIONS */
+
+    section {
+        padding: 45px 5%;
     }
 
-    .season-grid,
-    .team-grid,
-    .awards-grid,
-    .sponsor-grid,
-    .gallery-grid {
+    .section-title {
+        font-size: 27px;
+    }
+
+
+    /* CARDS */
+
+    .season-card,
+    .team-card,
+    .award-card,
+    .sponsor-card {
+        padding: 20px;
+    }
+
+
+    /* TABLE */
+
+    .captain-table {
+        font-size: 14px;
+    }
+
+    .captain-table th,
+    .captain-table td {
+        padding: 10px;
+    }
+
+
+    /* CHAMPION */
+
+    .champion-box {
+        padding: 25px 18px;
+    }
+
+    .champion-box h3 {
+        font-size: 26px;
+    }
+
+
+    /* WINNER */
+
+    .winner-box {
+        padding: 25px 18px;
+    }
+
+    .winner-box h3 {
+        font-size: 25px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-container {
         grid-template-columns: 1fr;
     }
+}
 
-    .champion-card h2 {
-        font-size: 34px;
-    }
 
-    .winner-card {
-        flex-direction: column;
-    }
+/* ================= TABLET ================= */
 
-    .winner-card h2 {
+@media (min-width: 651px) and (max-width: 1000px) {
+
+    .logo-area h1 {
         font-size: 28px;
     }
 
-  
+    .hero h2 {
+        font-size: 40px;
+    }
 
+    section {
+        padding: 50px 5%;
+    }
+
+    .navbar a {
+        padding: 13px 12px;
+    }
 }
-/* ================= OPENING BPL PHOTO ================= */
 
-.opening-banner {
-    width: 100%;
-    background: #111827;
-    text-align: center;
-    overflow: hidden;
-}
 
-.opening-banner img {
-    width: 100%;
-    height: auto;
-    max-height: 650px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+/* ================= LARGE SCREEN ================= */
+
+@media (min-width: 1400px) {
+
+    .site-header {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .hero h2 {
+        font-size: 55px;
+    }
 }
