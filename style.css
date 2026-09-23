@@ -1586,6 +1586,14 @@ section {
 
 @media (max-width: 650px) {
 
+    .site-header {
+        min-height: 280px;
+        padding: 35px 5%;
+
+        background-position: center 35%;
+        background-size: cover;
+    }
+
 
     /* HEADER */
 
