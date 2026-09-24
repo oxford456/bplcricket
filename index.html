@@ -69,6 +69,131 @@
     </div>
 
 </div>
+<script>
+
+const sponsorData = {
+
+    "brotomodification": {
+        name: "Brotomodification",
+        icon: "🚗",
+        location: "Near Laxmi Sweet, Sanganer Sector 3, Pratap Nagar, Jaipur – 302033",
+        services: "Car Audio Systems, Alloy Wheels, Car Accessories, Seat Covers",
+        contact: "+91 94600 60213"
+    },
+
+    "chirag-dj": {
+        name: "Chirag DJ",
+        icon: "🎧",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "hdfc-babu-lal": {
+        name: "HDFC Bank (Babu Lal)",
+        icon: "🏦",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "ghata-rani": {
+        name: "Ghata Rani Tent House",
+        icon: "⛺",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "manraj-emitra": {
+        name: "Manraj Emitra",
+        icon: "🖥️",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "ap-study-hub": {
+        name: "AP Study Hub",
+        icon: "📚",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "sd-films": {
+        name: "SD Films",
+        icon: "🎬",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    }
+
+};
+
+
+function openSponsor(sponsorId) {
+
+    const sponsor = sponsorData[sponsorId];
+
+    if (!sponsor) return;
+
+    document.getElementById("modalIcon").textContent =
+        sponsor.icon;
+
+    document.getElementById("modalSponsorName").textContent =
+        sponsor.name;
+
+    document.getElementById("modalName").textContent =
+        sponsor.name;
+
+    document.getElementById("modalLocation").textContent =
+        sponsor.location;
+
+    document.getElementById("modalServices").textContent =
+        sponsor.services;
+
+    document.getElementById("modalContact").textContent =
+        sponsor.contact;
+
+    document.getElementById("sponsorModal")
+        .classList.add("active");
+
+}
+
+
+function closeSponsor() {
+
+    document.getElementById("sponsorModal")
+        .classList.remove("active");
+
+}
+
+
+/* Click outside popup to close */
+
+document.getElementById("sponsorModal")
+    .addEventListener("click", function(event) {
+
+        if (event.target === this) {
+            closeSponsor();
+        }
+
+    });
+
+
+/* ESC key to close */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeSponsor();
+    }
+
+});
+
+</script>
+    
 <body>
 
 
