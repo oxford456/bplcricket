@@ -9,7 +9,66 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- =====================================================
+     SPONSOR DETAILS POPUP
+     ===================================================== -->
 
+<div id="sponsorModal" class="sponsor-modal">
+
+    <div class="sponsor-modal-box">
+
+        <button class="sponsor-modal-close" onclick="closeSponsor()">
+            ×
+        </button>
+
+        <div class="sponsor-modal-icon" id="modalIcon">
+            🏢
+        </div>
+
+        <div class="sponsor-modal-title">
+            <span>OFFICIAL BPL SPONSOR</span>
+            <h2 id="modalSponsorName">Sponsor Name</h2>
+        </div>
+
+        <div class="sponsor-detail-list">
+
+            <div class="sponsor-detail-item">
+                <div class="detail-icon">🏢</div>
+                <div>
+                    <span>SPONSOR NAME</span>
+                    <strong id="modalName">-</strong>
+                </div>
+            </div>
+
+            <div class="sponsor-detail-item">
+                <div class="detail-icon">📍</div>
+                <div>
+                    <span>LOCATION</span>
+                    <strong id="modalLocation">-</strong>
+                </div>
+            </div>
+
+            <div class="sponsor-detail-item">
+                <div class="detail-icon">🛠️</div>
+                <div>
+                    <span>SERVICES</span>
+                    <strong id="modalServices">-</strong>
+                </div>
+            </div>
+
+            <div class="sponsor-detail-item">
+                <div class="detail-icon">📞</div>
+                <div>
+                    <span>CONTACT</span>
+                    <strong id="modalContact">-</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 <body>
 
 
@@ -823,7 +882,9 @@
             <p>
                 <strong>Desi Avengers</strong>
             </p>
-
+<button class="sponsor-details-btn" onclick="openSponsor('brotomodification')">
+    View Sponsor Details
+</button>
         </div>
 
 
@@ -838,7 +899,9 @@
             <p>
                 <strong>Eleven Star</strong>
             </p>
-
+<button class="sponsor-details-btn" onclick="openSponsor('chirag-dj')">
+    View Sponsor Details
+</button>
         </div>
 
 
@@ -853,7 +916,9 @@
             <p>
                 <strong>Rising Stars</strong>
             </p>
-
+<button class="sponsor-details-btn" onclick="openSponsor('hdfc-babu-lal')">
+    View Sponsor Details
+</button>
         </div>
 
 
@@ -868,7 +933,9 @@
             <p>
                 <strong>Royal Rangers</strong>
             </p>
-
+<button class="sponsor-details-btn" onclick="openSponsor('ghata-rani')">
+    View Sponsor Details
+</button>
         </div>
 
 
@@ -883,7 +950,9 @@
             <p>
                 <strong>Royal Strikers</strong>
             </p>
-
+<button class="sponsor-details-btn" onclick="openSponsor('manraj-emitra')">
+    View Sponsor Details
+</button>
         </div>
 
 
@@ -898,7 +967,9 @@
             <p>
                 <strong>Spartans 11</strong>
             </p>
-
+<button class="sponsor-details-btn" onclick="openSponsor('ap-study-hub')">
+    View Sponsor Details
+</button>
         </div>
 
 
@@ -916,7 +987,9 @@
 
         </div>
 
-
+<button class="sponsor-details-btn" onclick="openSponsor('sd-films')">
+    View Sponsor Details
+</button>
     </div>
 
 </section>
