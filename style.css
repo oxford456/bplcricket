@@ -3688,3 +3688,239 @@ section {
         font-size: 13px;
     }
 }
+/* =====================================================
+   BPL CAPTAINS — MODERN LEADERSHIP SECTION
+   ===================================================== */
+
+.captains-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.captains-intro h2 {
+    margin: 12px 0 6px;
+
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(38px, 5vw, 52px);
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            90deg,
+            #052e16,
+            #2563eb,
+            #7c3aed,
+            #ec4899
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.captains-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #64748b;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CAPTAIN TABLE
+   ===================================================== */
+
+.captain-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+
+    padding: 8px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f8fafc
+        );
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 15px 40px rgba(15,23,42,0.10);
+}
+
+.captain-table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Table heading */
+
+.captain-table thead th {
+    padding: 17px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #052e16,
+            #172554,
+            #312e81
+        );
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-align: left;
+}
+
+
+/* Rounded top corners */
+
+.captain-table thead th:first-child {
+    border-top-left-radius: 16px;
+}
+
+.captain-table thead th:last-child {
+    border-top-right-radius: 16px;
+}
+
+
+/* Table rows */
+
+.captain-table tbody tr {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.captain-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.captain-table tbody tr:hover {
+    background: #f1f5f9;
+
+    transform: scale(1.005);
+
+    box-shadow:
+        0 8px 20px rgba(15,23,42,0.07);
+}
+
+
+/* Table cells */
+
+.captain-table tbody td {
+    padding: 17px 20px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    color: #475569;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Serial number */
+
+.captain-table tbody td:first-child {
+    width: 70px;
+
+    color: #2563eb;
+
+    font-family: 'Baloo 2', sans-serif;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* Team name */
+
+.captain-table tbody td:nth-child(2) {
+    color: #172033;
+
+    font-family: 'Baloo 2', sans-serif;
+
+    font-size: 19px;
+    font-weight: 800;
+}
+
+
+/* Captain name */
+
+.captain-table tbody td:nth-child(3) {
+    color: #7c3aed;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+/* Captain icon */
+
+.captain-table tbody td:nth-child(3)::before {
+    content: "👑 ";
+
+    font-size: 15px;
+}
+
+
+/* Last row */
+
+.captain-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+    .captains-intro {
+        margin-bottom: 25px;
+    }
+
+    .captains-intro h2 {
+        font-size: 38px;
+    }
+
+    .captains-intro p {
+        font-size: 13px;
+    }
+
+    .captain-table-wrapper {
+        padding: 5px;
+        border-radius: 18px;
+    }
+
+    .captain-table {
+        min-width: 600px;
+    }
+
+    .captain-table thead th,
+    .captain-table tbody td {
+        padding: 14px 15px;
+    }
+}
