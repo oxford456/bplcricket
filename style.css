@@ -2731,3 +2731,267 @@ section {
     }
 
 }
+/* =====================================================
+   BPL SEASON-I TIMELINE - FINAL FIX
+   ===================================================== */
+
+.season-summary {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 45px 35px;
+    border-radius: 28px;
+    overflow: visible;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(34,197,94,0.22), transparent 28%),
+        radial-gradient(circle at 90% 80%, rgba(236,72,153,0.20), transparent 30%),
+        linear-gradient(135deg, #031b12, #0f172a 50%, #312e81);
+    border: 2px solid rgba(251,191,36,0.35);
+    box-shadow: 0 20px 50px rgba(15,23,42,0.30);
+}
+
+/* Heading */
+
+.summary-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.summary-label {
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #fbbf24, #f97316, #ec4899);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 18px rgba(249,115,22,0.30);
+}
+
+.summary-header h2 {
+    margin: 12px 0 5px;
+    color: #ffffff;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.summary-header p {
+    margin: 0;
+    color: #cbd5e1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Timeline */
+
+.season-timeline {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Horizontal connecting line */
+
+.season-timeline::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 9%;
+    right: 9%;
+    height: 4px;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        #22c55e,
+        #fbbf24,
+        #f97316,
+        #ec4899
+    );
+    z-index: 0;
+}
+
+/* Individual timeline item */
+
+.timeline-item {
+    position: relative;
+    z-index: 2;
+    width: 22%;
+    text-align: center;
+    color: white;
+}
+
+.timeline-icon {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #ffffff;
+
+    font-size: 30px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.25),
+        0 0 0 7px rgba(255,255,255,0.08);
+
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-icon {
+    transform: scale(1.12) translateY(-4px);
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.30),
+        0 0 25px rgba(251,191,36,0.55);
+}
+
+/* Text */
+
+.timeline-content span {
+    display: block;
+    margin-bottom: 5px;
+
+    color: #94a3b8;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.timeline-content strong {
+    display: block;
+
+    color: #fbbf24;
+
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+.timeline-content small {
+    display: block;
+    margin-top: 5px;
+
+    color: #cbd5e1;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Champion */
+
+.champion-timeline .timeline-icon {
+    background: linear-gradient(135deg, #fbbf24, #f97316);
+}
+
+.champion-timeline .timeline-icon {
+    animation: timelineTrophyGlow 2.5s infinite;
+}
+
+@keyframes timelineTrophyGlow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(0,0,0,0.25),
+                    0 0 10px rgba(251,191,36,0.25);
+    }
+
+    50% {
+        box-shadow: 0 8px 25px rgba(0,0,0,0.25),
+                    0 0 30px rgba(251,191,36,0.75);
+    }
+}
+
+/* Runner-up */
+
+.runner-timeline .timeline-icon {
+    background: linear-gradient(135deg, #e2e8f0, #94a3b8);
+}
+
+/* Hide old separate timeline lines */
+
+.timeline-line {
+    display: none;
+}
+
+
+/* =====================================================
+   MOBILE TIMELINE
+   ===================================================== */
+
+@media (max-width: 750px) {
+
+    .season-summary {
+        padding: 35px 20px;
+    }
+
+    .summary-header h2 {
+        font-size: 34px;
+    }
+
+    .season-timeline {
+        display: block;
+        padding-left: 15px;
+    }
+
+    /* Vertical line */
+
+    .season-timeline::before {
+        top: 20px;
+        bottom: 20px;
+        left: 52px;
+        right: auto;
+
+        width: 4px;
+        height: auto;
+
+        background: linear-gradient(
+            180deg,
+            #22c55e,
+            #fbbf24,
+            #f97316,
+            #ec4899
+        );
+    }
+
+    .timeline-item {
+        width: 100%;
+        min-height: 120px;
+
+        display: flex;
+        align-items: center;
+
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .timeline-icon {
+        flex: 0 0 76px;
+        margin: 0 20px 0 0;
+    }
+
+    .timeline-content {
+        flex: 1;
+    }
+
+    .timeline-content strong {
+        font-size: 20px;
+    }
+
+    .timeline-line {
+        display: none;
+    }
+}
