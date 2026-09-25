@@ -13824,4 +13824,8 @@ section {
     }
 
 }
-
+.season-statistics-section {
+    background: red !important;
+    min-height: 500px !important;
+    padding: 100px !important;
+}
