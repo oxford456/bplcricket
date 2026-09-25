@@ -7665,3 +7665,290 @@ section {
     }
 
 }
+/* =====================================================
+   BPL SPONSORS — FINAL POLISH
+   ===================================================== */
+
+#sponsors {
+    position: relative;
+    overflow: hidden;
+}
+
+#sponsors .sponsor-grid {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+#sponsors .sponsor-card {
+    position: relative;
+    overflow: hidden;
+
+    min-width: 0;
+    min-height: 250px;
+
+    padding: 30px 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fafc
+        );
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* ---------- TOP COLOR LINE ---------- */
+
+#sponsors .sponsor-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #7c3aed,
+            #ec4899
+        );
+}
+
+
+/* ---------- SPONSOR ICON ---------- */
+
+#sponsors .sponsor-icon {
+    position: relative;
+    z-index: 2;
+
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #ede9fe
+        );
+
+    font-size: 38px;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* ---------- CARD HOVER ---------- */
+
+#sponsors .sponsor-card:hover {
+    transform: translateY(-9px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 22px 45px rgba(15, 23, 42, 0.14);
+}
+
+#sponsors .sponsor-card:hover .sponsor-icon {
+    transform:
+        scale(1.12)
+        rotate(-4deg);
+
+    box-shadow:
+        0 15px 30px rgba(37, 99, 235, 0.18);
+}
+
+
+/* ---------- SPONSOR NAME ---------- */
+
+#sponsors .sponsor-card h3 {
+    position: relative;
+    z-index: 2;
+
+    margin: 3px 0 8px;
+
+    color: #172033;
+
+    font-size: 22px;
+    line-height: 1.25;
+
+    word-break: break-word;
+}
+
+
+/* ---------- TEAM NAME ---------- */
+
+#sponsors .sponsor-card p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    color: #16a34a;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#sponsors .sponsor-card p::before {
+    margin-bottom: 5px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ---------- DETAILS BUTTON ---------- */
+
+#sponsors .sponsor-details-btn {
+    position: relative;
+    z-index: 5;
+
+    margin-top: 18px;
+
+    padding: 10px 19px;
+
+    border: none;
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#sponsors .sponsor-details-btn:hover {
+    transform:
+        translateY(-3px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 25px rgba(124, 58, 237, 0.30);
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 950px) {
+
+    #sponsors .sponsor-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    #sponsors .sponsor-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    #sponsors .sponsor-card {
+        min-height: 230px;
+
+        padding: 28px 18px;
+
+        border-radius: 19px;
+    }
+
+    #sponsors .sponsor-icon {
+        width: 64px;
+        height: 64px;
+
+        font-size: 33px;
+
+        border-radius: 18px;
+    }
+
+    #sponsors .sponsor-card h3 {
+        font-size: 21px;
+    }
+
+    #sponsors .sponsor-card p {
+        font-size: 12px;
+    }
+
+    #sponsors .sponsor-details-btn {
+        padding: 10px 17px;
+
+        font-size: 10px;
+    }
+
+}
