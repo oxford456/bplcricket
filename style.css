@@ -6810,3 +6810,67 @@ section {
     }
 
 }
+/* =====================================================
+   BPL STATISTICS — STEP 26.5-A
+   SEASON-I RECORD STRIP
+   ===================================================== */
+
+.stats-record-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 0 auto 35px;
+}
+
+.stats-strip-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 18px;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.stats-strip-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+
+.stats-strip-icon {
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
+.stats-strip-item strong {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #6b7280;
+    margin-bottom: 3px;
+}
+
+.stats-strip-item span:last-child {
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    color: #111827;
+}
+
+@media (max-width: 950px) {
+    .stats-record-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .stats-record-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-strip-item {
+        padding: 14px 16px;
+    }
+}
