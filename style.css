@@ -7050,3 +7050,96 @@ section {
     }
 
 }
+/* =====================================================
+   BPL STATISTICS — STEP 26.5-C
+   CLICK TO EXPLORE EFFECT
+   ===================================================== */
+
+.iconic-stat-card {
+    animation: statsCardAppear 0.7s ease both;
+}
+
+.iconic-stat-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.iconic-stat-card:nth-child(2) {
+    animation-delay: 0.10s;
+}
+
+.iconic-stat-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.iconic-stat-card:nth-child(4) {
+    animation-delay: 0.20s;
+}
+
+.iconic-stat-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.iconic-stat-card:nth-child(6) {
+    animation-delay: 0.30s;
+}
+
+@keyframes statsCardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Click indicator */
+
+.iconic-stat-card::after {
+    content: "CLICK TO EXPLORE →";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 9px;
+
+    background: rgba(17, 24, 39, 0.95);
+
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    opacity: 0;
+
+    transform: translateY(100%);
+
+    transition: all 0.3s ease;
+}
+
+.iconic-stat-card:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .iconic-stat-card::after {
+        opacity: 1;
+        transform: translateY(0);
+        position: relative;
+        margin: 15px -20px -25px;
+    }
+
+}
