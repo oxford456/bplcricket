@@ -5442,3 +5442,532 @@ section {
     }
 
 }
+/* =========================================================
+   BPL WINNERS & RECORDS
+   ========================================================= */
+
+.winners-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.winners-intro h2 {
+    margin: 12px 0 7px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(38px, 5vw, 54px);
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            90deg,
+            #052e16,
+            #2563eb,
+            #7c3aed,
+            #ec4899
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.winners-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #64748b;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* HONOUR BOARD */
+
+.honour-board {
+
+    position: relative;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 35px;
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(34,197,94,.20),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(236,72,153,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #031b12,
+            #0f172a 50%,
+            #312e81
+        );
+
+    border: 2px solid rgba(251,191,36,.30);
+
+    box-shadow:
+        0 25px 60px rgba(15,23,42,.25);
+
+    overflow: hidden;
+}
+
+
+/* HONOUR HEADER */
+
+.honour-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-bottom: 32px;
+
+    text-align: left;
+}
+
+.honour-trophy {
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbbf24,
+            #f97316
+        );
+
+    font-size: 34px;
+
+    box-shadow:
+        0 10px 30px rgba(251,191,36,.35);
+
+    animation: honourTrophyGlow 2.5s infinite;
+}
+
+@keyframes honourTrophyGlow {
+
+    0%,100% {
+        transform: translateY(0);
+        box-shadow:
+            0 10px 30px rgba(251,191,36,.30);
+    }
+
+    50% {
+        transform: translateY(-5px);
+        box-shadow:
+            0 15px 40px rgba(251,191,36,.60);
+    }
+
+}
+
+.honour-header span {
+
+    color: #fbbf24;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.honour-header h3 {
+
+    margin: 3px 0 0;
+
+    color: white;
+
+    font-family: 'Baloo 2', sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 800;
+}
+
+
+/* RECORD GRID */
+
+.winner-record-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* RECORD CARD */
+
+.record-card {
+
+    position: relative;
+
+    min-height: 245px;
+
+    padding: 28px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    border:
+        1px solid rgba(255,255,255,.14);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.15);
+
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        box-shadow .35s ease;
+}
+
+.record-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #22c55e,
+            #fbbf24,
+            #f97316,
+            #ec4899
+        );
+}
+
+.record-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -70px;
+    bottom: -70px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(251,191,36,.18),
+            transparent 70%
+        );
+
+    transition: transform .4s ease;
+}
+
+.record-card:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.02);
+
+    background:
+        rgba(255,255,255,.13);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.25);
+}
+
+.record-card:hover::after {
+
+    transform: scale(1.5);
+
+}
+
+
+/* RECORD ICON */
+
+.record-icon {
+
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.95);
+
+    font-size: 30px;
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,.20);
+
+    transition:
+        transform .3s ease;
+}
+
+.record-card:hover .record-icon {
+
+    transform:
+        scale(1.12)
+        rotate(-4deg);
+
+}
+
+
+/* LABEL */
+
+.record-label {
+
+    margin-bottom: 5px;
+
+    color: #94a3b8;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* NAME */
+
+.record-card h3 {
+
+    margin: 0;
+
+    color: #fbbf24;
+
+    font-family: 'Baloo 2', sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+/* TEAM */
+
+.record-card p {
+
+    margin: 5px 0 12px;
+
+    color: #cbd5e1;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* BADGE */
+
+.record-badge {
+
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(251,191,36,.13);
+
+    border:
+        1px solid rgba(251,191,36,.25);
+
+    color: #fbbf24;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+/* CHAMPION SPECIAL */
+
+.champion-record {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(251,191,36,.16),
+            rgba(249,115,22,.10)
+        );
+
+    border-color:
+        rgba(251,191,36,.35);
+}
+
+.champion-record .record-icon {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbbf24,
+            #f97316
+        );
+
+    animation:
+        championRecordGlow 2.5s infinite;
+}
+
+@keyframes championRecordGlow {
+
+    0%,100% {
+        box-shadow:
+            0 8px 22px rgba(0,0,0,.20),
+            0 0 10px rgba(251,191,36,.25);
+    }
+
+    50% {
+        box-shadow:
+            0 8px 22px rgba(0,0,0,.20),
+            0 0 30px rgba(251,191,36,.65);
+    }
+
+}
+
+
+/* RUNNER-UP */
+
+.runner-record {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(226,232,240,.13),
+            rgba(148,163,184,.08)
+        );
+
+    border-color:
+        rgba(203,213,225,.25);
+}
+
+
+/* TABLET */
+
+@media(max-width:950px) {
+
+    .winner-record-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:650px) {
+
+    .honour-board {
+
+        padding: 25px 15px;
+
+        border-radius: 23px;
+
+    }
+
+    .honour-header {
+
+        margin-bottom: 25px;
+
+    }
+
+    .honour-trophy {
+
+        width: 58px;
+        height: 58px;
+
+        font-size: 27px;
+
+        border-radius: 17px;
+
+    }
+
+    .honour-header h3 {
+
+        font-size: 24px;
+
+    }
+
+    .winner-record-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+
+    }
+
+    .record-card {
+
+        min-height: 220px;
+
+    }
+
+}
