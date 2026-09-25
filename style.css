@@ -7514,3 +7514,154 @@ section {
     }
 
 }
+/* =====================================================
+   BPL CAPTAINS — FINAL POLISH
+   ===================================================== */
+
+#captains {
+    position: relative;
+    overflow: hidden;
+}
+
+#captains .section-heading {
+    margin-bottom: 35px;
+}
+
+#captains .captain-table-wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+
+    overflow-x: auto;
+
+    padding: 8px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fafc
+        );
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.10);
+
+    -webkit-overflow-scrolling: touch;
+}
+
+#captains .captain-table {
+    width: 100%;
+    min-width: 520px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+#captains .captain-table th {
+    padding: 17px 20px;
+
+    text-align: left;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            90deg,
+            #052e16,
+            #172554,
+            #312e81
+        );
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 0.4px;
+}
+
+#captains .captain-table th:first-child {
+    border-top-left-radius: 14px;
+}
+
+#captains .captain-table th:last-child {
+    border-top-right-radius: 14px;
+}
+
+#captains .captain-table td {
+    padding: 16px 20px;
+
+    color: #475569;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    background: #ffffff;
+}
+
+#captains .captain-table tbody tr {
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+#captains .captain-table tbody tr:hover td {
+    background: #f0fdf4;
+}
+
+#captains .captain-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#captains .captain-table td:first-child {
+    color: #172033;
+    font-weight: 800;
+}
+
+#captains .captain-table td:last-child {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    #captains .section-heading {
+        margin-bottom: 25px;
+    }
+
+    #captains .captain-table-wrapper {
+        padding: 5px;
+
+        border-radius: 18px;
+    }
+
+    #captains .captain-table {
+        min-width: 480px;
+    }
+
+    #captains .captain-table th {
+        padding: 14px 15px;
+
+        font-size: 12px;
+    }
+
+    #captains .captain-table td {
+        padding: 14px 15px;
+
+        font-size: 13px;
+    }
+
+}
