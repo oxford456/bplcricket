@@ -1532,7 +1532,9 @@ document.addEventListener("keydown", function(event) {
 
 function openStats(type) {
 
-    if (type !== "batsmen") return;
+   if (type !== "batsmen") {
+    return;
+}
 
     const modal = document.getElementById("batsmenModal");
 
