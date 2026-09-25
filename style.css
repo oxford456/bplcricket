@@ -7050,3 +7050,141 @@ section {
     }
 
 }
+/* =====================================================
+   BPL WINNERS — FINAL POLISH
+   ===================================================== */
+
+.winners-section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.winners-section .section-heading {
+    margin-bottom: 35px;
+}
+
+.winners-section .section-label {
+    color: #d97706;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.winners-section .winner-card {
+    position: relative;
+    overflow: hidden;
+    max-width: 850px;
+    min-height: 180px;
+    margin: 0 auto;
+    padding: 35px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    border: 2px solid #fbbf24;
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #fff7ed
+        );
+
+    box-shadow:
+        0 18px 45px rgba(217, 119, 6, 0.16);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.winners-section .winner-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 25px 55px rgba(217, 119, 6, 0.24);
+}
+
+.winners-section .winner-trophy {
+    flex-shrink: 0;
+    font-size: 72px;
+    line-height: 1;
+}
+
+.winners-section .winner-card h2 {
+    margin: 5px 0 8px;
+    font-size: clamp(30px, 5vw, 44px);
+}
+
+.winners-section .winner-card p {
+    margin: 0;
+}
+
+.winners-section .runner-card {
+    max-width: 700px;
+    margin: 25px auto 0;
+    padding: 22px 25px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.winners-section .runner-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 16px 35px rgba(15, 23, 42, 0.12);
+}
+
+.winners-section .runner-card p {
+    margin-bottom: 5px;
+}
+
+.winners-section .runner-card h3 {
+    margin: 0;
+}
+
+
+/* ---------- WINNERS MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    .winners-section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .winners-section .winner-card {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 30px 20px;
+        gap: 15px;
+    }
+
+    .winners-section .winner-trophy {
+        font-size: 58px;
+    }
+
+    .winners-section .winner-card h2 {
+        font-size: 32px;
+    }
+
+    .winners-section .runner-card {
+        padding: 20px 15px;
+    }
+
+   }
