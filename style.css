@@ -11829,3 +11829,674 @@ section {
     }
 
 }
+/* =====================================================
+   SEASON-I STATISTICS
+   PREMIUM DARK + GOLD DESIGN
+   ===================================================== */
+
+#season-one-page .season-statistics-section {
+    position: relative;
+
+    padding: 100px 24px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 20% 15%,
+            rgba(255, 193, 7, 0.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 85%,
+            rgba(255, 152, 0, 0.06),
+            transparent 32%
+        ),
+        #080b12;
+}
+
+
+/* =====================================================
+   BACKGROUND GRID
+   ===================================================== */
+
+#season-one-page .season-statistics-section::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px
+        );
+
+    background-size: 55px 55px;
+
+    pointer-events: none;
+
+    opacity: 0.55;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+   ===================================================== */
+
+#season-one-page .season-statistics-section
+.season-section-heading {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    margin:
+        0
+        auto
+        55px;
+
+    text-align: center;
+}
+
+
+#season-one-page .season-statistics-section
+.season-section-kicker {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 18px;
+
+    margin-bottom: 18px;
+
+    border:
+        1px solid rgba(255, 193, 7, 0.25);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255, 193, 7, 0.06);
+
+    color: #ffc107;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+#season-one-page .season-statistics-section
+.season-section-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(
+        36px,
+        5vw,
+        58px
+    );
+
+    line-height: 1.05;
+
+    font-weight: 900;
+
+    letter-spacing: -1.5px;
+}
+
+
+#season-one-page .season-statistics-section
+.season-section-heading p {
+    max-width: 650px;
+
+    margin:
+        18px
+        auto
+        0;
+
+    color:
+        rgba(255, 255, 255, 0.52);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   RECORD STRIP
+   ===================================================== */
+
+#season-one-page .season-stat-records {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(100%, 1150px);
+
+    margin:
+        0
+        auto
+        45px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+
+/* =====================================================
+   RECORD CARD
+   ===================================================== */
+
+#season-one-page .season-stat-record {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-height: 92px;
+
+    padding:
+        18px
+        20px;
+
+    border:
+        1px solid rgba(255, 193, 7, 0.13);
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(29, 34, 47, 0.96),
+            rgba(11, 14, 22, 0.98)
+        );
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+#season-one-page .season-stat-record:hover {
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(255, 193, 7, 0.30);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.42),
+        0 0 25px rgba(255, 193, 7, 0.05);
+}
+
+
+/* =====================================================
+   RECORD ICON
+   ===================================================== */
+
+#season-one-page .season-stat-icon {
+    flex: 0 0 52px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 193, 7, 0.14),
+            rgba(255, 152, 0, 0.05)
+        );
+
+    border:
+        1px solid rgba(255, 193, 7, 0.18);
+
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   RECORD TEXT
+   ===================================================== */
+
+#season-one-page .season-stat-record span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color:
+        rgba(255, 255, 255, 0.40);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+#season-one-page .season-stat-record strong {
+    display: block;
+
+    color: #f5f5f5;
+
+    font-size: 14px;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   STATISTICS GRID
+   ===================================================== */
+
+#season-one-page .season-statistics-grid {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(100%, 1150px);
+
+    margin:
+        0
+        auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =====================================================
+   STATISTICS CARD
+   ===================================================== */
+
+#season-one-page .season-stat-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding:
+        32px
+        26px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    text-align: left;
+
+    border:
+        1px solid rgba(255, 193, 7, 0.14);
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(31, 36, 49, 0.97),
+            rgba(10, 13, 21, 0.99)
+        );
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* =====================================================
+   CARD TOP GLOW
+   ===================================================== */
+
+#season-one-page .season-stat-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    right: -80px;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 193, 7, 0.12),
+            transparent 68%
+        );
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+/* =====================================================
+   CARD HOVER
+   ===================================================== */
+
+#season-one-page .season-stat-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(255, 193, 7, 0.38);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(38, 43, 57, 0.98),
+            rgba(12, 15, 24, 1)
+        );
+
+    box-shadow:
+        0 28px 65px rgba(0, 0, 0, 0.50),
+        0 0 30px rgba(255, 193, 7, 0.06);
+}
+
+
+#season-one-page .season-stat-card:hover::before {
+    transform: scale(1.25);
+}
+
+
+/* =====================================================
+   CARD ICON
+   ===================================================== */
+
+#season-one-page .season-stat-card-icon {
+    position: relative;
+
+    z-index: 1;
+
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 193, 7, 0.15),
+            rgba(255, 152, 0, 0.05)
+        );
+
+    border:
+        1px solid rgba(255, 193, 7, 0.20);
+
+    font-size: 34px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =====================================================
+   CARD LABEL
+   ===================================================== */
+
+#season-one-page .season-stat-card-label {
+    position: relative;
+
+    z-index: 1;
+
+    margin-bottom: 7px;
+
+    color: #ffc107;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   CARD TITLE
+   ===================================================== */
+
+#season-one-page .season-stat-card h3 {
+    position: relative;
+
+    z-index: 1;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    line-height: 1.1;
+
+    font-weight: 900;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =====================================================
+   CARD DESCRIPTION
+   ===================================================== */
+
+#season-one-page .season-stat-card p {
+    position: relative;
+
+    z-index: 1;
+
+    margin:
+        12px
+        0
+        0;
+
+    color:
+        rgba(255, 255, 255, 0.48);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   CARD ACTION
+   ===================================================== */
+
+#season-one-page .season-stat-card-action {
+    position: relative;
+
+    z-index: 1;
+
+    margin-top: auto;
+
+    padding-top: 25px;
+
+    color:
+        rgba(255, 193, 7, 0.82);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.3px;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+#season-one-page .season-stat-card:hover
+.season-stat-card-action {
+    color: #ffc107;
+
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   KEYBOARD ACCESSIBILITY
+   ===================================================== */
+
+#season-one-page .season-stat-card:focus-visible {
+    outline: 2px solid #ffc107;
+
+    outline-offset: 4px;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 950px) {
+
+    #season-one-page .season-stat-records {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    #season-one-page .season-statistics-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    #season-one-page .season-statistics-section {
+        padding:
+            75px
+            14px;
+    }
+
+    #season-one-page .season-statistics-section
+    .season-section-heading {
+        margin-bottom: 40px;
+    }
+
+    #season-one-page .season-statistics-section
+    .season-section-heading h2 {
+        font-size: 36px;
+    }
+
+    #season-one-page .season-statistics-section
+    .season-section-heading p {
+        font-size: 13px;
+    }
+
+    #season-one-page .season-stat-records {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-bottom: 30px;
+    }
+
+    #season-one-page .season-stat-record {
+        min-height: 80px;
+
+        padding:
+            15px
+            16px;
+    }
+
+    #season-one-page .season-stat-icon {
+        flex-basis: 46px;
+
+        width: 46px;
+        height: 46px;
+
+        font-size: 22px;
+    }
+
+    #season-one-page .season-statistics-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    #season-one-page .season-stat-card {
+        min-height: 275px;
+
+        padding:
+            28px
+            22px;
+
+        border-radius: 20px;
+    }
+
+    #season-one-page .season-stat-card-icon {
+        width: 62px;
+        height: 62px;
+
+        font-size: 31px;
+    }
+
+    #season-one-page .season-stat-card h3 {
+        font-size: 25px;
+    }
+
+}
