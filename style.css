@@ -8407,3 +8407,585 @@ section {
     }
 
 }
+/* =====================================================
+   BPL SEASON-I CARD — MODERN FINAL DESIGN
+   ===================================================== */
+
+.season-one-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 470px;
+
+    padding: 35px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    border-radius: 28px;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(34, 197, 94, 0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 90%,
+            rgba(124, 58, 237, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fafc
+        );
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.10);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* ---------- TOP GOLD LINE ---------- */
+
+.season-one-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #16a34a,
+            #fbbf24,
+            #f97316,
+            #7c3aed
+        );
+}
+
+
+/* ---------- SOFT GLOW ---------- */
+
+.season-one-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -90px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(251, 191, 36, 0.10);
+
+    pointer-events: none;
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+/* ---------- HOVER ---------- */
+
+.season-one-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(251, 191, 36, 0.65);
+
+    box-shadow:
+        0 28px 60px rgba(15, 23, 42, 0.16);
+}
+
+.season-one-card:hover::after {
+    transform: scale(1.5);
+}
+
+
+/* ---------- COMPLETED BADGE ---------- */
+
+.season-one-card .season-status {
+    position: relative;
+    z-index: 2;
+
+    margin-bottom: 18px;
+
+    padding: 7px 15px;
+
+    border: 1px solid #bbf7d0;
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dcfce7,
+            #f0fdf4
+        );
+
+    color: #166534;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+
+    box-shadow:
+        0 6px 15px rgba(22, 101, 52, 0.10);
+}
+
+
+/* ---------- TROPHY ICON ---------- */
+
+.season-one-card .season-card-icon {
+    position: relative;
+    z-index: 2;
+
+    width: 82px;
+    height: 82px;
+
+    margin-bottom: 14px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #fef3c7
+        );
+
+    border: 1px solid #fde68a;
+
+    font-size: 45px;
+
+    box-shadow:
+        0 12px 28px rgba(245, 158, 11, 0.16);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.season-one-card:hover .season-card-icon {
+    transform:
+        scale(1.08)
+        rotate(-3deg);
+
+    box-shadow:
+        0 18px 35px rgba(245, 158, 11, 0.22);
+}
+
+
+/* ---------- TITLE ---------- */
+
+.season-one-card h3 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 0 24px;
+
+    font-family:
+        'Baloo 2',
+        sans-serif;
+
+    font-size:
+        clamp(30px, 4vw, 38px);
+
+    line-height: 1.1;
+
+    font-weight: 900;
+
+    background:
+        linear-gradient(
+            90deg,
+            #052e16,
+            #2563eb,
+            #7c3aed
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ---------- DATE INFORMATION ---------- */
+
+.season-one-card .season-info {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.season-one-card .season-info-item {
+    padding: 13px 10px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+
+    background:
+        rgba(255, 255, 255, 0.85);
+
+    box-shadow:
+        0 7px 18px rgba(15, 23, 42, 0.05);
+}
+
+.season-one-card .season-info-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #64748b;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 1.2px;
+}
+
+.season-one-card .season-info-item strong {
+    display: block;
+
+    color: #172033;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    line-height: 1.35;
+}
+
+
+/* ---------- WINNER / RUNNER-UP ---------- */
+
+.season-one-card .season-results {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+}
+
+.season-one-card .season-result {
+    margin: 0;
+
+    min-width: 0;
+
+    padding: 14px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 10px;
+
+    text-align: left;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 7px 18px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.season-one-card .season-result:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(15, 23, 42, 0.10);
+}
+
+.season-one-card .result-icon {
+    flex-shrink: 0;
+
+    font-size: 28px;
+
+    line-height: 1;
+}
+
+.season-one-card .season-result small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #64748b;
+
+    font-size: 8px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+.season-one-card .season-result strong {
+    display: block;
+
+    color: #172033;
+
+    font-size: 13px;
+
+    line-height: 1.3;
+
+    word-break: break-word;
+}
+
+
+/* ---------- WINNER HIGHLIGHT ---------- */
+
+.season-one-card .winner-result {
+    border-color: #fde68a;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffbeb,
+            #ffffff
+        );
+}
+
+.season-one-card .winner-result strong {
+    color: #b45309;
+}
+
+
+/* ---------- RUNNER-UP ---------- */
+
+.season-one-card .runner-result {
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #ffffff
+        );
+}
+
+.season-one-card .runner-result strong {
+    color: #475569;
+}
+
+
+/* ---------- ENTER BUTTON ---------- */
+
+.season-one-card .season-enter-btn {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 13px 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #052e16,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: #ffffff;
+
+    font-family:
+        'Montserrat',
+        sans-serif;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    letter-spacing: 0.8px;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.22);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.season-one-card .season-enter-btn:hover {
+    transform:
+        translateY(-4px)
+        scale(1.02);
+
+    box-shadow:
+        0 16px 32px rgba(37, 99, 235, 0.30);
+}
+
+.season-one-card .season-enter-arrow {
+    font-size: 18px;
+
+    line-height: 1;
+
+    transition:
+        transform 0.25s ease;
+}
+
+.season-one-card .season-enter-btn:hover .season-enter-arrow {
+    transform: translateX(5px);
+}
+
+
+/* =====================================================
+   SEASON-I CARD — TABLET
+   ===================================================== */
+
+@media (max-width: 750px) {
+
+    .season-one-card {
+        min-height: auto;
+
+        padding: 30px 22px;
+
+        border-radius: 24px;
+    }
+
+    .season-one-card .season-info,
+    .season-one-card .season-results {
+        gap: 10px;
+    }
+
+}
+
+
+/* =====================================================
+   SEASON-I CARD — MOBILE
+   ===================================================== */
+
+@media (max-width: 520px) {
+
+    .season-one-card {
+        padding: 28px 16px;
+
+        border-radius: 20px;
+    }
+
+    .season-one-card .season-status {
+        margin-bottom: 15px;
+
+        padding: 6px 13px;
+
+        font-size: 10px;
+    }
+
+    .season-one-card .season-card-icon {
+        width: 70px;
+        height: 70px;
+
+        margin-bottom: 12px;
+
+        border-radius: 20px;
+
+        font-size: 38px;
+    }
+
+    .season-one-card h3 {
+        margin-bottom: 20px;
+
+        font-size: 30px;
+    }
+
+    .season-one-card .season-info {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        margin-bottom: 12px;
+    }
+
+    .season-one-card .season-info-item {
+        padding: 11px 10px;
+    }
+
+    .season-one-card .season-results {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        margin-bottom: 18px;
+    }
+
+    .season-one-card .season-result {
+        padding: 12px;
+
+        border-radius: 14px;
+    }
+
+    .season-one-card .result-icon {
+        font-size: 25px;
+    }
+
+    .season-one-card .season-result strong {
+        font-size: 12px;
+    }
+
+    .season-one-card .season-enter-btn {
+        min-height: 50px;
+
+        font-size: 10px;
+
+        letter-spacing: 0.6px;
+    }
+
+}
