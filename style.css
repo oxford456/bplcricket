@@ -10447,3 +10447,464 @@ section {
 #season-one-page .season-sponsor-card p {
     color: rgba(255, 255, 255, 0.48) !important;
 }
+/* =====================================================
+   BPL SEASON-I
+   SPONSOR POPUP + DETAILS BUTTON
+   PREMIUM DARK GOLD DESIGN
+   ===================================================== */
+
+
+/* =====================================================
+   VIEW DETAILS BUTTON
+   ===================================================== */
+
+#season-one-page .season-sponsor-details-btn {
+
+    display: inline-flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+    padding: 11px 20px;
+
+    border: 1px solid rgba(255, 193, 7, 0.35) !important;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 193, 7, 0.14),
+            rgba(255, 152, 0, 0.06)
+        ) !important;
+
+    color: #ffc107 !important;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+#season-one-page .season-sponsor-details-btn:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 193, 7, 0.24),
+            rgba(255, 152, 0, 0.12)
+        ) !important;
+
+    border-color:
+        rgba(255, 193, 7, 0.65) !important;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.38),
+        0 0 22px rgba(255, 193, 7, 0.10);
+
+}
+
+
+/* =====================================================
+   POPUP BACKDROP
+   ===================================================== */
+
+#season-one-page .sponsor-modal {
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(255, 193, 7, 0.08),
+            transparent 35%
+        ),
+        rgba(2, 5, 10, 0.88) !important;
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    padding: 20px !important;
+
+}
+
+
+/* =====================================================
+   POPUP BOX
+   ===================================================== */
+
+#season-one-page .sponsor-modal-box {
+
+    width: 100% !important;
+
+    max-width: 540px !important;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 38px 30px 30px !important;
+
+    border-radius: 28px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #171c27,
+            #0b0f17
+        ) !important;
+
+    border:
+        1px solid rgba(255, 193, 7, 0.22) !important;
+
+    box-shadow:
+        0 35px 90px rgba(0, 0, 0, 0.65),
+        0 0 45px rgba(255, 193, 7, 0.06) !important;
+
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+   ===================================================== */
+
+#season-one-page .sponsor-modal-close {
+
+    width: 40px !important;
+
+    height: 40px !important;
+
+    top: 14px !important;
+
+    right: 14px !important;
+
+    border:
+        1px solid rgba(255, 193, 7, 0.18) !important;
+
+    background:
+        rgba(255, 255, 255, 0.05) !important;
+
+    color:
+        rgba(255, 255, 255, 0.70) !important;
+
+}
+
+
+#season-one-page .sponsor-modal-close:hover {
+
+    background:
+        rgba(255, 193, 7, 0.12) !important;
+
+    border-color:
+        rgba(255, 193, 7, 0.45) !important;
+
+    color:
+        #ffc107 !important;
+
+    transform: rotate(90deg);
+
+}
+
+
+/* =====================================================
+   SPONSOR ICON
+   ===================================================== */
+
+#season-one-page .sponsor-modal-icon {
+
+    width: 86px !important;
+
+    height: 86px !important;
+
+    margin: 0 auto 18px !important;
+
+    border-radius: 24px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 193, 7, 0.16),
+            rgba(255, 152, 0, 0.05)
+        ) !important;
+
+    border:
+        1px solid rgba(255, 193, 7, 0.28) !important;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(255, 193, 7, 0.08);
+
+    font-size: 40px !important;
+
+}
+
+
+/* =====================================================
+   POPUP TITLE
+   ===================================================== */
+
+#season-one-page .sponsor-modal-title span {
+
+    color:
+        #ffc107 !important;
+
+    font-size: 10px !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 2px !important;
+
+}
+
+
+#season-one-page .sponsor-modal-title h2 {
+
+    margin-top: 8px !important;
+
+    color:
+        #ffffff !important;
+
+    font-size: 28px !important;
+
+    font-weight: 800 !important;
+
+    line-height: 1.2;
+
+}
+
+
+/* =====================================================
+   DETAILS AREA
+   ===================================================== */
+
+#season-one-page .sponsor-modal-details {
+
+    margin-top: 26px !important;
+
+    display: grid;
+
+    gap: 12px;
+
+}
+
+
+/* =====================================================
+   DETAIL ITEM
+   ===================================================== */
+
+#season-one-page .sponsor-detail-item {
+
+    display: flex !important;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 15px !important;
+
+    border-radius: 16px !important;
+
+    background:
+        rgba(255, 255, 255, 0.035) !important;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07) !important;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+#season-one-page .sponsor-detail-item:hover {
+
+    transform: translateY(-2px);
+
+    background:
+        rgba(255, 193, 7, 0.055) !important;
+
+    border-color:
+        rgba(255, 193, 7, 0.18) !important;
+
+}
+
+
+/* =====================================================
+   DETAIL ICON
+   ===================================================== */
+
+#season-one-page .sponsor-detail-item .detail-icon {
+
+    flex: 0 0 42px;
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background:
+        rgba(255, 193, 7, 0.09) !important;
+
+    border:
+        1px solid rgba(255, 193, 7, 0.16) !important;
+
+    font-size: 19px;
+
+}
+
+
+/* =====================================================
+   DETAIL LABEL
+   ===================================================== */
+
+#season-one-page .sponsor-detail-item span {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color:
+        rgba(255, 193, 7, 0.75) !important;
+
+    font-size: 9px !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 1.4px;
+
+}
+
+
+/* =====================================================
+   DETAIL VALUE
+   ===================================================== */
+
+#season-one-page .sponsor-detail-item strong {
+
+    display: block;
+
+    color:
+        rgba(255, 255, 255, 0.88) !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.55;
+
+    word-break: break-word;
+
+}
+
+
+/* =====================================================
+   MOBILE POPUP
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    #season-one-page .sponsor-modal {
+
+        padding: 14px !important;
+
+    }
+
+
+    #season-one-page .sponsor-modal-box {
+
+        max-height: 92vh;
+
+        padding:
+            34px 18px 20px !important;
+
+        border-radius: 22px !important;
+
+    }
+
+
+    #season-one-page .sponsor-modal-title h2 {
+
+        font-size: 23px !important;
+
+    }
+
+
+    #season-one-page .sponsor-modal-icon {
+
+        width: 72px !important;
+
+        height: 72px !important;
+
+        border-radius: 20px !important;
+
+        font-size: 34px !important;
+
+    }
+
+
+    #season-one-page .sponsor-detail-item {
+
+        padding: 13px !important;
+
+        gap: 11px;
+
+    }
+
+
+    #season-one-page .sponsor-detail-item .detail-icon {
+
+        flex-basis: 38px;
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 17px;
+
+    }
+
+
+    #season-one-page .sponsor-detail-item strong {
+
+        font-size: 12px !important;
+
+    }
+
+
+    #season-one-page .season-sponsor-details-btn {
+
+        width: 100%;
+
+    }
+
+}
