@@ -8206,3 +8206,204 @@ section {
     }
 
 }
+/* =====================================================
+   BPL CONTACT — FINAL POLISH
+   ===================================================== */
+
+#contact.contact-section {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(34, 197, 94, 0.25),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(124, 58, 237, 0.28),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #052e16,
+            #0f172a,
+            #312e81
+        );
+}
+
+
+/* ---------- DECORATIVE GLOW ---------- */
+
+#contact.contact-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    top: -120px;
+    right: -80px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(251, 191, 36, 0.10);
+
+    filter: blur(5px);
+
+    pointer-events: none;
+}
+
+#contact.contact-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    bottom: -120px;
+    left: -70px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(37, 99, 235, 0.15);
+
+    filter: blur(5px);
+
+    pointer-events: none;
+}
+
+
+/* ---------- CONTACT CONTENT ---------- */
+
+#contact.contact-section .section-heading {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 40px 25px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(255, 255, 255, 0.06);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.14);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.20);
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* ---------- LABEL ---------- */
+
+#contact.contact-section .section-label {
+    margin-bottom: 10px;
+
+    color: #fbbf24;
+
+    font-size: 13px;
+    font-weight: 900;
+
+    letter-spacing: 2.5px;
+}
+
+
+/* ---------- BPL TITLE ---------- */
+
+#contact.contact-section .section-heading h2 {
+    margin: 0 0 10px;
+
+    font-family:
+        'Baloo 2',
+        sans-serif;
+
+    font-size:
+        clamp(42px, 7vw, 68px);
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #fbbf24,
+            #f97316
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ---------- DESCRIPTION ---------- */
+
+#contact.contact-section .section-heading > p:last-child {
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    #contact.contact-section {
+        min-height: 300px;
+
+        padding: 50px 5%;
+    }
+
+    #contact.contact-section .section-heading {
+        padding: 32px 18px;
+
+        border-radius: 22px;
+    }
+
+    #contact.contact-section .section-label {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+    #contact.contact-section .section-heading h2 {
+        font-size: 48px;
+    }
+
+    #contact.contact-section .section-heading > p:last-child {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+}
