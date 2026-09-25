@@ -11351,3 +11351,481 @@ section {
     }
 
 }
+ /* =====================================================
+    SEASON-I CHAMPION
+    WINNER + RUNNER-UP PODIUM
+    ===================================================== */
+
+#season-one-page .season-champion-section {
+    position: relative;
+
+    padding: 90px 24px;
+
+    background:
+        radial-gradient(
+            circle at 50% 25%,
+            rgba(255, 193, 7, 0.08),
+            transparent 35%
+        ),
+        #080b12;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   MAIN CHAMPION CARD
+   ===================================================== */
+
+#season-one-page .season-champion-card {
+    position: relative;
+
+    width: min(100%, 1050px);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.45fr)
+        minmax(260px, 0.75fr);
+
+    align-items: stretch;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    border:
+        1px solid rgba(255, 193, 7, 0.20);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(29, 34, 47, 0.98),
+            rgba(9, 12, 19, 0.99)
+        );
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+
+/* =====================================================
+   WINNER SIDE
+   ===================================================== */
+
+#season-one-page .champion-winner {
+    position: relative;
+
+    padding:
+        55px
+        50px
+        60px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(255, 193, 7, 0.14),
+            transparent 45%
+        );
+}
+
+
+/* =====================================================
+   BIG WINNER TROPHY
+   ===================================================== */
+
+#season-one-page .champion-trophy {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 150px;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    font-size: 82px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 193, 7, 0.18),
+            rgba(255, 193, 7, 0.04) 65%,
+            transparent 70%
+        );
+
+    border:
+        1px solid rgba(255, 193, 7, 0.22);
+
+    box-shadow:
+        0 0 55px rgba(255, 193, 7, 0.13),
+        inset 0 0 35px rgba(255, 193, 7, 0.05);
+
+    animation:
+        championTrophyGlow 3s ease-in-out infinite;
+}
+
+
+@keyframes championTrophyGlow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+/* =====================================================
+   WINNER LABEL
+   ===================================================== */
+
+#season-one-page .champion-kicker {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #ffc107;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   WINNER NAME
+   ===================================================== */
+
+#season-one-page .champion-winner h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(
+        38px,
+        5vw,
+        64px
+    );
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -1.5px;
+
+    text-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =====================================================
+   WINNER DESCRIPTION
+   ===================================================== */
+
+#season-one-page .champion-title {
+    max-width: 600px;
+
+    margin:
+        20px
+        auto
+        0;
+
+    color:
+        rgba(255, 255, 255, 0.55);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   DIVIDER
+   ===================================================== */
+
+#season-one-page .champion-winner::after {
+    content: "";
+
+    position: absolute;
+
+    top: 15%;
+
+    right: 0;
+
+    width: 1px;
+
+    height: 70%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(255, 193, 7, 0.25),
+            transparent
+        );
+}
+
+
+/* =====================================================
+   RUNNER-UP SIDE
+   ===================================================== */
+
+#season-one-page .champion-runner {
+    position: relative;
+
+    padding:
+        45px
+        35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.025),
+            rgba(255, 255, 255, 0.008)
+        );
+}
+
+
+/* =====================================================
+   SMALLER RUNNER TROPHY
+   ===================================================== */
+
+#season-one-page .runner-trophy {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 92px;
+    height: 92px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    font-size: 48px;
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =====================================================
+   RUNNER LABEL
+   ===================================================== */
+
+#season-one-page .runner-kicker {
+    margin-bottom: 10px;
+
+    color:
+        rgba(255, 255, 255, 0.45);
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   RUNNER NAME
+   ===================================================== */
+
+#season-one-page .champion-runner h3 {
+    margin: 0;
+
+    color: #eeeeee;
+
+    font-size: clamp(
+        24px,
+        3vw,
+        34px
+    );
+
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   RUNNER ACCENT
+   ===================================================== */
+
+#season-one-page .champion-runner::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 70px;
+
+    height: 3px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.35),
+            transparent
+        );
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    #season-one-page .season-champion-card {
+        grid-template-columns: 1fr;
+    }
+
+    #season-one-page .champion-winner {
+        padding:
+            55px
+            30px
+            45px;
+    }
+
+    #season-one-page .champion-winner::after {
+        top: auto;
+
+        right: 12%;
+
+        bottom: 0;
+
+        width: 76%;
+
+        height: 1px;
+    }
+
+    #season-one-page .champion-runner {
+        padding:
+            35px
+            25px
+            40px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    #season-one-page .season-champion-section {
+        padding:
+            65px
+            14px;
+    }
+
+    #season-one-page .season-champion-card {
+        border-radius: 22px;
+    }
+
+    #season-one-page .champion-winner {
+        padding:
+            45px
+            20px
+            38px;
+    }
+
+    #season-one-page .champion-trophy {
+        width: 120px;
+        height: 120px;
+
+        font-size: 66px;
+
+        margin-bottom: 20px;
+    }
+
+    #season-one-page .champion-kicker {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+    #season-one-page .champion-winner h2 {
+        font-size: 38px;
+    }
+
+    #season-one-page .champion-title {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+    #season-one-page .champion-runner {
+        padding:
+            30px
+            18px
+            35px;
+    }
+
+    #season-one-page .runner-trophy {
+        width: 76px;
+        height: 76px;
+
+        font-size: 40px;
+    }
+
+    #season-one-page .champion-runner h3 {
+        font-size: 25px;
+    }
+
+}
