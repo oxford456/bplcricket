@@ -1527,6 +1527,59 @@ document.addEventListener("keydown", function(event) {
 
 </div>
 </main>
+<script>
 
+function openStats(type) {
+
+    if (type !== "batsmen") return;
+
+    const modal = document.getElementById("batsmenModal");
+
+    if (!modal) return;
+
+    modal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function closeStats(type) {
+
+    if (type !== "batsmen") return;
+
+    const modal = document.getElementById("batsmenModal");
+
+    if (!modal) return;
+
+    modal.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+document.addEventListener("click", function(event) {
+
+    const modal = document.getElementById("batsmenModal");
+
+    if (!modal) return;
+
+    if (event.target === modal) {
+        closeStats("batsmen");
+    }
+
+});
+
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeStats("batsmen");
+    }
+
+});
+
+</script>
 </body>
 </html>
