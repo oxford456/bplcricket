@@ -5971,3 +5971,332 @@ section {
     }
 
 }
+/* =====================================================
+   BPL ICONIC STATISTICS — STEP 26.2
+   ===================================================== */
+
+.statistics-section {
+    max-width: 1400px;
+    position: relative;
+}
+
+.statistics-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.statistics-intro .section-kicker {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #d97706;
+    margin-bottom: 10px;
+}
+
+.statistics-intro h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 12px;
+    background: linear-gradient(
+        90deg,
+        #111827,
+        #d97706,
+        #111827
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.statistics-intro p {
+    color: #6b7280;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* ================= ICONIC GRID ================= */
+
+.iconic-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* ================= STAT CARD ================= */
+
+.iconic-stat-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 245px;
+
+    border: none;
+    border-radius: 22px;
+
+    padding: 32px 25px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    background: white;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+    font-family: inherit;
+}
+
+
+.iconic-stat-card:hover {
+    transform: translateY(-9px) scale(1.02);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.16);
+}
+
+
+.iconic-stat-card:active {
+    transform: scale(0.98);
+}
+
+
+/* ================= CARD GLOW ================= */
+
+.stat-card-glow {
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+
+    top: -70px;
+    right: -50px;
+
+    opacity: 0.25;
+
+    filter: blur(5px);
+
+    transition: 0.4s;
+}
+
+
+.iconic-stat-card:hover .stat-card-glow {
+    transform: scale(1.6);
+    opacity: 0.4;
+}
+
+
+/* ================= ICON ================= */
+
+.iconic-stat-icon {
+    position: relative;
+
+    font-size: 55px;
+
+    margin-bottom: 12px;
+
+    transition: transform 0.35s ease;
+}
+
+
+.iconic-stat-card:hover .iconic-stat-icon {
+    transform: scale(1.18) rotate(-4deg);
+}
+
+
+/* ================= LABEL ================= */
+
+.iconic-stat-label {
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 4px;
+}
+
+
+/* ================= TITLE ================= */
+
+.iconic-stat-card h3 {
+    position: relative;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+
+    color: #111827;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.iconic-stat-card p {
+    position: relative;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= VIEW BUTTON ================= */
+
+.view-stats {
+    position: relative;
+
+    display: inline-block;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+
+    color: #111827;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    background: #f3f4f6;
+
+    transition: 0.3s;
+}
+
+
+.iconic-stat-card:hover .view-stats {
+    background: #111827;
+    color: white;
+}
+
+
+/* =====================================================
+   INDIVIDUAL CARD THEMES
+   ===================================================== */
+
+
+/* Batsmen */
+
+.batting-card {
+    border-top: 5px solid #f59e0b;
+}
+
+.batting-card .stat-card-glow {
+    background: #f59e0b;
+}
+
+.batting-card .iconic-stat-label {
+    color: #d97706;
+}
+
+
+/* Bowlers */
+
+.bowling-card {
+    border-top: 5px solid #7c3aed;
+}
+
+.bowling-card .stat-card-glow {
+    background: #8b5cf6;
+}
+
+.bowling-card .iconic-stat-label {
+    color: #7c3aed;
+}
+
+
+/* Fielders */
+
+.fielding-card {
+    border-top: 5px solid #059669;
+}
+
+.fielding-card .stat-card-glow {
+    background: #10b981;
+}
+
+.fielding-card .iconic-stat-label {
+    color: #059669;
+}
+
+
+/* Sixes */
+
+.sixes-card {
+    border-top: 5px solid #dc2626;
+}
+
+.sixes-card .stat-card-glow {
+    background: #ef4444;
+}
+
+.sixes-card .iconic-stat-label {
+    color: #dc2626;
+}
+
+
+/* Fours */
+
+.fours-card {
+    border-top: 5px solid #ea580c;
+}
+
+.fours-card .stat-card-glow {
+    background: #fb923c;
+}
+
+.fours-card .iconic-stat-label {
+    color: #ea580c;
+}
+
+
+/* Records */
+
+.records-card {
+    border-top: 5px solid #0891b2;
+}
+
+.records-card .stat-card-glow {
+    background: #06b6d4;
+}
+
+.records-card .iconic-stat-label {
+    color: #0891b2;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 950px) {
+
+    .iconic-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .iconic-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iconic-stat-card {
+        min-height: 220px;
+    }
+
+}
