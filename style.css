@@ -14102,3 +14102,10 @@ section {
     min-height: 500px !important;
     padding: 100px !important;
 }
+/* =====================================================
+   SEASON HIGHLIGHTS — HEADING VISIBILITY FIX
+   ===================================================== */
+
+#season-highlights .section-heading h2 {
+    color: #f8fafc !important;
+}
