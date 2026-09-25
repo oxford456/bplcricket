@@ -7188,3 +7188,150 @@ section {
     }
 
    }
+/* =====================================================
+   BPL TEAMS — FINAL POLISH
+   ===================================================== */
+
+#teams {
+    position: relative;
+    overflow: hidden;
+}
+
+#teams .team-grid {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+#teams .team-card {
+    position: relative;
+    overflow: hidden;
+
+    min-width: 0;
+    padding: 28px 22px;
+
+    text-align: center;
+
+    border-radius: 22px;
+    border: 1px solid #e2e8f0;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fafc
+        );
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+#teams .team-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 20px 40px rgba(15, 23, 42, 0.14);
+}
+
+#teams .team-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 12px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #052e16,
+            #2563eb
+        );
+
+    color: #ffffff;
+
+    font-weight: 900;
+    font-size: 14px;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.20);
+}
+
+#teams .team-card h3 {
+    margin: 5px 0 14px;
+
+    font-size: 25px;
+    line-height: 1.2;
+
+    word-break: break-word;
+}
+
+#teams .team-card p {
+    margin: 7px 0;
+
+    line-height: 1.5;
+}
+
+#teams .team-card p strong {
+    color: #1e293b;
+}
+
+#teams .team-achievement {
+    margin-top: 12px;
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 950px) {
+
+    #teams .team-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    #teams .team-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    #teams .team-card {
+        padding: 25px 18px;
+        border-radius: 18px;
+    }
+
+    #teams .team-card h3 {
+        font-size: 23px;
+    }
+
+    #teams .team-number {
+        width: 44px;
+        height: 44px;
+    }
+
+}
