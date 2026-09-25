@@ -9,191 +9,6 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- =====================================================
-     SPONSOR DETAILS POPUP
-     ===================================================== -->
-
-<div id="sponsorModal" class="sponsor-modal">
-
-    <div class="sponsor-modal-box">
-
-        <button class="sponsor-modal-close" onclick="closeSponsor()">
-            ×
-        </button>
-
-        <div class="sponsor-modal-icon" id="modalIcon">
-            🏢
-        </div>
-
-        <div class="sponsor-modal-title">
-            <span>OFFICIAL BPL SPONSOR</span>
-            <h2 id="modalSponsorName">Sponsor Name</h2>
-        </div>
-
-        <div class="sponsor-detail-list">
-
-            <div class="sponsor-detail-item">
-                <div class="detail-icon">🏢</div>
-                <div>
-                    <span>SPONSOR NAME</span>
-                    <strong id="modalName">-</strong>
-                </div>
-            </div>
-
-            <div class="sponsor-detail-item">
-                <div class="detail-icon">📍</div>
-                <div>
-                    <span>LOCATION</span>
-                    <strong id="modalLocation">-</strong>
-                </div>
-            </div>
-
-            <div class="sponsor-detail-item">
-                <div class="detail-icon">🛠️</div>
-                <div>
-                    <span>SERVICES</span>
-                    <strong id="modalServices">-</strong>
-                </div>
-            </div>
-
-            <div class="sponsor-detail-item">
-                <div class="detail-icon">📞</div>
-                <div>
-                    <span>CONTACT</span>
-                    <strong id="modalContact">-</strong>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-<script>
-
-const sponsorData = {
-
-    "brotomodification": {
-        name: "Brotomodification",
-        icon: "🚗",
-        location: "Near Laxmi Sweet, Sanganer Sector 3, Pratap Nagar, Jaipur – 302033",
-        services: "Car Audio Systems, Alloy Wheels, Car Accessories, Seat Covers",
-        contact: "+91 94600 60213 (Brajesh Kumar Meena)"
-    },
-
-    "chirag-dj": {
-        name: "Chirag DJ",
-        icon: "🎧",
-        location: "Details to be added",
-        services: "Details to be added",
-        contact: "Details to be added"
-    },
-
-    "hdfc-babu-lal": {
-        name: "HDFC Bank (Babu Lal)",
-        icon: "🏦",
-        location: "Details to be added",
-        services: "Details to be added",
-        contact: "Details to be added"
-    },
-
-    "ghata-rani": {
-        name: "Ghata Rani Tent House",
-        icon: "⛺",
-        location: "Details to be added",
-        services: "Details to be added",
-        contact: "Details to be added"
-    },
-
-    "manraj-emitra": {
-        name: "Manraj Emitra",
-        icon: "🖥️",
-        location: "Details to be added",
-        services: "Details to be added",
-        contact: "Details to be added"
-    },
-
-    "ap-study-hub": {
-        name: "AP Study Hub",
-        icon: "📚",
-        location: "Details to be added",
-        services: "Details to be added",
-        contact: "Details to be added"
-    },
-
-   "sd-films": {
-    name: "SD Films",
-    icon: "🎬",
-    location: "Sawar (Ajmer)",
-    services: "Candid & Cinematic Photography, Pre Wedding Shoot, Event Ceremony",
-    contact: "7023870850 (Raj Kumar Meena)"
-}
-    }
-
-};
-
-
-function openSponsor(sponsorId) {
-
-    const sponsor = sponsorData[sponsorId];
-
-    if (!sponsor) return;
-
-    document.getElementById("modalIcon").textContent =
-        sponsor.icon;
-
-    document.getElementById("modalSponsorName").textContent =
-        sponsor.name;
-
-    document.getElementById("modalName").textContent =
-        sponsor.name;
-
-    document.getElementById("modalLocation").textContent =
-        sponsor.location;
-
-    document.getElementById("modalServices").textContent =
-        sponsor.services;
-
-    document.getElementById("modalContact").textContent =
-        sponsor.contact;
-
-    document.getElementById("sponsorModal")
-        .classList.add("active");
-
-}
-
-
-function closeSponsor() {
-
-    document.getElementById("sponsorModal")
-        .classList.remove("active");
-
-}
-
-
-/* Click outside popup to close */
-
-document.getElementById("sponsorModal")
-    .addEventListener("click", function(event) {
-
-        if (event.target === this) {
-            closeSponsor();
-        }
-
-    });
-
-
-/* ESC key to close */
-
-document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-        closeSponsor();
-    }
-
-});
-
-</script>
     
 <body>
 
@@ -1101,14 +916,25 @@ document.addEventListener("keydown", function(event) {
 
         <!-- 7. VARNASHA PANTHERS -->
 
-       <div class="sponsor-card">
-    <div class="sponsor-icon">🎬</div>
-    <h3>SD Films</h3>
-    <p><strong>Varnasha Panthers</strong></p>
+      <div class="sponsor-card">
 
-    <button class="sponsor-details-btn" onclick="openSponsor('sd-films')">
+    <div class="sponsor-icon">🎬</div>
+
+    <h3>SD Films</h3>
+
+    <p>
+        <strong>Varnasha Panthers</strong>
+    </p>
+
+    <button
+        class="sponsor-details-btn"
+        type="button"
+        onclick="openSponsor('sd-films')">
+
         View Sponsor Details
+
     </button>
+
 </div>
 
 </section>
@@ -1301,7 +1127,241 @@ document.addEventListener("keydown", function(event) {
     </p>
 
 </footer>
+<!-- =====================================================
+     SPONSOR DETAILS POPUP
+     ===================================================== -->
 
+<div id="sponsorModal" class="sponsor-modal">
+
+    <div class="sponsor-modal-box">
+
+        <button
+            class="sponsor-modal-close"
+            type="button"
+            onclick="closeSponsor()">
+            ×
+        </button>
+
+        <div class="sponsor-modal-icon" id="modalIcon">
+            🏢
+        </div>
+
+        <div class="sponsor-modal-title">
+            <span>OFFICIAL BPL SPONSOR</span>
+            <h2 id="modalSponsorName">Sponsor Name</h2>
+        </div>
+
+        <div class="sponsor-detail-list">
+
+            <!-- SPONSOR NAME -->
+            <div class="sponsor-detail-item">
+
+                <div class="detail-icon">
+                    🏢
+                </div>
+
+                <div>
+                    <span>SPONSOR NAME</span>
+                    <strong id="modalName">-</strong>
+                </div>
+
+            </div>
+
+
+            <!-- LOCATION -->
+            <div class="sponsor-detail-item">
+
+                <div class="detail-icon">
+                    📍
+                </div>
+
+                <div>
+                    <span>LOCATION</span>
+                    <strong id="modalLocation">-</strong>
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="sponsor-detail-item">
+
+                <div class="detail-icon">
+                    🛠️
+                </div>
+
+                <div>
+                    <span>SERVICES</span>
+                    <strong id="modalServices">-</strong>
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="sponsor-detail-item">
+
+                <div class="detail-icon">
+                    📞
+                </div>
+
+                <div>
+                    <span>CONTACT</span>
+                    <strong id="modalContact">-</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     SPONSOR DETAILS JAVASCRIPT
+     ===================================================== -->
+
+<script>
+
+const sponsorData = {
+
+    brotomodification: {
+        name: "Brotomodification",
+        icon: "🚗",
+        location: "Near Laxmi Sweet, Sanganer Sector 3, Pratap Nagar, Jaipur – 302033",
+        services: "Car Audio Systems, Alloy Wheels, Car Accessories, Seat Covers",
+        contact: "+91 94600 60213 (Brajesh Kumar Meena)"
+    },
+
+    "chirag-dj": {
+        name: "Chirag DJ",
+        icon: "🎧",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "hdfc-babu-lal": {
+        name: "HDFC Bank (Babu Lal)",
+        icon: "🏦",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "ghata-rani": {
+        name: "Ghata Rani Tent House",
+        icon: "⛺",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "manraj-emitra": {
+        name: "Manraj Emitra",
+        icon: "🖥️",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "ap-study-hub": {
+        name: "AP Study Hub",
+        icon: "📚",
+        location: "Details to be added",
+        services: "Details to be added",
+        contact: "Details to be added"
+    },
+
+    "sd-films": {
+        name: "SD Films",
+        icon: "🎬",
+        location: "Sawar (Ajmer)",
+        services: "Candid & Cinematic Photography, Pre Wedding Shoot, Event Ceremony",
+        contact: "7023870850 (Raj Kumar Meena)"
+    }
+
+};
+
+
+/* =====================================================
+   OPEN SPONSOR DETAILS
+   ===================================================== */
+
+function openSponsor(sponsorId) {
+
+    const sponsor = sponsorData[sponsorId];
+
+    if (!sponsor) {
+        console.error("Sponsor not found:", sponsorId);
+        return;
+    }
+
+    document.getElementById("modalIcon").textContent =
+        sponsor.icon;
+
+    document.getElementById("modalSponsorName").textContent =
+        sponsor.name;
+
+    document.getElementById("modalName").textContent =
+        sponsor.name;
+
+    document.getElementById("modalLocation").textContent =
+        sponsor.location;
+
+    document.getElementById("modalServices").textContent =
+        sponsor.services;
+
+    document.getElementById("modalContact").textContent =
+        sponsor.contact;
+
+    document.getElementById("sponsorModal")
+        .classList.add("active");
+
+}
+
+
+/* =====================================================
+   CLOSE SPONSOR DETAILS
+   ===================================================== */
+
+function closeSponsor() {
+
+    document.getElementById("sponsorModal")
+        .classList.remove("active");
+
+}
+
+
+/* =====================================================
+   CLOSE WHEN CLICKING OUTSIDE
+   ===================================================== */
+
+document.getElementById("sponsorModal")
+    .addEventListener("click", function(event) {
+
+        if (event.target === this) {
+            closeSponsor();
+        }
+
+    });
+
+
+/* =====================================================
+   CLOSE WITH ESC KEY
+   ===================================================== */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeSponsor();
+    }
+
+});
+
+</script>
 
 </body>
 </html>
