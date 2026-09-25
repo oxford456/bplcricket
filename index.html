@@ -1822,6 +1822,384 @@ document.addEventListener("keydown", function(event) {
 });
 
 </script>
+<script>
 
+/* =====================================================
+   BPL SEASON-I STATISTICS DATA
+   ===================================================== */
+
+const bplStats = {
+
+    batsmen: {
+
+        title: "Top 5 Batsmen",
+        subtitle: "Runs & Strike Rate",
+
+        headers: [
+            "Sr No",
+            "Name",
+            "Team",
+            "Runs",
+            "Strike Rate"
+        ],
+
+        rows: [
+
+            ["1", "Amit Kumar Meena", "Varnasha Panthers", "319", "170.59"],
+            ["2", "Tej Singh Meena", "Desi Avengers", "265", "182.76"],
+            ["3", "Sitaram Meena", "Spartans 11", "225", "180"],
+            ["4", "Narendra Meena", "Desi Avengers", "208", "155.22"],
+            ["5", "Arman Meena", "Rising Stars", "145", "185.9"]
+
+        ]
+    },
+
+
+    bowlers: {
+
+        title: "Top 5 Bowlers",
+        subtitle: "Wickets & Economy",
+
+        headers: [
+            "Sr No",
+            "Name",
+            "Team",
+            "Wickets",
+            "Economy"
+        ],
+
+        rows: [
+
+            ["1", "Arman Meena", "Rising Stars", "19", "6.14"],
+            ["2", "Lokesh Meena", "Varnasha Panthers", "19", "6.73"],
+            ["3", "Sitaram Meena", "Spartans 11", "18", "5.55"],
+            ["4", "Amit Kumar Meena", "Varnasha Panthers", "14", "6.38"],
+            ["5", "Tej Singh Meena", "Desi Avengers", "13", "6.12"]
+
+        ]
+    },
+
+
+    fielders: {
+
+        title: "Top 5 Fielders",
+        subtitle: "Dismissals, Catches & Runouts",
+
+        headers: [
+            "Sr No",
+            "Name",
+            "Team",
+            "Dismissals",
+            "Catches",
+            "Runouts"
+        ],
+
+        rows: [
+
+            ["1", "Vikash Kevat", "Varnasha Panthers", "16", "2", "3"],
+            ["2", "Amit Kumar Meena", "Varnasha Panthers", "9", "4", "4"],
+            ["3", "Ajay Kumar Meena", "Royal Strikers", "8", "2", "0"],
+            ["4", "Sanjay Kumar Meena", "Royal Rangers", "8", "1", "1"],
+            ["5", "Narendra Meena", "Desi Avengers", "8", "5", "2"]
+
+        ]
+    },
+
+
+    sixes: {
+
+        title: "Top 5 Six Hitters",
+        subtitle: "Maximum Sixes",
+
+        headers: [
+            "Sr No",
+            "Name",
+            "Team",
+            "Sixes"
+        ],
+
+        rows: [
+
+            ["1", "Amit Kumar Meena", "Varnasha Panthers", "25"],
+            ["2", "Tej Singh Meena", "Desi Avengers", "24"],
+            ["3", "Sitaram Meena", "Spartans 11", "19"],
+            ["4", "Narendra Meena", "Desi Avengers", "15"],
+            ["5", "Arman Meena", "Rising Stars", "11"]
+
+        ]
+    },
+
+
+    fours: {
+
+        title: "Top 5 Four Hitters",
+        subtitle: "Maximum Fours",
+
+        headers: [
+            "Sr No",
+            "Name",
+            "Team",
+            "Fours"
+        ],
+
+        rows: [
+
+            ["1", "Amit Kumar Meena", "Varnasha Panthers", "24"],
+            ["2", "Narendra Meena", "Desi Avengers", "18"],
+            ["3", "Tej Singh Meena", "Desi Avengers", "17"],
+            ["4", "Sitaram Meena", "Spartans 11", "16"],
+            ["5", "Aman Singh Chouhan", "Rising Stars", "15"]
+
+        ]
+    },
+
+
+    records: {
+
+        title: "Other Records",
+        subtitle: "Memorable Season-I Records",
+
+        records: [
+
+            {
+                type: "Highest Individual Score",
+                name: "Tej Singh Meena",
+                team: "Desi Avengers",
+                value: "79*"
+            },
+
+            {
+                type: "Most Fifties",
+                name: "Amit Kumar Meena",
+                team: "Varnasha Panthers",
+                value: "3"
+            },
+
+            {
+                type: "Highest Wickets in an innings",
+                name: "Mukesh Meena",
+                team: "Royal Strikers",
+                value: "5"
+            },
+
+            {
+                type: "Most Maiden Overs Bowled",
+                name: "Tej Singh Meena",
+                team: "Desi Avengers",
+                value: "2"
+            },
+
+            {
+                type: "Most Dot Bowled",
+                name: "Lokesh Meena",
+                team: "Varnasha Panthers",
+                value: "85"
+            }
+
+        ]
+    }
+
+};
+
+
+/* =====================================================
+   OPEN STATISTICS POPUP
+   ===================================================== */
+
+function openStats(type) {
+
+    const modal = document.getElementById("statsModal");
+
+    const title = document.getElementById("statsModalTitle");
+
+    const subtitle = document.getElementById("statsModalSubtitle");
+
+    const content = document.getElementById("statsModalContent");
+
+    const data = bplStats[type];
+
+    if (!data) {
+        return;
+    }
+
+    title.textContent = data.title;
+
+    subtitle.textContent = data.subtitle;
+
+
+    /* OTHER RECORDS */
+
+    if (type === "records") {
+
+        content.innerHTML = `
+
+            <div class="stats-record-grid">
+
+                ${data.records.map(record => `
+
+                    <div class="stats-record-card">
+
+                        <div class="stats-record-type">
+                            ${record.type}
+                        </div>
+
+                        <div class="stats-record-name">
+                            ${record.name}
+                        </div>
+
+                        <div class="stats-record-team">
+                            ${record.team}
+                        </div>
+
+                        <div class="stats-record-value">
+                            ${record.value}
+                        </div>
+
+                    </div>
+
+                `).join("")}
+
+            </div>
+
+        `;
+
+    }
+
+
+    /* LEADERBOARD TABLES */
+
+    else {
+
+        content.innerHTML = `
+
+            <div class="stats-table-wrapper">
+
+                <table class="stats-table">
+
+                    <thead>
+
+                        <tr>
+
+                            ${data.headers.map(header => `
+                                <th>${header}</th>
+                            `).join("")}
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        ${data.rows.map(row => `
+
+                            <tr>
+
+                                ${row.map((cell, index) => {
+
+                                    if (index === 1) {
+
+                                        return `
+                                            <td>
+                                                <span class="stats-player">
+                                                    ${cell}
+                                                </span>
+                                            </td>
+                                        `;
+
+                                    }
+
+                                    if (index === 2) {
+
+                                        return `
+                                            <td>
+                                                <span class="stats-team">
+                                                    ${cell}
+                                                </span>
+                                            </td>
+                                        `;
+
+                                    }
+
+                                    return `
+                                        <td class="stats-highlight">
+                                            ${cell}
+                                        </td>
+                                    `;
+
+                                }).join("")}
+
+                            </tr>
+
+                        `).join("")}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        `;
+
+    }
+
+
+    modal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+/* =====================================================
+   CLOSE POPUP
+   ===================================================== */
+
+function closeStats() {
+
+    const modal = document.getElementById("statsModal");
+
+    modal.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+/* =====================================================
+   CLICK OUTSIDE POPUP TO CLOSE
+   ===================================================== */
+
+document.getElementById("statsModal").addEventListener(
+    "click",
+    function(event) {
+
+        if (event.target === this) {
+
+            closeStats();
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   ESC KEY TO CLOSE
+   ===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeStats();
+
+        }
+
+    }
+);
+
+</script>
 </body>
 </html>
