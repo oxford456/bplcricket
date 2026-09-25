@@ -6529,3 +6529,284 @@ section {
         min-width: 620px;
     }
 }
+/* =====================================================
+   BPL ICONIC STATISTICS — STEP 26.4-A
+   PREMIUM PODIUM / TOP 3 DESIGN
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   PREMIUM TABLE ROWS
+   ----------------------------------------------------- */
+
+.stats-table tbody tr {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.stats-table tbody tr:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(245,158,11,0.08),
+        rgba(255,255,255,0)
+    );
+    transform: translateX(4px);
+}
+
+
+/* -----------------------------------------------------
+   RANK COLUMN
+   ----------------------------------------------------- */
+
+.stats-table td:first-child {
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+/* -----------------------------------------------------
+   TOP 3 RANK HIGHLIGHT
+   ----------------------------------------------------- */
+
+.stats-table tbody tr:nth-child(1) td:first-child {
+    color: #d97706;
+}
+
+.stats-table tbody tr:nth-child(2) td:first-child {
+    color: #64748b;
+}
+
+.stats-table tbody tr:nth-child(3) td:first-child {
+    color: #b45309;
+}
+
+
+/* -----------------------------------------------------
+   PLAYER NAME
+   ----------------------------------------------------- */
+
+.stats-player {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 900;
+    color: #111827;
+    transition: 0.25s;
+}
+
+.stats-table tbody tr:hover .stats-player {
+    transform: translateX(3px);
+}
+
+
+/* -----------------------------------------------------
+   TEAM NAME
+   ----------------------------------------------------- */
+
+.stats-team {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* -----------------------------------------------------
+   STAT VALUE
+   ----------------------------------------------------- */
+
+.stats-highlight {
+    font-size: 16px !important;
+    font-weight: 900 !important;
+}
+
+
+/* -----------------------------------------------------
+   TOP 3 ROW VISUAL EFFECT
+   ----------------------------------------------------- */
+
+.stats-table tbody tr:nth-child(1) {
+    background: linear-gradient(
+        90deg,
+        rgba(245,158,11,0.13),
+        rgba(245,158,11,0.025)
+    );
+}
+
+.stats-table tbody tr:nth-child(2) {
+    background: linear-gradient(
+        90deg,
+        rgba(148,163,184,0.13),
+        rgba(148,163,184,0.025)
+    );
+}
+
+.stats-table tbody tr:nth-child(3) {
+    background: linear-gradient(
+        90deg,
+        rgba(180,83,9,0.10),
+        rgba(180,83,9,0.02)
+    );
+}
+
+
+/* -----------------------------------------------------
+   TOP 3 RANK BADGES
+   ----------------------------------------------------- */
+
+.stats-table tbody tr:nth-child(1) td:first-child::before {
+    content: "🥇";
+    display: block;
+    font-size: 21px;
+    line-height: 1;
+    margin-bottom: 3px;
+}
+
+.stats-table tbody tr:nth-child(2) td:first-child::before {
+    content: "🥈";
+    display: block;
+    font-size: 21px;
+    line-height: 1;
+    margin-bottom: 3px;
+}
+
+.stats-table tbody tr:nth-child(3) td:first-child::before {
+    content: "🥉";
+    display: block;
+    font-size: 21px;
+    line-height: 1;
+    margin-bottom: 3px;
+}
+
+
+/* -----------------------------------------------------
+   PREMIUM HEADER
+   ----------------------------------------------------- */
+
+.stats-modal-header {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(245,158,11,0.30),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #111827,
+            #1f2937,
+            #374151
+        );
+    overflow: hidden;
+}
+
+.stats-modal-header::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    right: -90px;
+    top: -120px;
+    background: rgba(245,158,11,0.10);
+    pointer-events: none;
+}
+
+
+/* -----------------------------------------------------
+   MODAL TITLE
+   ----------------------------------------------------- */
+
+.stats-modal-header h2 {
+    position: relative;
+    z-index: 2;
+    letter-spacing: -0.5px;
+}
+
+.stats-modal-header p {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* -----------------------------------------------------
+   CLOSE BUTTON
+   ----------------------------------------------------- */
+
+.stats-close {
+    z-index: 10;
+}
+
+
+/* -----------------------------------------------------
+   RECORD CARDS — PREMIUM LOOK
+   ----------------------------------------------------- */
+
+.stats-record-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-record-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(
+        180deg,
+        #f59e0b,
+        #0891b2
+    );
+}
+
+.stats-record-card:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+
+/* -----------------------------------------------------
+   RECORD VALUE
+   ----------------------------------------------------- */
+
+.stats-record-value {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 12px;
+    background: #fff7ed;
+}
+
+
+/* -----------------------------------------------------
+   MOBILE
+   ----------------------------------------------------- */
+
+@media (max-width: 650px) {
+
+    .stats-table tbody tr:hover {
+        transform: none;
+    }
+
+    .stats-player {
+        font-size: 14px;
+    }
+
+    .stats-team {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .stats-highlight {
+        font-size: 14px !important;
+    }
+
+    .stats-table tbody tr:nth-child(1) td:first-child::before,
+    .stats-table tbody tr:nth-child(2) td:first-child::before,
+    .stats-table tbody tr:nth-child(3) td:first-child::before {
+        font-size: 18px;
+    }
+
+}
