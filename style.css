@@ -14645,3 +14645,58 @@ section {
         grid-column: span 2;
     }
 }
+/* =========================================
+   SEASON-I STATISTICS — FORCE LAYOUT
+========================================= */
+
+#season-statistics.bpl-season-stats {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 70px 20px !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+}
+
+#season-statistics .bpl-season-stats-hero {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+}
+
+#season-statistics .bpl-season-stats-heading {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+#season-statistics .bpl-season-stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 16px !important;
+}
+
+#season-statistics .bpl-season-stat {
+    display: flex !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 700px) {
+
+    #season-statistics.bpl-season-stats {
+        padding: 45px 14px !important;
+    }
+
+    #season-statistics .bpl-season-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    #season-statistics .bpl-season-stat:nth-child(3) {
+        grid-column: span 2 !important;
+    }
+}
