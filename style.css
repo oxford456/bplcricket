@@ -14421,3 +14421,91 @@ section {
     }
 
 }
+/* =====================================================
+   BPL — ABOUT THE LEAGUE — GOOGLE MAP BUTTON
+   ===================================================== */
+
+.about-map-wrap {
+    margin: 20px 0 0 !important;
+    text-align: center !important;
+}
+
+.about-map-btn {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+
+    min-width: 260px !important;
+    padding: 14px 24px !important;
+
+    border-radius: 999px !important;
+    text-decoration: none !important;
+
+    color: #f8fafc !important;
+    background: linear-gradient(
+        135deg,
+        #151b28,
+        #0d131e
+    ) !important;
+
+    border: 1px solid rgba(245,158,11,0.45) !important;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.35),
+        0 0 25px rgba(245,158,11,0.08) !important;
+
+    overflow: hidden !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.about-map-btn span:first-child {
+    font-size: 19px !important;
+}
+
+.about-map-btn strong {
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    letter-spacing: 1.3px !important;
+    color: #f8fafc !important;
+}
+
+.about-map-btn span:last-child {
+    font-size: 20px !important;
+    color: #f59e0b !important;
+    line-height: 1 !important;
+}
+
+.about-map-btn:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(245,158,11,0.80) !important;
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.45),
+        0 0 35px rgba(245,158,11,0.14) !important;
+}
+
+.about-map-btn:hover span:last-child {
+    transform: translateX(4px) !important;
+}
+
+@media (max-width: 650px) {
+
+    .about-map-btn {
+        width: 100% !important;
+        max-width: 320px !important;
+        min-width: 0 !important;
+        padding: 14px 18px !important;
+    }
+
+    .about-map-btn strong {
+        font-size: 10px !important;
+        letter-spacing: 1px !important;
+    }
+
+}
