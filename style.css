@@ -14280,3 +14280,103 @@ section {
     }
 
 }
+/* =====================================================
+   BPL — ABOUT THE LEAGUE
+   ===================================================== */
+
+.about-league-section {
+    width: 100% !important;
+    padding: 90px 20px !important;
+    background: #080c14 !important;
+    box-sizing: border-box !important;
+}
+
+.about-league-content {
+    width: 100% !important;
+    max-width: 1000px !important;
+    margin: 35px auto 0 !important;
+    text-align: center !important;
+}
+
+.about-league-content > p {
+    max-width: 700px !important;
+    margin: 0 auto 40px !important;
+    color: #94a3b8 !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+}
+
+.about-league-info {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+}
+
+.about-league-item {
+    position: relative !important;
+    padding: 32px 24px !important;
+    border-radius: 20px !important;
+    background: linear-gradient(
+        145deg,
+        #111827,
+        #0b111c
+    ) !important;
+    border: 1px solid rgba(245,158,11,0.20) !important;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.30),
+        0 0 25px rgba(245,158,11,0.04) !important;
+    overflow: hidden !important;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.about-league-item:hover {
+    transform: translateY(-6px) !important;
+    border-color: rgba(245,158,11,0.55) !important;
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.40),
+        0 0 30px rgba(245,158,11,0.10) !important;
+}
+
+.about-league-item > span {
+    display: block !important;
+    margin-bottom: 14px !important;
+    font-size: 34px !important;
+}
+
+.about-league-item strong {
+    display: block !important;
+    margin-bottom: 8px !important;
+    color: #f59e0b !important;
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    letter-spacing: 1.2px !important;
+    text-transform: uppercase !important;
+}
+
+.about-league-item p {
+    margin: 0 !important;
+    color: #94a3b8 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+@media (max-width: 650px) {
+
+    .about-league-section {
+        padding: 65px 14px !important;
+    }
+
+    .about-league-info {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+
+    .about-league-item {
+        padding: 28px 20px !important;
+    }
+
+}
