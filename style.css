@@ -14679,7 +14679,9 @@ section {
     width: 100% !important;
     gap: 16px !important;
 }
-
+#season-statistics .bpl-season-stats-grid {
+    display: grid !important;
+}
 #season-statistics .bpl-season-stat {
     display: flex !important;
     min-width: 0 !important;
