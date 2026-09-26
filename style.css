@@ -15330,3 +15330,212 @@ section {
         height: 190px !important;
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Montserrat:wght@500;700;800;900&display=swap');
+
+/* =====================================================
+   BPL HOME HERO — INDIAN TRICOLOUR CRICKET THEME
+   ===================================================== */
+
+#home {
+    position: relative !important;
+    overflow: hidden !important;
+
+    background:
+        radial-gradient(
+            circle at 15% 45%,
+            rgba(255,153,51,0.20),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 45%,
+            rgba(19,136,8,0.20),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 50% 25%,
+            rgba(255,255,255,0.06),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #02070d 0%,
+            #06111b 48%,
+            #02060a 100%
+        ) !important;
+
+    min-height: 650px !important;
+}
+
+/* TRICOLOUR LIGHTING */
+#home::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    pointer-events: none !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,153,51,0.13) 0%,
+            transparent 28%,
+            transparent 72%,
+            rgba(19,136,8,0.13) 100%
+        ) !important;
+
+    opacity: 1 !important;
+}
+
+/* CENTRAL WHITE GLOW */
+#home::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 50% !important;
+    bottom: 0 !important;
+
+    width: 900px !important;
+    height: 280px !important;
+
+    transform: translateX(-50%) !important;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(255,255,255,0.09),
+            transparent 68%
+        ) !important;
+
+    filter: blur(30px) !important;
+    pointer-events: none !important;
+}
+
+/* KEEP HERO CONTENT ABOVE EFFECTS */
+#home > * {
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+/* WELCOME TO */
+#home h1 {
+    font-family:
+        "Montserrat",
+        sans-serif !important;
+
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    letter-spacing: 5px !important;
+
+    color: #ffffff !important;
+
+    text-shadow:
+        0 2px 12px rgba(0,0,0,0.7) !important;
+
+    text-transform: uppercase !important;
+}
+
+/* MAIN BPL TITLE */
+#home h2 {
+    font-family:
+        "Permanent Marker",
+        "Montserrat",
+        sans-serif !important;
+
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+
+    font-size: clamp(48px, 7vw, 92px) !important;
+    line-height: 0.98 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff7a00 0%,
+            #ff9933 25%,
+            #ffffff 46%,
+            #ffffff 54%,
+            #42e85f 75%,
+            #138808 100%
+        ) !important;
+
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+
+    -webkit-text-fill-color: transparent !important;
+
+    text-shadow:
+        0 6px 25px rgba(0,0,0,0.65) !important;
+
+    filter:
+        drop-shadow(0 0 12px rgba(255,153,51,0.12))
+        drop-shadow(0 0 12px rgba(19,136,8,0.12)) !important;
+}
+
+/* TAGLINE */
+#home p {
+    font-family:
+        "Montserrat",
+        sans-serif !important;
+
+    font-size: 18px !important;
+    font-weight: 500 !important;
+
+    letter-spacing: 1px !important;
+
+    color: #f5f7fa !important;
+
+    text-shadow:
+        0 3px 14px rgba(0,0,0,0.7) !important;
+}
+
+/* PREMIUM TRICOLOUR UNDERLINE EFFECT */
+#home h2::after {
+    content: "" !important;
+    display: block !important;
+
+    width: 55% !important;
+    height: 5px !important;
+
+    margin: 22px auto 0 !important;
+
+    border-radius: 20px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff9933 0%,
+            #ffffff 50%,
+            #138808 100%
+        ) !important;
+
+    box-shadow:
+        0 0 18px rgba(255,153,51,0.25),
+        0 0 18px rgba(19,136,8,0.20) !important;
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+
+    #home {
+        min-height: 560px !important;
+    }
+
+    #home h1 {
+        font-size: 13px !important;
+        letter-spacing: 3px !important;
+    }
+
+    #home h2 {
+        font-size: clamp(38px, 12vw, 60px) !important;
+        line-height: 1.05 !important;
+    }
+
+    #home p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    #home h2::after {
+        width: 70% !important;
+        height: 3px !important;
+        margin-top: 16px !important;
+    }
+}
