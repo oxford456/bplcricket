@@ -12838,3 +12838,16 @@ section {
     max-width: 1100px !important;
     margin: 0 auto !important;
 }
+/* SEASON HIGHLIGHTS — CENTER */
+#season-highlights .section-heading {
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+#season-highlights .section-heading h2 {
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
