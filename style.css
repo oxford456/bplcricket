@@ -14632,3 +14632,57 @@ section {
     }
 
 }
+/* =====================================================
+   BPL — ABOUT INTRO — INDIAN TRICOLOUR THEME
+   ===================================================== */
+
+.about-league-intro {
+    color: #f8fafc !important;
+}
+
+/* BPL NAME — SAFFRON */
+
+.about-league-intro strong {
+    color: #ff9933 !important;
+    font-weight: 900 !important;
+    text-shadow: 0 0 12px rgba(255,153,51,0.18) !important;
+}
+
+/* HIGHLIGHTED TEXT — TRICOLOUR FEEL */
+
+.about-league-intro em {
+    font-style: italic !important;
+    font-weight: 700 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff9933 0%,
+            #ff9933 35%,
+            #ffffff 50%,
+            #138808 65%,
+            #138808 100%
+        ) !important;
+
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+
+    -webkit-text-fill-color: transparent !important;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.04) !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .about-league-intro strong {
+        text-shadow: none !important;
+    }
+
+    .about-league-intro em {
+        text-shadow: none !important;
+    }
+
+}
