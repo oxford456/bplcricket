@@ -14509,3 +14509,126 @@ section {
     }
 
 }
+/* =====================================================
+   BPL — MAIN NAVIGATION — PREMIUM STYLE
+   ===================================================== */
+
+.main-nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+
+    padding: 0 15px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #061b13,
+            #0b1220,
+            #17113a
+        ) !important;
+
+    border-top: 1px solid rgba(245,158,11,0.18) !important;
+    border-bottom: 1px solid rgba(245,158,11,0.25) !important;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.35),
+        0 0 25px rgba(245,158,11,0.04) !important;
+
+    box-sizing: border-box !important;
+}
+
+.main-nav a {
+    position: relative !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 16px 24px !important;
+
+    color: #f8fafc !important;
+
+    text-decoration: none !important;
+
+    font-family:
+        'Montserrat',
+        sans-serif !important;
+
+    font-size: 12px !important;
+    font-weight: 800 !important;
+
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease !important;
+}
+
+/* GOLD UNDERLINE */
+
+.main-nav a::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    left: 50% !important;
+    bottom: 6px !important;
+
+    width: 0 !important;
+    height: 3px !important;
+
+    border-radius: 10px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f59e0b,
+            #fbbf24
+        ) !important;
+
+    transform: translateX(-50%) !important;
+
+    transition: width 0.3s ease !important;
+}
+
+/* HOVER */
+
+.main-nav a:hover {
+    color: #fbbf24 !important;
+
+    background:
+        rgba(245,158,11,0.07) !important;
+}
+
+.main-nav a:hover::after {
+    width: 55% !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .main-nav {
+        padding: 0 5px !important;
+    }
+
+    .main-nav a {
+        padding: 13px 12px !important;
+        font-size: 10px !important;
+        letter-spacing: 0.7px !important;
+    }
+
+    .main-nav a::after {
+        bottom: 4px !important;
+    }
+
+}
