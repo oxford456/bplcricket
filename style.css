@@ -14731,3 +14731,86 @@ section {
     }
 
 }
+/* =====================================================
+   BPL SEASON-I — CHAMPION & RUNNER-UP LOGOS
+   ===================================================== */
+
+.champion-trophy,
+.runner-trophy {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.champion-trophy img,
+.runner-trophy img {
+    width: 100% !important;
+    height: 100% !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border-radius: 50% !important;
+}
+
+/* CHAMPION LOGO */
+
+.champion-trophy {
+    width: 135px !important;
+    height: 135px !important;
+
+    margin: 0 auto 20px !important;
+
+    overflow: hidden !important;
+
+    border-radius: 50% !important;
+
+    border: 3px solid #f59e0b !important;
+
+    background: #0b111c !important;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.45),
+        0 0 35px rgba(245,158,11,0.22) !important;
+}
+
+/* RUNNER-UP LOGO */
+
+.runner-trophy {
+    width: 105px !important;
+    height: 105px !important;
+
+    margin: 0 auto 18px !important;
+
+    overflow: hidden !important;
+
+    border-radius: 50% !important;
+
+    border: 3px solid rgba(203,213,225,0.65) !important;
+
+    background: #0b111c !important;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.40),
+        0 0 25px rgba(203,213,225,0.10) !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .champion-trophy {
+        width: 105px !important;
+        height: 105px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .runner-trophy {
+        width: 85px !important;
+        height: 85px !important;
+        margin-bottom: 15px !important;
+    }
+
+}
