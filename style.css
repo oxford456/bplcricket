@@ -14814,3 +14814,92 @@ section {
     }
 
 }
+/* =====================================================
+   BPL — ABOUT LEAGUE — PREMIUM SOOTHING TRICOLOUR TYPOGRAPHY
+   ===================================================== */
+
+.about-league-intro {
+    max-width: 880px !important;
+    margin: 0 auto 48px !important;
+    padding: 0 14px !important;
+
+    font-family:
+        "Noto Sans Devanagari",
+        "Nirmala UI",
+        "Mangal",
+        sans-serif !important;
+
+    font-size: 18px !important;
+    font-weight: 450 !important;
+    line-height: 2.05 !important;
+    letter-spacing: 0.15px !important;
+
+    color: #eef2f7 !important;
+    text-align: center !important;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/* BPL NAME — SAFFRON */
+
+.about-league-intro strong {
+    color: #ff9933 !important;
+
+    font-weight: 800 !important;
+
+    text-shadow:
+        0 0 10px rgba(255,153,51,0.18) !important;
+}
+
+/* IMPORTANT / EMOTIONAL PHRASES — TRICOLOUR */
+
+.about-league-intro em {
+    font-style: italic !important;
+    font-weight: 650 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff9933 0%,
+            #ff9933 30%,
+            #ffffff 50%,
+            #138808 70%,
+            #138808 100%
+        ) !important;
+
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+
+    -webkit-text-fill-color: transparent !important;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,0.06) !important;
+}
+
+/* SOFT SEPARATION BETWEEN PARAGRAPH LINES */
+
+.about-league-intro br {
+    line-height: 2.4 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .about-league-intro {
+        padding: 0 6px !important;
+
+        font-size: 15.5px !important;
+        line-height: 1.95 !important;
+        letter-spacing: 0.1px !important;
+    }
+
+    .about-league-intro strong {
+        text-shadow: none !important;
+    }
+
+    .about-league-intro em {
+        text-shadow: none !important;
+    }
+}
