@@ -12102,2006 +12102,7 @@ section {
     }
 
 }
-/* =====================================================
-   SEASON-I STATISTICS
-   PREMIUM DARK + GOLD DESIGN
-   ===================================================== */
 
-#season-one-page .season-statistics-section {
-    position: relative;
-
-    padding: 100px 24px;
-
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            circle at 20% 15%,
-            rgba(255, 193, 7, 0.08),
-            transparent 30%
-        ),
-        radial-gradient(
-            circle at 80% 85%,
-            rgba(255, 152, 0, 0.06),
-            transparent 32%
-        ),
-        #080b12;
-}
-
-
-/* =====================================================
-   BACKGROUND GRID
-   ===================================================== */
-
-#season-one-page .season-statistics-section::before {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background-image:
-        linear-gradient(
-            rgba(255, 255, 255, 0.018) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0.018) 1px,
-            transparent 1px
-        );
-
-    background-size: 55px 55px;
-
-    pointer-events: none;
-
-    opacity: 0.55;
-}
-
-
-/* =====================================================
-   SECTION HEADING
-   ===================================================== */
-
-#season-one-page .season-statistics-section
-.season-section-heading {
-    position: relative;
-
-    z-index: 2;
-
-    max-width: 800px;
-
-    margin:
-        0
-        auto
-        55px;
-
-    text-align: center;
-}
-
-
-#season-one-page .season-statistics-section
-.season-section-kicker {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 8px 18px;
-
-    margin-bottom: 18px;
-
-    border:
-        1px solid rgba(255, 193, 7, 0.25);
-
-    border-radius: 999px;
-
-    background:
-        rgba(255, 193, 7, 0.06);
-
-    color: #ffc107;
-
-    font-size: 11px;
-
-    font-weight: 900;
-
-    letter-spacing: 3px;
-}
-
-
-#season-one-page .season-statistics-section
-.season-section-heading h2 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: clamp(
-        36px,
-        5vw,
-        58px
-    );
-
-    line-height: 1.05;
-
-    font-weight: 900;
-
-    letter-spacing: -1.5px;
-}
-
-
-#season-one-page .season-statistics-section
-.season-section-heading p {
-    max-width: 650px;
-
-    margin:
-        18px
-        auto
-        0;
-
-    color:
-        rgba(255, 255, 255, 0.52);
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-
-/* =====================================================
-   RECORD STRIP
-   ===================================================== */
-
-#season-one-page .season-stat-records {
-    position: relative;
-
-    z-index: 2;
-
-    width: min(100%, 1150px);
-
-    margin:
-        0
-        auto
-        45px;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 14px;
-}
-
-
-/* =====================================================
-   RECORD CARD
-   ===================================================== */
-
-#season-one-page .season-stat-record {
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
-
-    min-height: 92px;
-
-    padding:
-        18px
-        20px;
-
-    border:
-        1px solid rgba(255, 193, 7, 0.13);
-
-    border-radius: 16px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(29, 34, 47, 0.96),
-            rgba(11, 14, 22, 0.98)
-        );
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.30),
-        inset 0 1px 0 rgba(255, 255, 255, 0.025);
-
-    transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-
-#season-one-page .season-stat-record:hover {
-    transform: translateY(-4px);
-
-    border-color:
-        rgba(255, 193, 7, 0.30);
-
-    box-shadow:
-        0 20px 45px rgba(0, 0, 0, 0.42),
-        0 0 25px rgba(255, 193, 7, 0.05);
-}
-
-
-/* =====================================================
-   RECORD ICON
-   ===================================================== */
-
-#season-one-page .season-stat-icon {
-    flex: 0 0 52px;
-
-    width: 52px;
-    height: 52px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255, 193, 7, 0.14),
-            rgba(255, 152, 0, 0.05)
-        );
-
-    border:
-        1px solid rgba(255, 193, 7, 0.18);
-
-    font-size: 25px;
-}
-
-
-/* =====================================================
-   RECORD TEXT
-   ===================================================== */
-
-#season-one-page .season-stat-record span {
-    display: block;
-
-    margin-bottom: 5px;
-
-    color:
-        rgba(255, 255, 255, 0.40);
-
-    font-size: 9px;
-
-    font-weight: 900;
-
-    letter-spacing: 1.5px;
-}
-
-
-#season-one-page .season-stat-record strong {
-    display: block;
-
-    color: #f5f5f5;
-
-    font-size: 14px;
-
-    line-height: 1.3;
-
-    font-weight: 800;
-}
-
-
-/* =====================================================
-   STATISTICS GRID
-   ===================================================== */
-
-#season-one-page .season-statistics-grid {
-    position: relative;
-
-    z-index: 2;
-
-    width: min(100%, 1150px);
-
-    margin:
-        0
-        auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 18px;
-}
-
-
-/* =====================================================
-   STATISTICS CARD
-   ===================================================== */
-
-#season-one-page .season-stat-card {
-    position: relative;
-
-    min-height: 300px;
-
-    padding:
-        32px
-        26px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    justify-content: flex-start;
-
-    text-align: left;
-
-    border:
-        1px solid rgba(255, 193, 7, 0.14);
-
-    border-radius: 22px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(31, 36, 49, 0.97),
-            rgba(10, 13, 21, 0.99)
-        );
-
-    color: #ffffff;
-
-    cursor: pointer;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.38),
-        inset 0 1px 0 rgba(255, 255, 255, 0.025);
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
-}
-
-
-/* =====================================================
-   CARD TOP GLOW
-   ===================================================== */
-
-#season-one-page .season-stat-card::before {
-    content: "";
-
-    position: absolute;
-
-    top: -100px;
-    right: -80px;
-
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(255, 193, 7, 0.12),
-            transparent 68%
-        );
-
-    transition:
-        transform 0.4s ease;
-}
-
-
-/* =====================================================
-   CARD HOVER
-   ===================================================== */
-
-#season-one-page .season-stat-card:hover {
-    transform: translateY(-8px);
-
-    border-color:
-        rgba(255, 193, 7, 0.38);
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(38, 43, 57, 0.98),
-            rgba(12, 15, 24, 1)
-        );
-
-    box-shadow:
-        0 28px 65px rgba(0, 0, 0, 0.50),
-        0 0 30px rgba(255, 193, 7, 0.06);
-}
-
-
-#season-one-page .season-stat-card:hover::before {
-    transform: scale(1.25);
-}
-
-
-/* =====================================================
-   CARD ICON
-   ===================================================== */
-
-#season-one-page .season-stat-card-icon {
-    position: relative;
-
-    z-index: 1;
-
-    width: 68px;
-    height: 68px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 25px;
-
-    border-radius: 18px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255, 193, 7, 0.15),
-            rgba(255, 152, 0, 0.05)
-        );
-
-    border:
-        1px solid rgba(255, 193, 7, 0.20);
-
-    font-size: 34px;
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.28);
-}
-
-
-/* =====================================================
-   CARD LABEL
-   ===================================================== */
-
-#season-one-page .season-stat-card-label {
-    position: relative;
-
-    z-index: 1;
-
-    margin-bottom: 7px;
-
-    color: #ffc107;
-
-    font-size: 10px;
-
-    font-weight: 900;
-
-    letter-spacing: 2px;
-}
-
-
-/* =====================================================
-   CARD TITLE
-   ===================================================== */
-
-#season-one-page .season-stat-card h3 {
-    position: relative;
-
-    z-index: 1;
-
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 27px;
-
-    line-height: 1.1;
-
-    font-weight: 900;
-
-    letter-spacing: -0.5px;
-}
-
-
-/* =====================================================
-   CARD DESCRIPTION
-   ===================================================== */
-
-#season-one-page .season-stat-card p {
-    position: relative;
-
-    z-index: 1;
-
-    margin:
-        12px
-        0
-        0;
-
-    color:
-        rgba(255, 255, 255, 0.48);
-
-    font-size: 13px;
-
-    line-height: 1.5;
-}
-
-
-/* =====================================================
-   CARD ACTION
-   ===================================================== */
-
-#season-one-page .season-stat-card-action {
-    position: relative;
-
-    z-index: 1;
-
-    margin-top: auto;
-
-    padding-top: 25px;
-
-    color:
-        rgba(255, 193, 7, 0.82);
-
-    font-size: 10px;
-
-    font-weight: 900;
-
-    letter-spacing: 1.3px;
-
-    transition:
-        color 0.25s ease,
-        transform 0.25s ease;
-}
-
-
-#season-one-page .season-stat-card:hover
-.season-stat-card-action {
-    color: #ffc107;
-
-    transform: translateX(4px);
-}
-
-
-/* =====================================================
-   KEYBOARD ACCESSIBILITY
-   ===================================================== */
-
-#season-one-page .season-stat-card:focus-visible {
-    outline: 2px solid #ffc107;
-
-    outline-offset: 4px;
-}
-
-
-/* =====================================================
-   TABLET
-   ===================================================== */
-
-@media (max-width: 950px) {
-
-    #season-one-page .season-stat-records {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    #season-one-page .season-statistics-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-   ===================================================== */
-
-@media (max-width: 600px) {
-
-    #season-one-page .season-statistics-section {
-        padding:
-            75px
-            14px;
-    }
-
-    #season-one-page .season-statistics-section
-    .season-section-heading {
-        margin-bottom: 40px;
-    }
-
-    #season-one-page .season-statistics-section
-    .season-section-heading h2 {
-        font-size: 36px;
-    }
-
-    #season-one-page .season-statistics-section
-    .season-section-heading p {
-        font-size: 13px;
-    }
-
-    #season-one-page .season-stat-records {
-        grid-template-columns: 1fr;
-
-        gap: 10px;
-
-        margin-bottom: 30px;
-    }
-
-    #season-one-page .season-stat-record {
-        min-height: 80px;
-
-        padding:
-            15px
-            16px;
-    }
-
-    #season-one-page .season-stat-icon {
-        flex-basis: 46px;
-
-        width: 46px;
-        height: 46px;
-
-        font-size: 22px;
-    }
-
-    #season-one-page .season-statistics-grid {
-        grid-template-columns: 1fr;
-
-        gap: 14px;
-    }
-
-    #season-one-page .season-stat-card {
-        min-height: 275px;
-
-        padding:
-            28px
-            22px;
-
-        border-radius: 20px;
-    }
-
-    #season-one-page .season-stat-card-icon {
-        width: 62px;
-        height: 62px;
-
-        font-size: 31px;
-    }
-
-    #season-one-page .season-stat-card h3 {
-        font-size: 25px;
-    }
-
-}
-/* =====================================================
-   SEASON-I STATISTICS
-   FINAL PREMIUM OVERRIDE
-   ===================================================== */
-
-#season-one-page .season-statistics-section {
-    position: relative !important;
-
-    display: block !important;
-
-    width: 100% !important;
-
-    padding: 100px 24px !important;
-
-    margin: 0 !important;
-
-    overflow: hidden !important;
-
-    background:
-        radial-gradient(
-            circle at 15% 15%,
-            rgba(255, 193, 7, 0.10),
-            transparent 30%
-        ),
-        radial-gradient(
-            circle at 85% 85%,
-            rgba(255, 152, 0, 0.08),
-            transparent 30%
-        ),
-        #080b12 !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* =====================================================
-   HEADING
-   ===================================================== */
-
-#season-one-page .season-statistics-section
-.season-section-heading {
-    position: relative !important;
-
-    z-index: 5 !important;
-
-    display: block !important;
-
-    width: min(100%, 800px) !important;
-
-    margin: 0 auto 55px !important;
-
-    padding: 0 !important;
-
-    text-align: center !important;
-}
-
-
-#season-one-page .season-statistics-section
-.season-section-kicker {
-    display: inline-flex !important;
-
-    padding: 8px 18px !important;
-
-    margin-bottom: 18px !important;
-
-    border: 1px solid rgba(255, 193, 7, 0.30) !important;
-
-    border-radius: 999px !important;
-
-    background: rgba(255, 193, 7, 0.07) !important;
-
-    color: #ffc107 !important;
-
-    font-size: 11px !important;
-
-    font-weight: 900 !important;
-
-    letter-spacing: 3px !important;
-}
-
-
-#season-one-page .season-statistics-section
-.season-section-heading h2 {
-    margin: 0 !important;
-
-    color: #ffffff !important;
-
-    font-size: clamp(36px, 5vw, 58px) !important;
-
-    line-height: 1.05 !important;
-
-    font-weight: 900 !important;
-
-    letter-spacing: -1px !important;
-}
-
-
-#season-one-page .season-statistics-section
-.season-section-heading p {
-    max-width: 650px !important;
-
-    margin: 18px auto 0 !important;
-
-    color: rgba(255, 255, 255, 0.55) !important;
-
-    font-size: 15px !important;
-
-    line-height: 1.7 !important;
-}
-
-
-/* =====================================================
-   TOP RECORDS
-   ===================================================== */
-
-#season-one-page .season-stat-records {
-    position: relative !important;
-
-    z-index: 5 !important;
-
-    display: grid !important;
-
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-
-    gap: 16px !important;
-
-    width: min(100%, 1150px) !important;
-
-    margin: 0 auto 45px !important;
-}
-
-
-#season-one-page .season-stat-record {
-    display: flex !important;
-
-    align-items: center !important;
-
-    gap: 14px !important;
-
-    min-height: 90px !important;
-
-    padding: 18px !important;
-
-    margin: 0 !important;
-
-    border: 1px solid rgba(255, 193, 7, 0.18) !important;
-
-    border-radius: 16px !important;
-
-    background:
-        linear-gradient(
-            145deg,
-            #1e2330,
-            #0c0f17
-        ) !important;
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.40) !important;
-
-    box-sizing: border-box !important;
-}
-
-
-#season-one-page .season-stat-icon {
-    flex: 0 0 52px !important;
-
-    width: 52px !important;
-
-    height: 52px !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    margin: 0 !important;
-
-    border-radius: 14px !important;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255, 193, 7, 0.18),
-            rgba(255, 152, 0, 0.05)
-        ) !important;
-
-    border: 1px solid rgba(255, 193, 7, 0.25) !important;
-
-    font-size: 25px !important;
-}
-
-
-#season-one-page .season-stat-record span {
-    display: block !important;
-
-    margin: 0 0 5px !important;
-
-    color: rgba(255, 255, 255, 0.42) !important;
-
-    font-size: 9px !important;
-
-    font-weight: 900 !important;
-
-    letter-spacing: 1.4px !important;
-}
-
-
-#season-one-page .season-stat-record strong {
-    display: block !important;
-
-    margin: 0 !important;
-
-    color: #ffffff !important;
-
-    font-size: 14px !important;
-
-    font-weight: 800 !important;
-}
-
-
-/* =====================================================
-   MAIN STAT CARDS
-   ===================================================== */
-
-#season-one-page .season-statistics-grid {
-    position: relative !important;
-
-    z-index: 5 !important;
-
-    display: grid !important;
-
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-
-    gap: 18px !important;
-
-    width: min(100%, 1150px) !important;
-
-    margin: 0 auto !important;
-}
-
-
-#season-one-page .season-stat-card {
-    position: relative !important;
-
-    display: flex !important;
-
-    flex-direction: column !important;
-
-    align-items: flex-start !important;
-
-    justify-content: flex-start !important;
-
-    width: 100% !important;
-
-    min-height: 310px !important;
-
-    padding: 30px 26px !important;
-
-    margin: 0 !important;
-
-    box-sizing: border-box !important;
-
-    border: 1px solid rgba(255, 193, 7, 0.17) !important;
-
-    border-radius: 22px !important;
-
-    background:
-        linear-gradient(
-            145deg,
-            #202634,
-            #0b0e16
-        ) !important;
-
-    color: #ffffff !important;
-
-    text-align: left !important;
-
-    cursor: pointer !important;
-
-    overflow: hidden !important;
-
-    box-shadow:
-        0 22px 50px rgba(0, 0, 0, 0.45),
-        inset 0 1px 0 rgba(255, 255, 255, 0.035) !important;
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease !important;
-
-    appearance: none !important;
-
-    -webkit-appearance: none !important;
-}
-
-
-#season-one-page .season-stat-card:hover {
-    transform: translateY(-8px) !important;
-
-    border-color:
-        rgba(255, 193, 7, 0.42) !important;
-
-    box-shadow:
-        0 30px 65px rgba(0, 0, 0, 0.55),
-        0 0 30px rgba(255, 193, 7, 0.08) !important;
-}
-
-
-/* =====================================================
-   CARD ICON
-   ===================================================== */
-
-#season-one-page .season-stat-card-icon {
-    position: relative !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    width: 68px !important;
-
-    height: 68px !important;
-
-    min-width: 68px !important;
-
-    margin: 0 0 24px !important;
-
-    border-radius: 18px !important;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255, 193, 7, 0.17),
-            rgba(255, 152, 0, 0.05)
-        ) !important;
-
-    border: 1px solid rgba(255, 193, 7, 0.25) !important;
-
-    font-size: 34px !important;
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.30) !important;
-}
-
-
-/* =====================================================
-   CARD LABEL
-   ===================================================== */
-
-#season-one-page .season-stat-card-label {
-    display: block !important;
-
-    margin: 0 0 8px !important;
-
-    color: #ffc107 !important;
-
-    font-size: 10px !important;
-
-    font-weight: 900 !important;
-
-    letter-spacing: 2px !important;
-}
-
-
-/* =====================================================
-   CARD TITLE
-   ===================================================== */
-
-#season-one-page .season-stat-card h3 {
-    margin: 0 !important;
-
-    color: #ffffff !important;
-
-    font-size: 28px !important;
-
-    line-height: 1.1 !important;
-
-    font-weight: 900 !important;
-}
-
-
-/* =====================================================
-   CARD DESCRIPTION
-   ===================================================== */
-
-#season-one-page .season-stat-card p {
-    margin: 12px 0 0 !important;
-
-    color: rgba(255, 255, 255, 0.50) !important;
-
-    font-size: 13px !important;
-
-    line-height: 1.5 !important;
-}
-
-
-/* =====================================================
-   CARD BUTTON TEXT
-   ===================================================== */
-
-#season-one-page .season-stat-card-action {
-    display: block !important;
-
-    margin-top: auto !important;
-
-    padding-top: 25px !important;
-
-    color: #ffc107 !important;
-
-    font-size: 10px !important;
-
-    font-weight: 900 !important;
-
-    letter-spacing: 1.3px !important;
-}
-
-
-/* =====================================================
-   TABLET
-   ===================================================== */
-
-@media (max-width: 950px) {
-
-    #season-one-page .season-stat-records {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr)) !important;
-    }
-
-    #season-one-page .season-statistics-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr)) !important;
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-   ===================================================== */
-
-@media (max-width: 600px) {
-
-    #season-one-page .season-statistics-section {
-        padding:
-            70px
-            14px !important;
-    }
-
-    #season-one-page .season-statistics-section
-    .season-section-heading {
-        margin-bottom: 40px !important;
-    }
-
-    #season-one-page .season-statistics-section
-    .season-section-heading h2 {
-        font-size: 35px !important;
-    }
-
-    #season-one-page .season-stat-records {
-        grid-template-columns: 1fr !important;
-
-        gap: 10px !important;
-
-        margin-bottom: 30px !important;
-    }
-
-    #season-one-page .season-statistics-grid {
-        grid-template-columns: 1fr !important;
-
-        gap: 14px !important;
-    }
-
-    #season-one-page .season-stat-card {
-        min-height: 285px !important;
-
-        padding: 28px 22px !important;
-    }
-/* =====================================================
-   BPL SEASON-I — PREMIUM STATISTICS FINAL
-   ===================================================== */
-
-.season-statistics-section {
-    position: relative;
-    max-width: 1400px;
-    margin: 70px auto;
-    padding: 65px 30px;
-    border-radius: 32px;
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            circle at 15% 10%,
-            rgba(245, 158, 11, 0.14),
-            transparent 32%
-        ),
-        radial-gradient(
-            circle at 85% 90%,
-            rgba(251, 191, 36, 0.10),
-            transparent 30%
-        ),
-        linear-gradient(
-            145deg,
-            #070b12,
-            #0d1420 55%,
-            #080d15
-        );
-
-    border: 1px solid rgba(245, 158, 11, 0.28);
-
-    box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.45),
-        inset 0 1px 0 rgba(255,255,255,0.05);
-}
-
-
-/* =====================================================
-   SECTION HEADING
-   ===================================================== */
-
-.season-statistics-section .season-section-heading {
-    position: relative;
-    z-index: 2;
-
-    text-align: center;
-    max-width: 760px;
-    margin: 0 auto 42px;
-}
-
-
-.season-statistics-section .season-section-kicker {
-    display: inline-block;
-
-    margin-bottom: 12px;
-
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 4px;
-
-    color: #fbbf24;
-}
-
-
-.season-statistics-section .season-section-heading h2 {
-    margin: 0 0 14px;
-
-    font-size: clamp(32px, 5vw, 52px);
-    line-height: 1.05;
-    font-weight: 950;
-
-    color: #ffffff;
-
-    letter-spacing: -1px;
-}
-
-
-.season-statistics-section .season-section-heading p {
-    margin: 0 auto;
-
-    max-width: 650px;
-
-    font-size: 15px;
-    line-height: 1.7;
-
-    color: rgba(255,255,255,0.65);
-}
-
-
-/* =====================================================
-   RECORD HIGHLIGHTS
-   ===================================================== */
-
-.season-stat-records {
-    position: relative;
-    z-index: 2;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 16px;
-
-    margin-bottom: 35px;
-}
-
-
-.season-stat-record {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    gap: 14px;
-
-    min-height: 92px;
-
-    padding: 18px;
-
-    border-radius: 18px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,0.075),
-            rgba(255,255,255,0.025)
-        );
-
-    border: 1px solid rgba(245,158,11,0.22);
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,0.25);
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-.season-stat-record:hover {
-    transform: translateY(-5px);
-
-    border-color: rgba(251,191,36,0.65);
-
-    box-shadow:
-        0 18px 40px rgba(0,0,0,0.35),
-        0 0 25px rgba(245,158,11,0.08);
-}
-
-
-/* Record Icon */
-
-.season-stat-icon {
-    flex-shrink: 0;
-
-    width: 52px;
-    height: 52px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 15px;
-
-    font-size: 25px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(245,158,11,0.22),
-            rgba(245,158,11,0.07)
-        );
-
-    border: 1px solid rgba(251,191,36,0.30);
-
-    box-shadow:
-        0 0 20px rgba(245,158,11,0.08);
-}
-
-
-.season-stat-record span {
-    display: block;
-
-    margin-bottom: 5px;
-
-    font-size: 9px;
-    font-weight: 900;
-    letter-spacing: 1.5px;
-
-    color: rgba(255,255,255,0.48);
-}
-
-
-.season-stat-record strong {
-    display: block;
-
-    font-size: 15px;
-    font-weight: 900;
-
-    color: #ffffff;
-}
-
-
-/* =====================================================
-   STATISTICS CARDS
-   ===================================================== */
-
-.season-statistics-grid {
-    position: relative;
-    z-index: 2;
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 22px;
-}
-
-
-.season-stat-card {
-    position: relative;
-
-    min-height: 285px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 32px 24px;
-
-    text-align: center;
-
-    border-radius: 24px;
-
-    cursor: pointer;
-
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            145deg,
-            #151d2a,
-            #0d141f
-        );
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    box-shadow:
-        0 18px 45px rgba(0,0,0,0.32);
-
-    color: #ffffff;
-
-    font-family: inherit;
-
-    transition:
-        transform 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease;
-}
-
-
-/* Card glow */
-
-.season-stat-card::before {
-    content: "";
-
-    position: absolute;
-
-    width: 180px;
-    height: 180px;
-
-    top: -90px;
-    right: -70px;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(245,158,11,0.20),
-            transparent 70%
-        );
-
-    pointer-events: none;
-
-    transition: transform 0.45s ease;
-}
-
-
-.season-stat-card::after {
-    content: "";
-
-    position: absolute;
-
-    left: 12%;
-    right: 12%;
-    bottom: 0;
-
-    height: 2px;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(251,191,36,0.65),
-            transparent
-        );
-
-    opacity: 0.5;
-}
-
-
-/* Hover */
-
-.season-stat-card:hover {
-    transform: translateY(-9px);
-
-    border-color: rgba(251,191,36,0.48);
-
-    box-shadow:
-        0 25px 55px rgba(0,0,0,0.42),
-        0 0 30px rgba(245,158,11,0.07);
-}
-
-
-.season-stat-card:hover::before {
-    transform: scale(1.45);
-}
-
-
-/* =====================================================
-   CARD ICON
-   ===================================================== */
-
-.season-stat-card-icon {
-    position: relative;
-    z-index: 2;
-
-    width: 76px;
-    height: 76px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 18px;
-
-    border-radius: 22px;
-
-    font-size: 36px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(245,158,11,0.20),
-            rgba(245,158,11,0.06)
-        );
-
-    border: 1px solid rgba(251,191,36,0.32);
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.25),
-        0 0 25px rgba(245,158,11,0.06);
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
-}
-
-
-.season-stat-card:hover .season-stat-card-icon {
-    transform:
-        translateY(-3px)
-        scale(1.08)
-        rotate(-4deg);
-
-    box-shadow:
-        0 14px 30px rgba(0,0,0,0.35),
-        0 0 30px rgba(245,158,11,0.15);
-}
-
-
-/* =====================================================
-   CARD TEXT
-   ===================================================== */
-
-.season-stat-card-label {
-    position: relative;
-    z-index: 2;
-
-    margin-bottom: 6px;
-
-    font-size: 10px;
-    font-weight: 900;
-
-    letter-spacing: 3px;
-
-    color: #fbbf24;
-}
-
-
-.season-stat-card h3 {
-    position: relative;
-    z-index: 2;
-
-    margin: 0 0 7px;
-
-    font-size: 25px;
-    line-height: 1.15;
-
-    font-weight: 950;
-
-    color: #ffffff;
-}
-
-
-.season-stat-card p {
-    position: relative;
-    z-index: 2;
-
-    margin: 0 0 20px;
-
-    font-size: 13px;
-
-    color: rgba(255,255,255,0.55);
-}
-
-
-/* =====================================================
-   CARD ACTION
-   ===================================================== */
-
-.season-stat-card-action {
-    position: relative;
-    z-index: 2;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 34px;
-
-    padding: 7px 14px;
-
-    border-radius: 30px;
-
-    font-size: 10px;
-    font-weight: 900;
-
-    letter-spacing: 1px;
-
-    color: #111827;
-
-    background:
-        linear-gradient(
-            135deg,
-            #fbbf24,
-            #f59e0b
-        );
-
-    box-shadow:
-        0 6px 18px rgba(245,158,11,0.18);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-.season-stat-card:hover .season-stat-card-action {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 9px 24px rgba(245,158,11,0.28);
-}
-
-
-/* =====================================================
-   TABLET
-   ===================================================== */
-
-@media (max-width: 1050px) {
-
-    .season-stat-records {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .season-statistics-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-   ===================================================== */
-
-@media (max-width: 650px) {
-
-    .season-statistics-section {
-        margin: 45px 12px;
-        padding: 45px 16px;
-
-        border-radius: 25px;
-    }
-
-
-    .season-statistics-section .season-section-heading {
-        margin-bottom: 30px;
-    }
-
-
-    .season-statistics-section .season-section-heading h2 {
-        font-size: 34px;
-    }
-
-
-    .season-statistics-section .season-section-heading p {
-        font-size: 13px;
-    }
-
-
-    .season-stat-records {
-        grid-template-columns: 1fr;
-
-        gap: 12px;
-
-        margin-bottom: 25px;
-    }
-
-
-    .season-stat-record {
-        min-height: 78px;
-
-        padding: 14px;
-    }
-
-
-    .season-stat-icon {
-        width: 46px;
-        height: 46px;
-
-        font-size: 22px;
-    }
-
-
-    .season-stat-record strong {
-        font-size: 14px;
-    }
-
-
-    .season-statistics-grid {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
-
-
-    .season-stat-card {
-        min-height: 260px;
-
-        padding: 28px 20px;
-    }
-
-
-    .season-stat-card-icon {
-        width: 68px;
-        height: 68px;
-
-        font-size: 32px;
-    }
-
-
-    .season-stat-card h3 {
-        font-size: 23px;
-    }
-
-}
-/* =====================================================
-   BPL SEASON-I — STATISTICS PREMIUM DESIGN
-   ===================================================== */
-
-.season-statistics-section {
-    width: 100% !important;
-    padding: 90px 24px 100px !important;
-    background:
-        radial-gradient(circle at 20% 10%, rgba(212, 175, 55, 0.10), transparent 32%),
-        radial-gradient(circle at 80% 80%, rgba(255, 215, 100, 0.07), transparent 30%),
-        linear-gradient(180deg, #090909 0%, #11100d 50%, #090909 100%) !important;
-    border-top: 1px solid rgba(212, 175, 55, 0.22) !important;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.18) !important;
-    box-sizing: border-box !important;
-}
-
-.season-statistics-section .season-section-heading {
-    max-width: 900px !important;
-    margin: 0 auto 55px !important;
-    text-align: center !important;
-}
-
-.season-statistics-section .season-section-kicker {
-    display: inline-block !important;
-    margin-bottom: 14px !important;
-    color: #d4af37 !important;
-    font-size: 13px !important;
-    font-weight: 800 !important;
-    letter-spacing: 3px !important;
-    text-transform: uppercase !important;
-}
-
-.season-statistics-section .season-section-heading h2 {
-    margin: 0 0 16px !important;
-    color: #f5d76e !important;
-    font-size: clamp(34px, 5vw, 56px) !important;
-    font-weight: 900 !important;
-    line-height: 1.05 !important;
-    text-shadow: 0 0 28px rgba(212, 175, 55, 0.22) !important;
-}
-
-.season-statistics-section .season-section-heading p {
-    max-width: 680px !important;
-    margin: 0 auto !important;
-    color: rgba(255, 255, 255, 0.68) !important;
-    font-size: 16px !important;
-    line-height: 1.7 !important;
-}
-
-/* RECORD STRIP */
-
-.season-statistics-section .season-stat-records {
-    max-width: 1200px !important;
-    margin: 0 auto 50px !important;
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 16px !important;
-}
-
-.season-statistics-section .season-stat-record {
-    min-height: 105px !important;
-    padding: 20px !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 15px !important;
-    background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.075),
-        rgba(255,255,255,0.025)
-    ) !important;
-    border: 1px solid rgba(212, 175, 55, 0.30) !important;
-    border-radius: 18px !important;
-    box-shadow:
-        0 12px 35px rgba(0,0,0,0.35),
-        inset 0 1px 0 rgba(255,255,255,0.06) !important;
-    box-sizing: border-box !important;
-}
-
-.season-statistics-section .season-stat-record:hover {
-    transform: translateY(-5px) !important;
-    border-color: rgba(212, 175, 55, 0.70) !important;
-    box-shadow:
-        0 18px 45px rgba(0,0,0,0.45),
-        0 0 28px rgba(212,175,55,0.10) !important;
-}
-
-.season-statistics-section .season-stat-icon {
-    width: 52px !important;
-    height: 52px !important;
-    min-width: 52px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border-radius: 15px !important;
-    background: rgba(212,175,55,0.10) !important;
-    border: 1px solid rgba(212,175,55,0.32) !important;
-    font-size: 25px !important;
-}
-
-.season-statistics-section .season-stat-record span {
-    display: block !important;
-    margin-bottom: 6px !important;
-    color: rgba(255,255,255,0.55) !important;
-    font-size: 10px !important;
-    font-weight: 800 !important;
-    letter-spacing: 1.5px !important;
-}
-
-.season-statistics-section .season-stat-record strong {
-    display: block !important;
-    color: #ffffff !important;
-    font-size: 16px !important;
-    font-weight: 800 !important;
-}
-
-/* STATISTICS CARDS */
-
-.season-statistics-section .season-statistics-grid {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 20px !important;
-}
-
-.season-statistics-section .season-stat-card {
-    position: relative !important;
-    min-height: 260px !important;
-    padding: 30px 25px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    text-align: left !important;
-    cursor: pointer !important;
-    color: #fff !important;
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,0.09),
-            rgba(255,255,255,0.025)
-        ) !important;
-    border: 1px solid rgba(212,175,55,0.28) !important;
-    border-radius: 22px !important;
-    box-shadow:
-        0 15px 40px rgba(0,0,0,0.40),
-        inset 0 1px 0 rgba(255,255,255,0.05) !important;
-    transition: all 0.28s ease !important;
-    box-sizing: border-box !important;
-}
-
-.season-statistics-section .season-stat-card:hover {
-    transform: translateY(-8px) !important;
-    border-color: #d4af37 !important;
-    box-shadow:
-        0 24px 55px rgba(0,0,0,0.50),
-        0 0 30px rgba(212,175,55,0.13) !important;
-}
-
-.season-statistics-section .season-stat-card-icon {
-    width: 64px !important;
-    height: 64px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin-bottom: 22px !important;
-    border-radius: 18px !important;
-    background: linear-gradient(
-        145deg,
-        rgba(212,175,55,0.18),
-        rgba(212,175,55,0.05)
-    ) !important;
-    border: 1px solid rgba(212,175,55,0.38) !important;
-    font-size: 31px !important;
-}
-
-.season-statistics-section .season-stat-card-label {
-    margin-bottom: 7px !important;
-    color: #d4af37 !important;
-    font-size: 10px !important;
-    font-weight: 900 !important;
-    letter-spacing: 2px !important;
-}
-
-.season-statistics-section .season-stat-card h3 {
-    margin: 0 0 9px !important;
-    color: #ffffff !important;
-    font-size: 25px !important;
-    font-weight: 900 !important;
-}
-
-.season-statistics-section .season-stat-card p {
-    margin: 0 !important;
-    color: rgba(255,255,255,0.58) !important;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-}
-
-.season-statistics-section .season-stat-card-action {
-    margin-top: auto !important;
-    padding-top: 24px !important;
-    color: #f1cf59 !important;
-    font-size: 11px !important;
-    font-weight: 900 !important;
-    letter-spacing: 1px !important;
-}
-
-/* TABLET */
-
-@media (max-width: 1000px) {
-
-    .season-statistics-section .season-stat-records {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-
-    .season-statistics-section .season-statistics-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-
-}
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    .season-statistics-section {
-        padding: 65px 16px 75px !important;
-    }
-
-    .season-statistics-section .season-section-heading {
-        margin-bottom: 35px !important;
-    }
-
-    .season-statistics-section .season-section-heading h2 {
-        font-size: 34px !important;
-    }
-
-    .season-statistics-section .season-section-heading p {
-        font-size: 14px !important;
-    }
-
-    .season-statistics-section .season-stat-records {
-        grid-template-columns: 1fr !important;
-        gap: 12px !important;
-        margin-bottom: 30px !important;
-    }
-
-    .season-statistics-section .season-stat-record {
-        min-height: 90px !important;
-        padding: 16px !important;
-    }
-
-    .season-statistics-section .season-statistics-grid {
-        grid-template-columns: 1fr !important;
-        gap: 14px !important;
-    }
-
-    .season-statistics-section .season-stat-card {
-        min-height: 225px !important;
-        padding: 24px 20px !important;
-    }
-
-}
-.season-statistics-section {
-    background: red !important;
-    min-height: 500px !important;
-    padding: 100px !important;
-}
 /* =====================================================
    SEASON HIGHLIGHTS — HEADING VISIBILITY FIX
    ===================================================== */
@@ -14109,548 +12110,11 @@ section {
 #season-highlights .section-heading h2 {
     color: #f8fafc !important;
 }
-/* =====================================================
-   BPL SEASON-I — BATSMEN POPUP
-   ===================================================== */
-
-.season-stats-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-
-    display: none;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-
-    background: rgba(3, 7, 18, 0.82);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
-.season-stats-modal.active {
-    display: flex;
-}
-
-.season-stats-modal-box {
-    position: relative;
-
-    width: min(900px, 100%);
-    max-height: 90vh;
-    overflow-y: auto;
-
-    padding: 34px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #111827,
-            #0f172a
-        );
-
-    border: 1px solid rgba(245, 158, 11, 0.35);
-    border-radius: 26px;
-
-    box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.55),
-        0 0 45px rgba(245, 158, 11, 0.08);
-}
-
-.season-stats-modal-close {
-    position: absolute;
-    top: 18px;
-    right: 20px;
-
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.06);
-    color: #f8fafc;
-
-    font-size: 27px;
-    line-height: 1;
-
-    cursor: pointer;
-
-    transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
-}
-
-.season-stats-modal-close:hover {
-    background: #f59e0b;
-    color: #111827;
-    transform: rotate(90deg);
-}
-
-.season-stats-modal-header {
-    padding-right: 55px;
-    margin-bottom: 28px;
-}
-
-.season-stats-modal-kicker {
-    display: inline-block;
-
-    margin-bottom: 8px;
-
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 2px;
-
-    color: #fbbf24;
-}
-
-.season-stats-modal-header h2 {
-    margin: 0;
-
-    font-size: clamp(28px, 4vw, 40px);
-    font-weight: 950;
-
-    color: #f8fafc;
-}
-
-.season-stats-modal-header p {
-    margin: 8px 0 0;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    color: #94a3b8;
-}
-
-
-/* =====================================================
-   BATSMEN LIST
-   ===================================================== */
-
-.season-batsmen-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.season-batsman-row {
-    display: grid;
-
-    grid-template-columns:
-        60px
-        minmax(180px, 1fr)
-        110px
-        140px;
-
-    align-items: center;
-    gap: 18px;
-
-    padding: 17px 18px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255, 255, 255, 0.055),
-            rgba(255, 255, 255, 0.025)
-        );
-
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 17px;
-
-    transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        background 0.25s ease;
-}
-
-.season-batsman-row:hover {
-    transform: translateY(-2px);
-
-    border-color: rgba(245, 158, 11, 0.4);
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(245, 158, 11, 0.10),
-            rgba(255, 255, 255, 0.035)
-        );
-}
-
-.season-batsman-rank {
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 12px;
-
-    background: rgba(245, 158, 11, 0.10);
-    border: 1px solid rgba(245, 158, 11, 0.25);
-
-    color: #fbbf24;
-
-    font-size: 13px;
-    font-weight: 950;
-}
-
-.season-batsman-info {
-    min-width: 0;
-}
-
-.season-batsman-info strong {
-    display: block;
-
-    font-size: 16px;
-    font-weight: 900;
-
-    color: #f8fafc;
-
-    line-height: 1.3;
-}
-
-.season-batsman-info span {
-    display: block;
-
-    margin-top: 4px;
-
-    font-size: 12px;
-    font-weight: 600;
-
-    color: #94a3b8;
-}
-
-.season-batsman-stat {
-    text-align: center;
-}
-
-.season-batsman-stat strong {
-    display: block;
-
-    font-size: 20px;
-    font-weight: 950;
-
-    color: #fbbf24;
-}
-
-.season-batsman-stat span {
-    display: block;
-
-    margin-top: 3px;
-
-    font-size: 9px;
-    font-weight: 900;
-    letter-spacing: 1px;
-
-    color: #64748b;
-}
-
-
-/* =====================================================
-   MOBILE
-   ===================================================== */
-
-@media (max-width: 700px) {
-
-    .season-stats-modal {
-        padding: 12px;
-    }
-
-    .season-stats-modal-box {
-        padding: 25px 16px;
-
-        border-radius: 21px;
-
-        max-height: 94vh;
-    }
-
-    .season-stats-modal-close {
-        top: 14px;
-        right: 14px;
-
-        width: 38px;
-        height: 38px;
-
-        font-size: 24px;
-    }
-
-    .season-stats-modal-header {
-        padding-right: 48px;
-        margin-bottom: 20px;
-    }
-
-    .season-stats-modal-header h2 {
-        font-size: 27px;
-    }
-
-    .season-batsman-row {
-        grid-template-columns:
-            42px
-            minmax(0, 1fr)
-            75px
-            85px;
-
-        gap: 8px;
-
-        padding: 13px 10px;
-
-        border-radius: 14px;
-    }
-
-    .season-batsman-rank {
-        width: 36px;
-        height: 36px;
-
-        border-radius: 10px;
-
-        font-size: 11px;
-    }
-
-    .season-batsman-info strong {
-        font-size: 13px;
-    }
-
-    .season-batsman-info span {
-        font-size: 10px;
-    }
-
-    .season-batsman-stat strong {
-        font-size: 16px;
-    }
-
-    .season-batsman-stat span {
-        font-size: 7px;
-        letter-spacing: 0.6px;
-    }
-   
-}
 /* =========================================
-   SEASON-I STATISTICS — DYNAMIC NUMBERS
-========================================= */
-
-.bpl-season-stats {
-    width: 100%;
-    padding: 70px 20px;
-    margin: 0;
-}
-
-.bpl-season-stats-hero {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 55px 40px 45px;
-    overflow: hidden;
-    border-radius: 30px;
-    background:
-        radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.16), transparent 45%),
-        linear-gradient(145deg, #111827, #080d18 70%);
-    border: 1px solid rgba(245, 158, 11, 0.28);
-    box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.45),
-        inset 0 1px 0 rgba(255, 255, 255, 0.04);
-}
-
-.bpl-season-stats-hero::before {
-    content: "";
-    position: absolute;
-    top: -140px;
-    left: 50%;
-    width: 420px;
-    height: 420px;
-    transform: translateX(-50%);
-    background: rgba(245, 158, 11, 0.08);
-    border-radius: 50%;
-    filter: blur(70px);
-    pointer-events: none;
-}
-
-.bpl-season-stats-heading {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    margin-bottom: 42px;
-}
-
-.bpl-season-stats-kicker {
-    display: inline-block;
-    margin-bottom: 12px;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #f59e0b;
-    text-transform: uppercase;
-}
-
-.bpl-season-stats-heading h2 {
-    margin: 0;
-    font-size: clamp(30px, 5vw, 54px);
-    line-height: 1.05;
-    font-weight: 900;
-    letter-spacing: -1px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.bpl-season-stats-heading h2 span {
-    display: block;
-    color: #f59e0b;
-    text-shadow: 0 0 25px rgba(245, 158, 11, 0.22);
-}
-
-.bpl-season-stats-heading p {
-    max-width: 650px;
-    margin: 18px auto 0;
-    color: #cbd5e1;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-/* STAT GRID */
-
-.bpl-season-stats-grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-}
-
-.bpl-season-stat {
-    position: relative;
-    min-height: 145px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 22px 15px;
-    text-align: center;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.035);
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.bpl-season-stat:hover {
-    transform: translateY(-7px);
-    border-color: rgba(245, 158, 11, 0.42);
-    background: rgba(245, 158, 11, 0.06);
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.25),
-        0 0 25px rgba(245, 158, 11, 0.07);
-}
-
-.bpl-season-stat-icon {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 25px;
-    line-height: 1;
-}
-
-.bpl-season-stat strong {
-    display: block;
-    font-size: clamp(30px, 4vw, 42px);
-    line-height: 1;
-    font-weight: 900;
-    color: #ffffff;
-    letter-spacing: -1px;
-}
-
-.bpl-season-stat > span:last-child {
-    margin-top: 9px;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: #94a3b8;
-}
-
-/* SPECIAL WINNER CARD */
-
-.bpl-season-stat:nth-child(3) {
-    border-color: rgba(245, 158, 11, 0.3);
-    background:
-        linear-gradient(
-            145deg,
-            rgba(245, 158, 11, 0.12),
-            rgba(245, 158, 11, 0.035)
-        );
-}
-
-.bpl-season-stat:nth-child(3) strong {
-    color: #fbbf24;
-    text-shadow: 0 0 22px rgba(245, 158, 11, 0.3);
-}
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-
-    .bpl-season-stats {
-        padding: 45px 14px;
-    }
-
-    .bpl-season-stats-hero {
-        padding: 40px 16px 25px;
-        border-radius: 24px;
-    }
-
-    .bpl-season-stats-heading {
-        margin-bottom: 30px;
-    }
-
-    .bpl-season-stats-heading h2 {
-        font-size: 30px;
-    }
-
-    .bpl-season-stats-heading p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    .bpl-season-stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 11px;
-    }
-
-    .bpl-season-stat {
-        min-height: 125px;
-        padding: 18px 10px;
-        border-radius: 17px;
-    }
-
-    .bpl-season-stat-icon {
-        font-size: 21px;
-    }
-
-    .bpl-season-stat strong {
-        font-size: 29px;
-    }
-
-    .bpl-season-stat > span:last-child {
-        font-size: 9px;
-        letter-spacing: 1.4px;
-    }
-
-    .bpl-season-stat:nth-child(3) {
-        grid-column: span 2;
-    }
-}
-/* =========================================
-   SEASON-I STATISTICS — FORCE LAYOUT
+   SEASON-I STATISTICS — FINAL
 ========================================= */
 
 #season-statistics.bpl-season-stats {
-    display: block !important;
     width: 100% !important;
     max-width: none !important;
     margin: 0 !important;
@@ -14660,33 +12124,251 @@ section {
 }
 
 #season-statistics .bpl-season-stats-hero {
-    display: block !important;
+    position: relative !important;
     width: 100% !important;
     max-width: 1200px !important;
     margin: 0 auto !important;
+    padding: 55px 40px 45px !important;
     box-sizing: border-box !important;
+    overflow: hidden !important;
+    border-radius: 30px !important;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(245, 158, 11, 0.16),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #111827,
+            #080d18 70%
+        ) !important;
+
+    border: 1px solid rgba(245, 158, 11, 0.28) !important;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
 }
 
+#season-statistics .bpl-season-stats-hero::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -140px !important;
+    left: 50% !important;
+    width: 420px !important;
+    height: 420px !important;
+    transform: translateX(-50%) !important;
+
+    background: rgba(245, 158, 11, 0.08) !important;
+
+    border-radius: 50% !important;
+    filter: blur(70px) !important;
+    pointer-events: none !important;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
 #season-statistics .bpl-season-stats-heading {
+    position: relative !important;
+    z-index: 1 !important;
+
     display: block !important;
     width: 100% !important;
+
+    margin: 0 0 42px !important;
+
     text-align: center !important;
 }
 
+#season-statistics .bpl-season-stats-kicker {
+    display: inline-block !important;
+
+    margin-bottom: 12px !important;
+
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    letter-spacing: 3px !important;
+
+    color: #f59e0b !important;
+    text-transform: uppercase !important;
+}
+
+#season-statistics .bpl-season-stats-heading h2 {
+    margin: 0 !important;
+
+    font-size: clamp(30px, 5vw, 54px) !important;
+    line-height: 1.05 !important;
+    font-weight: 900 !important;
+    letter-spacing: -1px !important;
+
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+}
+
+#season-statistics .bpl-season-stats-heading h2 span {
+    display: block !important;
+
+    color: #f59e0b !important;
+
+    text-shadow:
+        0 0 25px rgba(245, 158, 11, 0.22) !important;
+}
+
+#season-statistics .bpl-season-stats-heading p {
+    max-width: 650px !important;
+
+    margin: 18px auto 0 !important;
+
+    color: #cbd5e1 !important;
+
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+}
+
+/* =========================================
+   STATISTICS GRID
+========================================= */
+
 #season-statistics .bpl-season-stats-grid {
+    position: relative !important;
+    z-index: 1 !important;
+
     display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    width: 100% !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
     gap: 16px !important;
+
+    width: 100% !important;
 }
-#season-statistics .bpl-season-stats-grid {
-    display: grid !important;
-}
+
+/* =========================================
+   STAT CARD
+========================================= */
+
 #season-statistics .bpl-season-stat {
-    display: flex !important;
+    position: relative !important;
+
     min-width: 0 !important;
+    min-height: 145px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 22px 15px !important;
+
+    text-align: center !important;
+
     box-sizing: border-box !important;
+
+    border-radius: 20px !important;
+
+    background:
+        rgba(255, 255, 255, 0.035) !important;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.035) !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease !important;
 }
+
+#season-statistics .bpl-season-stat:hover {
+    transform: translateY(-7px) !important;
+
+    border-color:
+        rgba(245, 158, 11, 0.42) !important;
+
+    background:
+        rgba(245, 158, 11, 0.06) !important;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25),
+        0 0 25px rgba(245, 158, 11, 0.07) !important;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+#season-statistics .bpl-season-stat-icon {
+    display: block !important;
+
+    margin-bottom: 8px !important;
+
+    font-size: 25px !important;
+    line-height: 1 !important;
+}
+
+/* =========================================
+   NUMBER
+========================================= */
+
+#season-statistics .bpl-season-stat strong {
+    display: block !important;
+
+    font-size: clamp(30px, 4vw, 42px) !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    letter-spacing: -1px !important;
+
+    color: #ffffff !important;
+}
+
+/* =========================================
+   LABEL
+========================================= */
+
+#season-statistics .bpl-season-stat > span:last-child {
+    margin-top: 9px !important;
+
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px !important;
+
+    color: #94a3b8 !important;
+}
+
+/* =========================================
+   WINNER CARD
+========================================= */
+
+#season-statistics .bpl-season-stat:nth-child(3) {
+    border-color:
+        rgba(245, 158, 11, 0.3) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(245, 158, 11, 0.12),
+            rgba(245, 158, 11, 0.035)
+        ) !important;
+}
+
+#season-statistics .bpl-season-stat:nth-child(3) strong {
+    color: #fbbf24 !important;
+
+    text-shadow:
+        0 0 22px rgba(245, 158, 11, 0.3) !important;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 700px) {
 
@@ -14694,10 +12376,53 @@ section {
         padding: 45px 14px !important;
     }
 
-    #season-statistics .bpl-season-stats-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    #season-statistics .bpl-season-stats-hero {
+        padding: 40px 16px 25px !important;
+        border-radius: 24px !important;
     }
 
+    #season-statistics .bpl-season-stats-heading {
+        margin-bottom: 30px !important;
+    }
+
+    #season-statistics .bpl-season-stats-heading h2 {
+        font-size: 30px !important;
+    }
+
+    #season-statistics .bpl-season-stats-heading p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    #season-statistics .bpl-season-stats-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 11px !important;
+    }
+
+    #season-statistics .bpl-season-stat {
+        min-height: 125px !important;
+
+        padding: 18px 10px !important;
+
+        border-radius: 17px !important;
+    }
+
+    #season-statistics .bpl-season-stat-icon {
+        font-size: 21px !important;
+    }
+
+    #season-statistics .bpl-season-stat strong {
+        font-size: 29px !important;
+    }
+
+    #season-statistics .bpl-season-stat > span:last-child {
+        font-size: 9px !important;
+        letter-spacing: 1.4px !important;
+    }
+
+    /* Winner card full width on mobile */
     #season-statistics .bpl-season-stat:nth-child(3) {
         grid-column: span 2 !important;
     }
