@@ -12429,63 +12429,111 @@ section {
 }
 /* =========================================
    SEASON-I — SEASON HIGHLIGHTS
-   PREMIUM AWARD CARDS
+   FINAL PREMIUM DESIGN
 ========================================= */
 
 #season-highlights {
     position: relative !important;
     width: 100% !important;
-    padding: 70px 20px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 75px 20px 80px !important;
     box-sizing: border-box !important;
 }
 
 /* =========================================
-   HEADING
+   SECTION HEADING
 ========================================= */
 
 #season-highlights .section-heading {
-    position: relative !important;
-    z-index: 2 !important;
+    width: 100% !important;
+    margin: 0 0 42px !important;
+    padding: 0 !important;
     text-align: center !important;
-    margin-bottom: 42px !important;
 }
 
 #season-highlights .section-heading h2 {
     margin: 0 !important;
+    padding: 0 !important;
+
     color: #f8fafc !important;
+
+    font-size: clamp(30px, 4vw, 46px) !important;
+    line-height: 1.1 !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.5px !important;
+
+    text-transform: uppercase !important;
 }
 
 /* =========================================
-   HIGHLIGHTS GRID
+   GOLD LINE UNDER HEADING
+========================================= */
+
+#season-highlights .section-heading::after {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 70px !important;
+    height: 3px !important;
+
+    margin: 16px auto 0 !important;
+
+    border-radius: 10px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #f59e0b,
+            transparent
+        ) !important;
+
+    box-shadow:
+        0 0 15px rgba(245,158,11,0.35) !important;
+}
+
+/* =========================================
+   THREE CARD GRID
 ========================================= */
 
 #season-highlights .highlights-grid {
+    position: relative !important;
+
     width: 100% !important;
-    max-width: 1150px !important;
+    max-width: 1100px !important;
+
     margin: 0 auto !important;
+    padding: 0 !important;
 
     display: grid !important;
+
     grid-template-columns:
         repeat(3, minmax(0, 1fr)) !important;
 
     gap: 20px !important;
+
+    box-sizing: border-box !important;
 }
 
 /* =========================================
-   AWARD CARD
+   CARD
 ========================================= */
 
 #season-highlights .highlight-card {
     position: relative !important;
+
     min-width: 0 !important;
+    min-height: 275px !important;
 
     display: flex !important;
     flex-direction: column !important;
+
     align-items: center !important;
     justify-content: center !important;
 
-    min-height: 245px !important;
-    padding: 30px 22px !important;
+    padding: 32px 22px !important;
 
     box-sizing: border-box !important;
     overflow: hidden !important;
@@ -12497,16 +12545,17 @@ section {
     background:
         linear-gradient(
             145deg,
-            rgba(255,255,255,0.055),
-            rgba(255,255,255,0.018)
+            #151b28 0%,
+            #0b101a 55%,
+            #080c14 100%
         ) !important;
 
     border:
-        1px solid rgba(245,158,11,0.18) !important;
+        1px solid rgba(245,158,11,0.20) !important;
 
     box-shadow:
-        0 20px 45px rgba(0,0,0,0.28),
-        inset 0 1px 0 rgba(255,255,255,0.04) !important;
+        0 18px 45px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.045) !important;
 
     transition:
         transform 0.35s ease,
@@ -12514,86 +12563,87 @@ section {
         box-shadow 0.35s ease !important;
 }
 
-/* GOLD GLOW */
+/* =========================================
+   TOP GOLD GLOW
+========================================= */
 
 #season-highlights .highlight-card::before {
     content: "" !important;
 
     position: absolute !important;
-    top: -90px !important;
+
+    top: -110px !important;
     left: 50% !important;
 
-    width: 220px !important;
-    height: 220px !important;
+    width: 260px !important;
+    height: 260px !important;
 
     transform: translateX(-50%) !important;
 
     border-radius: 50% !important;
 
     background:
-        rgba(245,158,11,0.09) !important;
+        rgba(245,158,11,0.10) !important;
 
-    filter: blur(55px) !important;
+    filter: blur(60px) !important;
 
     pointer-events: none !important;
 }
 
-/* CARD HOVER */
+/* =========================================
+   CARD INNER CONTENT
+========================================= */
 
-#season-highlights .highlight-card:hover {
-    transform: translateY(-8px) !important;
-
-    border-color:
-        rgba(245,158,11,0.48) !important;
-
-    box-shadow:
-        0 28px 55px rgba(0,0,0,0.38),
-        0 0 35px rgba(245,158,11,0.08) !important;
+#season-highlights .highlight-card > * {
+    position: relative !important;
+    z-index: 2 !important;
 }
 
 /* =========================================
-   TROPHY / ICON
+   ICON
 ========================================= */
 
-#season-highlights .highlight-card .highlight-icon {
-    position: relative !important;
-    z-index: 1 !important;
-
-    width: 64px !important;
-    height: 64px !important;
+#season-highlights .highlight-icon {
+    width: 68px !important;
+    height: 68px !important;
 
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 
-    margin-bottom: 18px !important;
+    margin: 0 0 18px !important;
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
 
     border-radius: 50% !important;
 
     background:
-        rgba(245,158,11,0.10) !important;
+        rgba(245,158,11,0.08) !important;
 
     border:
-        1px solid rgba(245,158,11,0.28) !important;
+        1px solid rgba(245,158,11,0.30) !important;
 
-    font-size: 28px !important;
+    font-size: 30px !important;
+    line-height: 1 !important;
 
     box-shadow:
-        0 0 25px rgba(245,158,11,0.08) !important;
+        0 0 28px rgba(245,158,11,0.10),
+        inset 0 1px 0 rgba(255,255,255,0.05) !important;
 }
 
 /* =========================================
    LABEL
 ========================================= */
 
-#season-highlights .highlight-card .highlight-label {
-    position: relative !important;
-    z-index: 1 !important;
+#season-highlights .highlight-label {
+    margin: 0 0 10px !important;
+    padding: 0 !important;
 
-    margin-bottom: 10px !important;
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+    font-weight: 900 !important;
 
-    font-size: 11px !important;
-    font-weight: 800 !important;
     letter-spacing: 2.5px !important;
 
     color: #f59e0b !important;
@@ -12606,51 +12656,95 @@ section {
 ========================================= */
 
 #season-highlights .highlight-card h3 {
-    position: relative !important;
-    z-index: 1 !important;
-
     margin: 0 !important;
+    padding: 0 !important;
 
     color: #ffffff !important;
 
-    font-size: 23px !important;
-    line-height: 1.2 !important;
+    font-size: 24px !important;
+    line-height: 1.25 !important;
     font-weight: 900 !important;
+
+    text-align: center !important;
 }
 
 /* =========================================
    TEAM
 ========================================= */
 
-#season-highlights .highlight-card .highlight-team {
-    position: relative !important;
-    z-index: 1 !important;
-
-    margin-top: 8px !important;
+#season-highlights .highlight-team {
+    margin: 8px 0 0 !important;
+    padding: 0 !important;
 
     color: #94a3b8 !important;
 
     font-size: 13px !important;
+    line-height: 1.4 !important;
     font-weight: 600 !important;
+
+    text-align: center !important;
 }
 
 /* =========================================
-   PERFORMANCE VALUE
+   VALUE
 ========================================= */
 
-#season-highlights .highlight-card .highlight-value {
-    position: relative !important;
-    z-index: 1 !important;
+#season-highlights .highlight-value {
+    margin: 14px 0 0 !important;
+    padding: 7px 15px !important;
 
-    margin-top: 13px !important;
+    border-radius: 999px !important;
+
+    background:
+        rgba(245,158,11,0.08) !important;
+
+    border:
+        1px solid rgba(245,158,11,0.20) !important;
 
     color: #fbbf24 !important;
 
-    font-size: 20px !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
     font-weight: 900 !important;
 
-    text-shadow:
-        0 0 18px rgba(245,158,11,0.22) !important;
+    letter-spacing: 0.5px !important;
+
+    box-shadow:
+        0 0 18px rgba(245,158,11,0.06) !important;
+}
+
+/* =========================================
+   HOVER
+========================================= */
+
+#season-highlights .highlight-card:hover {
+    transform: translateY(-8px) !important;
+
+    border-color:
+        rgba(245,158,11,0.50) !important;
+
+    box-shadow:
+        0 28px 55px rgba(0,0,0,0.42),
+        0 0 32px rgba(245,158,11,0.08) !important;
+}
+
+/* =========================================
+   INDIVIDUAL CARD ACCENTS
+========================================= */
+
+#season-highlights .highlight-card:nth-child(1) {
+    border-color:
+        rgba(245,158,11,0.32) !important;
+}
+
+#season-highlights .highlight-card:nth-child(2) {
+    border-color:
+        rgba(251,146,60,0.24) !important;
+}
+
+#season-highlights .highlight-card:nth-child(3) {
+    border-color:
+        rgba(168,85,247,0.25) !important;
 }
 
 /* =========================================
@@ -12660,34 +12754,44 @@ section {
 @media (max-width: 700px) {
 
     #season-highlights {
-        padding: 48px 14px !important;
+        padding: 50px 14px 60px !important;
     }
 
     #season-highlights .section-heading {
-        margin-bottom: 28px !important;
+        margin-bottom: 30px !important;
+    }
+
+    #season-highlights .section-heading h2 {
+        font-size: 30px !important;
     }
 
     #season-highlights .highlights-grid {
-        grid-template-columns:
-            1fr !important;
-
+        grid-template-columns: 1fr !important;
         gap: 14px !important;
     }
 
     #season-highlights .highlight-card {
-        min-height: 220px !important;
-        padding: 26px 18px !important;
-        border-radius: 20px !important;
+        min-height: 235px !important;
+        padding: 28px 18px !important;
+        border-radius: 21px !important;
     }
 
-    #season-highlights .highlight-card .highlight-icon {
-        width: 56px !important;
-        height: 56px !important;
-        font-size: 25px !important;
+    #season-highlights .highlight-icon {
+        width: 58px !important;
+        height: 58px !important;
         margin-bottom: 15px !important;
+        font-size: 26px !important;
     }
 
     #season-highlights .highlight-card h3 {
         font-size: 21px !important;
+    }
+
+    #season-highlights .highlight-team {
+        font-size: 12px !important;
+    }
+
+    #season-highlights .highlight-value {
+        font-size: 15px !important;
     }
 }
