@@ -15709,7 +15709,13 @@ section {
         box-shadow 0.25s ease,
         border-color 0.25s ease;
 }
-
+.committee-entry {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 25px;
+    padding: 0 15px;
+}
 .committee-entry-btn:hover {
     transform: translateY(-4px);
 
