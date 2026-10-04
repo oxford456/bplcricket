@@ -15715,7 +15715,7 @@ section {
     justify-content: center;
     margin: 35px 0 25px;
     padding: 0 15px;
-   background: transparent !important;
+   background: #080d18 !important;
 }
 .committee-entry-btn:hover {
     transform: translateY(-4px);
