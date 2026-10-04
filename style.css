@@ -15664,3 +15664,141 @@ section {
     position: relative !important;
     z-index: 3 !important;
 }
+/* =====================================================
+   MEET OUR LEGENDS — SEASON I ENTRY BUTTON
+   ===================================================== */
+
+.committee-entry {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 25px;
+    padding: 0 15px;
+}
+
+.committee-entry-btn {
+    width: 100%;
+    max-width: 620px;
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 16px 22px;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1e3a8a,
+        #7c2d12
+    );
+
+    border: 2px solid #f59e0b;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.25),
+        0 0 18px rgba(245, 158, 11, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.committee-entry-btn:hover {
+    transform: translateY(-4px);
+
+    border-color: #fbbf24;
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.32),
+        0 0 28px rgba(245, 158, 11, 0.35);
+}
+
+.committee-entry-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+}
+
+.committee-entry-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.committee-entry-text strong {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.committee-entry-text small {
+    font-size: 13px;
+    opacity: 0.85;
+    letter-spacing: 0.4px;
+}
+
+.committee-entry-arrow {
+    font-size: 28px;
+    font-weight: 700;
+
+    transition: transform 0.25s ease;
+}
+
+.committee-entry-btn:hover .committee-entry-arrow {
+    transform: translateX(6px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .committee-entry {
+        margin: 28px 0 20px;
+        padding: 0 12px;
+    }
+
+    .committee-entry-btn {
+        min-height: 74px;
+        padding: 13px 15px;
+        gap: 12px;
+        border-radius: 15px;
+    }
+
+    .committee-entry-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+        border-radius: 12px;
+    }
+
+    .committee-entry-text strong {
+        font-size: 15px;
+    }
+
+    .committee-entry-text small {
+        font-size: 11px;
+    }
+
+    .committee-entry-arrow {
+        font-size: 23px;
+    }
+}
