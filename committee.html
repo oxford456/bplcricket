@@ -122,41 +122,665 @@
         .committee-photo-placeholder {
             width: 100%;
             height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 13px;
-            font-size: 42px;
-        }
+/* =========================================================
+   BPL SEASON-I — MEET OUR LEGENDS
+   PREMIUM COMMITTEE PAGE
+   ========================================================= */
 
-        .committee-back {
-            text-align: center;
-            margin-top: 40px;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        .committee-back a {
-            display: inline-block;
-            padding: 14px 24px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 800;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        @media (max-width: 700px) {
-            .committee-page {
-                padding: 30px 12px 50px;
-            }
+body {
+    margin: 0;
+    min-height: 100vh;
 
-            .committee-table th,
-            .committee-table td {
-                padding: 15px;
-            }
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
 
-            .committee-photo-frame {
-                width: 170px;
-                height: 200px;
-            }
-        }
+    color: #f8fafc;
+
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(245, 158, 11, 0.16),
+            transparent 38%
+        ),
+        linear-gradient(
+            180deg,
+            #050914 0%,
+            #0a1020 48%,
+            #050914 100%
+        );
+}
+
+
+/* =========================================================
+   MAIN PAGE
+   ========================================================= */
+
+.committee-page {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 55px 22px 80px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.committee-header {
+    position: relative;
+
+    text-align: center;
+
+    margin-bottom: 45px;
+    padding: 10px 15px 30px;
+}
+
+.committee-header::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: min(260px, 70%);
+
+    height: 3px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #f59e0b,
+            #fde68a,
+            #f59e0b,
+            transparent
+        );
+
+    box-shadow:
+        0 0 15px rgba(245, 158, 11, 0.55);
+}
+
+.committee-header .eyebrow {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    padding: 7px 15px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+    color: #fbbf24;
+
+    background: rgba(245, 158, 11, 0.08);
+
+    border: 1px solid rgba(245, 158, 11, 0.35);
+
+    border-radius: 50px;
+
+    box-shadow:
+        inset 0 0 15px rgba(245, 158, 11, 0.05),
+        0 0 18px rgba(245, 158, 11, 0.08);
+}
+
+.committee-header h1 {
+    margin: 8px 0 0;
+
+    font-size: clamp(32px, 6vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 900;
+
+    letter-spacing: -1px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 20%,
+            #fde68a 50%,
+            #f59e0b 85%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    text-shadow:
+        0 8px 30px rgba(245, 158, 11, 0.12);
+}
+
+.committee-header p {
+    max-width: 720px;
+
+    margin: 18px auto 0;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================================================
+   TABLE OUTER CARD
+   ========================================================= */
+
+.committee-table-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(245, 158, 11, 0.28);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45),
+        0 0 35px rgba(245, 158, 11, 0.07);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.committee-table {
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.committee-table thead th {
+    padding: 20px 18px;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color: #fef3c7;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #172554,
+            #111827
+        );
+
+    border-bottom: 2px solid rgba(245, 158, 11, 0.55);
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE CELLS
+   ========================================================= */
+
+.committee-table td {
+    padding: 22px 18px;
+
+    text-align: left;
+
+    vertical-align: middle;
+
+    font-size: 16px;
+
+    color: #e2e8f0;
+
+    border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+
+    background: rgba(2, 6, 23, 0.55);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* =========================================================
+   ROW HOVER
+   ========================================================= */
+
+.committee-table tbody tr {
+    position: relative;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.committee-table tbody tr:hover {
+    transform: translateY(-2px);
+}
+
+.committee-table tbody tr:hover td {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(245, 158, 11, 0.075),
+            rgba(30, 64, 175, 0.06),
+            rgba(245, 158, 11, 0.075)
+        );
+}
+
+
+/* =========================================================
+   SERIAL NUMBER
+   ========================================================= */
+
+.committee-number {
+    width: 90px;
+
+    font-size: 18px !important;
+
+    font-weight: 900 !important;
+
+    color: #fbbf24 !important;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   MEMBER NAME
+   ========================================================= */
+
+.committee-name {
+    font-size: 20px !important;
+
+    font-weight: 900 !important;
+
+    color: #ffffff !important;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   OCCUPATION
+   ========================================================= */
+
+.committee-occupation {
+    font-size: 16px !important;
+
+    font-weight: 700 !important;
+
+    color: #cbd5e1 !important;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PHOTO COLUMN
+   ========================================================= */
+
+.committee-photo-cell {
+    width: 270px;
+
+    min-width: 270px;
+
+    text-align: center !important;
+
+    vertical-align: middle !important;
+}
+
+
+/* =========================================================
+   PREMIUM PHOTO FRAME
+   ========================================================= */
+
+.committee-photo-frame {
+    position: relative;
+
+    width: 200px;
+    height: 235px;
+
+    margin: 0 auto;
+
+    padding: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fde68a,
+            #f59e0b 35%,
+            #92400e 65%,
+            #fbbf24
+        );
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.38),
+        0 0 20px rgba(245, 158, 11, 0.16);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Outer glowing frame */
+
+.committee-photo-frame::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 2px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+
+    pointer-events: none;
+}
+
+
+/* Inner photo area */
+
+.committee-photo-frame::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border-radius: 13px;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.18),
+        inset 0 0 25px rgba(0, 0, 0, 0.18);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   PHOTO
+   ========================================================= */
+
+.committee-photo-frame img {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f8fafc,
+            #e2e8f0
+        );
+
+    border-radius: 13px;
+
+    border: 2px solid rgba(255, 255, 255, 0.75);
+
+    padding: 2px;
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease;
+}
+
+
+/* Photo hover */
+
+.committee-table tbody tr:hover .committee-photo-frame {
+    transform: scale(1.025);
+
+    box-shadow:
+        0 16px 38px rgba(0, 0, 0, 0.48),
+        0 0 30px rgba(245, 158, 11, 0.28);
+}
+
+.committee-table tbody tr:hover .committee-photo-frame img {
+    filter: brightness(1.04);
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+.committee-photo-placeholder {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    font-size: 42px;
+
+    color: #94a3b8;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111827,
+            #1e293b
+        );
+
+    border: 2px dashed rgba(245, 158, 11, 0.45);
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.committee-back {
+    text-align: center;
+
+    margin-top: 45px;
+}
+
+.committee-back a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 26px;
+
+    color: #fef3c7;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    letter-spacing: 0.5px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #1e3a8a
+        );
+
+    border: 1px solid rgba(245, 158, 11, 0.55);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.committee-back a:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(245, 158, 11, 0.18);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .committee-page {
+        padding: 35px 10px 55px;
+    }
+
+    .committee-header {
+        margin-bottom: 32px;
+    }
+
+    .committee-header h1 {
+        font-size: 34px;
+    }
+
+    .committee-header p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .committee-table-wrap {
+        border-radius: 18px;
+    }
+
+    .committee-table {
+        min-width: 820px;
+    }
+
+    .committee-table th,
+    .committee-table td {
+        padding: 16px 13px;
+    }
+
+    .committee-name {
+        font-size: 18px !important;
+    }
+
+    .committee-occupation {
+        font-size: 15px !important;
+    }
+
+    .committee-photo-cell {
+        width: 230px;
+        min-width: 230px;
+    }
+
+    .committee-photo-frame {
+        width: 175px;
+        height: 210px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .committee-page {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .committee-header h1 {
+        font-size: 30px;
+    }
+
+    .committee-header .eyebrow {
+        font-size: 10px;
+        letter-spacing: 1.8px;
+    }
+
+    .committee-table {
+        min-width: 790px;
+    }
+
+    .committee-photo-frame {
+        width: 165px;
+        height: 200px;
+    }
+}
     </style>
 </head>
 
