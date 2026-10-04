@@ -16366,3 +16366,50 @@ body:has(.committee-page) .committee-occupation {
     margin: 8px 0 0 !important;
     line-height: 1.4 !important;
 }
+/* =====================================================
+   COMMITTEE — FINAL TEXT ALIGNMENT
+   ===================================================== */
+
+body:has(.committee-page) .committee-table tbody tr {
+    position: relative !important;
+}
+
+body:has(.committee-page) .committee-table tbody td {
+    vertical-align: middle !important;
+}
+
+/* Name + Occupation को एक fixed information box में रखो */
+body:has(.committee-page) .committee-table tbody td:nth-child(2) {
+    vertical-align: middle !important;
+    text-align: left !important;
+}
+
+/* Name */
+body:has(.committee-page) .committee-name {
+    display: block !important;
+    margin: 0 0 6px 0 !important;
+    padding: 0 !important;
+
+    line-height: 1.35 !important;
+}
+
+/* Occupation */
+body:has(.committee-page) .committee-occupation {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 1.35 !important;
+}
+
+/* Sr No को exact center */
+body:has(.committee-page) .committee-number {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+/* Photo exact middle */
+body:has(.committee-page) .committee-photo-cell {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
