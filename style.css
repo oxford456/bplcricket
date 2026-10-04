@@ -16413,3 +16413,76 @@ body:has(.committee-page) .committee-photo-cell {
     vertical-align: middle !important;
     text-align: center !important;
 }
+/* =====================================================
+   COMMITTEE — 4 COLUMN HORIZONTAL LAYOUT
+   Sr No | Name | Occupation | Photo
+   ===================================================== */
+
+body:has(.committee-page) .committee-table {
+    width: 100% !important;
+    table-layout: fixed !important;
+}
+
+body:has(.committee-page) .committee-table tbody tr {
+    vertical-align: middle !important;
+}
+
+body:has(.committee-page) .committee-table tbody td {
+    vertical-align: middle !important;
+}
+
+/* Column 1 — Sr No */
+body:has(.committee-page) .committee-table th:nth-child(1),
+body:has(.committee-page) .committee-table td:nth-child(1) {
+    width: 10% !important;
+    text-align: center !important;
+}
+
+/* Column 2 — Name */
+body:has(.committee-page) .committee-table th:nth-child(2),
+body:has(.committee-page) .committee-table td:nth-child(2) {
+    width: 27% !important;
+    text-align: left !important;
+}
+
+/* Column 3 — Occupation */
+body:has(.committee-page) .committee-table th:nth-child(3),
+body:has(.committee-page) .committee-table td:nth-child(3) {
+    width: 25% !important;
+    text-align: left !important;
+}
+
+/* Column 4 — Photo */
+body:has(.committee-page) .committee-table th:nth-child(4),
+body:has(.committee-page) .committee-table td:nth-child(4) {
+    width: 38% !important;
+    text-align: center !important;
+}
+
+/* Name को सिर्फ normal table cell रहने दो */
+body:has(.committee-page) .committee-name {
+    display: table-cell !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 22px 18px !important;
+
+    color: #ffffff !important;
+    line-height: 1.4 !important;
+}
+
+/* Occupation भी अलग table cell */
+body:has(.committee-page) .committee-occupation {
+    display: table-cell !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 22px 18px !important;
+
+    color: #cbd5e1 !important;
+    line-height: 1.5 !important;
+}
+
+/* Photo */
+body:has(.committee-page) .committee-photo-cell {
+    vertical-align: middle !important;
+    text-align: center !important;
+       }
