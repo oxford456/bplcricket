@@ -16315,3 +16315,18 @@ body:has(.committee-page) .committee-back a:hover {
     }
 
 }
+/* Committee text vertical alignment fix */
+
+body:has(.committee-page) .committee-table td {
+    vertical-align: middle !important;
+}
+
+body:has(.committee-page) .committee-name,
+body:has(.committee-page) .committee-occupation {
+    vertical-align: middle !important;
+}
+
+body:has(.committee-page) .committee-occupation {
+    display: block !important;
+    margin-top: 8px !important;
+}
