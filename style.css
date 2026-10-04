@@ -15713,9 +15713,13 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 35px 0 25px;
-    padding: 0 15px;
-   background: #080d18 !important;
+
+    margin: 0;
+
+    padding: 35px 15px 25px;
+
+    background: #080d18 !important;
+    box-sizing: border-box;
 }
 .committee-entry-btn:hover {
     transform: translateY(-4px);
