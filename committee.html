@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meet Our Legends | BPL Season-I</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .committee-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px 70px;
+        }
+
+        .committee-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .committee-header .eyebrow {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .committee-header h1 {
+            margin: 0;
+            font-size: clamp(30px, 5vw, 52px);
+        }
+
+        .committee-header p {
+            margin: 12px auto 0;
+            max-width: 700px;
+            line-height: 1.7;
+        }
+
+        .committee-table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 18px;
+        }
+
+        .committee-table {
+            width: 100%;
+            min-width: 850px;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+        }
+
+        .committee-table th,
+        .committee-table td {
+            padding: 20px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .committee-table th {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .committee-table td {
+            font-size: 17px;
+        }
+
+        .committee-table tbody tr {
+            transition: transform 0.2s ease;
+        }
+
+        .committee-table tbody tr:hover {
+            transform: scale(1.005);
+        }
+
+        .committee-number {
+            font-weight: 800;
+            font-size: 20px !important;
+            white-space: nowrap;
+        }
+
+        .committee-name {
+            font-weight: 800;
+            font-size: 20px !important;
+            white-space: nowrap;
+        }
+
+        .committee-occupation {
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .committee-photo-cell {
+            width: 250px;
+            text-align: center !important;
+        }
+
+        .committee-photo-frame {
+            width: 190px;
+            height: 220px;
+            margin: 0 auto;
+            padding: 7px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .committee-photo-frame img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 13px;
+        }
+
+        .committee-photo-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 13px;
+            font-size: 42px;
+        }
+
+        .committee-back {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .committee-back a {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        @media (max-width: 700px) {
+            .committee-page {
+                padding: 30px 12px 50px;
+            }
+
+            .committee-table th,
+            .committee-table td {
+                padding: 15px;
+            }
+
+            .committee-photo-frame {
+                width: 170px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="committee-page">
+
+    <header class="committee-header">
+        <div class="eyebrow">BPL SEASON-I • 2024</div>
+
+        <h1>🏆 Meet Our Legends</h1>
+
+        <p>
+            Committee Members जिन्होंने BPL Season-I को सफल बनाने में
+            अपना महत्वपूर्ण योगदान दिया।
+        </p>
+    </header>
+
+
+    <div class="committee-table-wrap">
+
+        <table class="committee-table">
+
+            <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Member Name</th>
+                    <th>Occupation</th>
+                    <th class="committee-photo-cell">Member Photo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td class="committee-number">01</td>
+                    <td class="committee-name">प्रेम प्रकाश मीणा</td>
+                    <td class="committee-occupation">प्रिंसिपल</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">02</td>
+                    <td class="committee-name">मुकेश मीणा</td>
+                    <td class="committee-occupation">नर्सिंग ऑफिसर</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">03</td>
+                    <td class="committee-name">सीताराम मीणा</td>
+                    <td class="committee-occupation">अध्यापक</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">04</td>
+                    <td class="committee-name">अमित कुमार मीणा</td>
+                    <td class="committee-occupation">अध्यापक</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">05</td>
+                    <td class="committee-name">नरेंद्र मीणा</td>
+                    <td class="committee-occupation">लेखापरीक्षक</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">06</td>
+                    <td class="committee-name">संजय कुमार मीणा</td>
+                    <td class="committee-occupation">अध्यापक</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">07</td>
+                    <td class="committee-name">राकेश कुमार मीणा</td>
+                    <td class="committee-occupation">अध्यापक</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">08</td>
+                    <td class="committee-name">कौशल मीणा</td>
+                    <td class="committee-occupation">अध्यापक</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">09</td>
+                    <td class="committee-name">मनराज मीणा</td>
+                    <td class="committee-occupation">ई-मित्र</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">10</td>
+                    <td class="committee-name">कालूराम रेगर</td>
+                    <td class="committee-occupation">अध्यापक</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="committee-number">11</td>
+                    <td class="committee-name">मनीष कुमार</td>
+                    <td class="committee-occupation">अध्यापक</td>
+                    <td class="committee-photo-cell">
+                        <div class="committee-photo-frame">
+                            <div class="committee-photo-placeholder">📷</div>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="committee-back">
+        <a href="season-1.html">← Back to Season-I</a>
+    </div>
+
+</main>
+
+</body>
+  </html>
