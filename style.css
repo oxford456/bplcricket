@@ -16330,3 +16330,39 @@ body:has(.committee-page) .committee-occupation {
     display: block !important;
     margin-top: 8px !important;
 }
+/* =====================================================
+   COMMITTEE — PERFECT ROW ALIGNMENT
+   ===================================================== */
+
+body:has(.committee-page) .committee-table tbody td {
+    vertical-align: middle !important;
+}
+
+/* Sr No column */
+body:has(.committee-page) .committee-table tbody td:first-child {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+/* Member information column */
+body:has(.committee-page) .committee-table tbody td:nth-child(2) {
+    vertical-align: middle !important;
+}
+
+/* Photo column */
+body:has(.committee-page) .committee-table tbody td:last-child {
+    vertical-align: middle !important;
+}
+
+/* Name + occupation को एक साथ center रखना */
+body:has(.committee-page) .committee-name {
+    display: block !important;
+    margin: 0 !important;
+    line-height: 1.4 !important;
+}
+
+body:has(.committee-page) .committee-occupation {
+    display: block !important;
+    margin: 8px 0 0 !important;
+    line-height: 1.4 !important;
+}
