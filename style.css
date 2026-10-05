@@ -16978,3 +16978,298 @@ body:has(.committee-page) .committee-header::after {
     }
 
 }
+/* =========================================================
+   🇮🇳 BPL — SOFT TRICOLOUR • MEET OUR LEGENDS
+   Calm • Elegant • Premium
+   ========================================================= */
+
+body:has(.committee-page) .committee-header {
+    position: relative !important;
+    overflow: hidden !important;
+
+    padding: 52px 30px !important;
+
+    /*
+       Soft Indian Tricolour
+       — no hard colour bands
+    */
+    background:
+        radial-gradient(
+            ellipse at 15% 15%,
+            rgba(255, 153, 51, 0.28),
+            transparent 42%
+        ),
+        radial-gradient(
+            ellipse at 85% 85%,
+            rgba(19, 136, 8, 0.24),
+            transparent 42%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(255, 153, 51, 0.10),
+            rgba(255, 255, 255, 0.96) 48%,
+            rgba(19, 136, 8, 0.10)
+        ) !important;
+
+    border: 1px solid rgba(180, 120, 40, 0.28) !important;
+
+    border-radius: 32px !important;
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+
+/* ---------- Soft decorative glow ---------- */
+
+body:has(.committee-page) .committee-header::before {
+    content: "" !important;
+
+    position: absolute !important;
+
+    width: 280px !important;
+    height: 280px !important;
+
+    top: -150px !important;
+    right: -80px !important;
+
+    background: rgba(255, 153, 51, 0.16) !important;
+
+    border-radius: 50% !important;
+
+    filter: blur(55px) !important;
+
+    pointer-events: none !important;
+}
+
+
+body:has(.committee-page) .committee-header::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    width: 280px !important;
+    height: 280px !important;
+
+    bottom: -160px !important;
+    left: -80px !important;
+
+    background: rgba(19, 136, 8, 0.13) !important;
+
+    border-radius: 50% !important;
+
+    filter: blur(60px) !important;
+
+    pointer-events: none !important;
+}
+
+
+/* ---------- Content above background ---------- */
+
+body:has(.committee-page) .committee-header > * {
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+
+/* =========================================================
+   SEASON-I LABEL
+   ========================================================= */
+
+body:has(.committee-page) .committee-header .eyebrow {
+    display: inline-block !important;
+
+    padding: 8px 19px !important;
+
+    color: #9a5a18 !important;
+
+    background: rgba(255, 255, 255, 0.62) !important;
+
+    border: 1px solid rgba(218, 130, 35, 0.25) !important;
+
+    border-radius: 50px !important;
+
+    font-family:
+        "Trebuchet MS",
+        "Segoe UI",
+        sans-serif !important;
+
+    font-size: 12px !important;
+    font-weight: 800 !important;
+
+    letter-spacing: 3px !important;
+
+    box-shadow:
+        0 5px 18px rgba(120, 80, 20, 0.08) !important;
+}
+
+
+/* =========================================================
+   🏆 MAIN TITLE
+   ========================================================= */
+
+body:has(.committee-page) .committee-header h1 {
+    margin: 18px 0 16px !important;
+
+    color: #18251d !important;
+
+    /*
+       Elegant editorial font stack
+    */
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif !important;
+
+    font-size: clamp(34px, 5vw, 58px) !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: -1.2px !important;
+
+    line-height: 1.12 !important;
+
+    text-shadow:
+        0 2px 10px rgba(255, 255, 255, 0.8) !important;
+}
+
+
+/* ---------- Golden accent under title ---------- */
+
+body:has(.committee-page) .committee-header h1::after {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 72px !important;
+    height: 3px !important;
+
+    margin: 17px auto 0 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #e28a2b,
+            #d9b44a,
+            #4b8d42
+        ) !important;
+
+    border-radius: 50px !important;
+
+    opacity: 0.75 !important;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+body:has(.committee-page) .committee-header p {
+    max-width: 760px !important;
+
+    margin: 22px auto 0 !important;
+
+    padding: 14px 20px !important;
+
+    color: #435048 !important;
+
+    background: rgba(255, 255, 255, 0.48) !important;
+
+    border: 1px solid rgba(80, 100, 85, 0.12) !important;
+
+    border-radius: 18px !important;
+
+    font-family:
+        "Segoe UI",
+        "Trebuchet MS",
+        sans-serif !important;
+
+    font-size: 16px !important;
+
+    font-weight: 500 !important;
+
+    letter-spacing: 0.15px !important;
+
+    line-height: 1.75 !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.75) !important;
+}
+
+
+/* =========================================================
+   VERY SUBTLE TRICOLOUR LINE
+   ========================================================= */
+
+body:has(.committee-page) .committee-header p::after {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 110px !important;
+    height: 2px !important;
+
+    margin: 14px auto 0 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 153, 51, 0.55),
+            rgba(255, 255, 255, 0.8),
+            rgba(19, 136, 8, 0.55)
+        ) !important;
+
+    border-radius: 50px !important;
+}
+
+
+/* =========================================================
+   SOFT HOVER
+   ========================================================= */
+
+body:has(.committee-page) .committee-header {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+body:has(.committee-page) .committee-header:hover {
+    transform: translateY(-2px) !important;
+
+    box-shadow:
+        0 26px 65px rgba(0, 0, 0, 0.32),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body:has(.committee-page) .committee-header {
+        padding: 38px 17px !important;
+
+        border-radius: 24px !important;
+    }
+
+    body:has(.committee-page) .committee-header h1 {
+        font-size: 34px !important;
+
+        letter-spacing: -0.7px !important;
+    }
+
+    body:has(.committee-page) .committee-header p {
+        font-size: 14px !important;
+
+        line-height: 1.65 !important;
+
+        padding: 13px 15px !important;
+    }
+
+}
