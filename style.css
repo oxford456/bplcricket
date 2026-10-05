@@ -17273,3 +17273,304 @@ body:has(.committee-page) .committee-header:hover {
     }
 
 }
+/* =========================================================
+   BPL SEASON-I — HERO CARD
+   CINEMATIC • THRILLING • PREMIUM
+   ========================================================= */
+
+/* Main Season-I hero card */
+#season-one-page .season-hero,
+#season-one-page .season-hero-card,
+#season-one-page .hero {
+    position: relative !important;
+    overflow: hidden !important;
+
+    background:
+        radial-gradient(
+            circle at 15% 35%,
+            rgba(255, 153, 51, 0.22),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 35%,
+            rgba(0, 255, 110, 0.16),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(0, 119, 255, 0.16),
+            transparent 42%
+        ),
+        linear-gradient(
+            135deg,
+            #020617,
+            #071426 48%,
+            #020b12
+        ) !important;
+
+    border: 1px solid rgba(245, 158, 11, 0.35) !important;
+
+    border-radius: 30px !important;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.65),
+        0 0 40px rgba(245, 158, 11, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* Cinematic orange light */
+#season-one-page .season-hero::before,
+#season-one-page .season-hero-card::before,
+#season-one-page .hero::before {
+    content: "" !important;
+
+    position: absolute !important;
+
+    width: 420px !important;
+    height: 420px !important;
+
+    top: -230px !important;
+    left: -160px !important;
+
+    background: rgba(255, 153, 51, 0.16) !important;
+
+    border-radius: 50% !important;
+
+    filter: blur(70px) !important;
+
+    pointer-events: none !important;
+}
+
+
+/* Cinematic green light */
+#season-one-page .season-hero::after,
+#season-one-page .season-hero-card::after,
+#season-one-page .hero::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    width: 420px !important;
+    height: 420px !important;
+
+    right: -170px !important;
+    bottom: -240px !important;
+
+    background: rgba(34, 197, 94, 0.13) !important;
+
+    border-radius: 50% !important;
+
+    filter: blur(75px) !important;
+
+    pointer-events: none !important;
+}
+
+
+/* Keep content above effects */
+#season-one-page .season-hero > *,
+#season-one-page .season-hero-card > *,
+#season-one-page .hero > * {
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+
+/* =========================================================
+   KICKER
+   ========================================================= */
+
+#season-one-page .season-hero .kicker,
+#season-one-page .season-hero-card .kicker,
+#season-one-page .hero .kicker {
+    display: inline-block !important;
+
+    padding: 8px 18px !important;
+
+    color: #fbbf24 !important;
+
+    background: rgba(245, 158, 11, 0.08) !important;
+
+    border: 1px solid rgba(245, 158, 11, 0.35) !important;
+
+    border-radius: 999px !important;
+
+    font-family:
+        "Trebuchet MS",
+        "Segoe UI",
+        sans-serif !important;
+
+    font-size: 12px !important;
+    font-weight: 900 !important;
+
+    letter-spacing: 3px !important;
+
+    box-shadow:
+        0 0 20px rgba(245, 158, 11, 0.10) !important;
+}
+
+
+/* =========================================================
+   MAIN HERO TITLE
+   ========================================================= */
+
+#season-one-page .season-hero h1,
+#season-one-page .season-hero-card h1,
+#season-one-page .hero h1 {
+    margin: 22px auto 18px !important;
+
+    max-width: 950px !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif !important;
+
+    font-size: clamp(38px, 6vw, 72px) !important;
+
+    font-weight: 900 !important;
+
+    line-height: 1.05 !important;
+
+    letter-spacing: -1.5px !important;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ffb347 0%,
+            #ffffff 35%,
+            #f8fafc 55%,
+            #7cff9b 100%
+        ) !important;
+
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+
+    -webkit-text-fill-color: transparent !important;
+
+    text-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.55) !important;
+
+    filter:
+        drop-shadow(0 0 15px rgba(255, 153, 51, 0.12)) !important;
+}
+
+
+/* =========================================================
+   TITLE ACCENT
+   ========================================================= */
+
+#season-one-page .season-hero h1::after,
+#season-one-page .season-hero-card h1::after,
+#season-one-page .hero h1::after {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 110px !important;
+    height: 4px !important;
+
+    margin: 22px auto 0 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff9933,
+            #ffffff,
+            #138808
+        ) !important;
+
+    border-radius: 999px !important;
+
+    box-shadow:
+        0 0 15px rgba(255, 153, 51, 0.35),
+        0 0 15px rgba(19, 136, 8, 0.25) !important;
+}
+
+
+/* =========================================================
+   DATE / HERO INFO
+   ========================================================= */
+
+#season-one-page .season-hero .hero-date,
+#season-one-page .season-hero .dates,
+#season-one-page .season-hero-card .hero-date,
+#season-one-page .season-hero-card .dates,
+#season-one-page .hero .hero-date,
+#season-one-page .hero .dates {
+    color: #e2e8f0 !important;
+
+    font-family:
+        "Trebuchet MS",
+        "Segoe UI",
+        sans-serif !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 0.8px !important;
+}
+
+
+/* =========================================================
+   SOFT GLASS INFORMATION AREA
+   ========================================================= */
+
+#season-one-page .season-hero .hero-info,
+#season-one-page .season-hero-card .hero-info,
+#season-one-page .hero .hero-info {
+    background:
+        rgba(255, 255, 255, 0.035) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+    border-radius: 18px !important;
+
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+#season-one-page .season-hero,
+#season-one-page .season-hero-card,
+#season-one-page .hero {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+#season-one-page .season-hero:hover,
+#season-one-page .season-hero-card:hover,
+#season-one-page .hero:hover {
+    transform: translateY(-3px) !important;
+
+    box-shadow:
+        0 32px 85px rgba(0, 0, 0, 0.72),
+        0 0 50px rgba(245, 158, 11, 0.15) !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    #season-one-page .season-hero h1,
+    #season-one-page .season-hero-card h1,
+    #season-one-page .hero h1 {
+        font-size: 38px !important;
+
+        letter-spacing: -0.8px !important;
+    }
+
+    #season-one-page .season-hero,
+    #season-one-page .season-hero-card,
+    #season-one-page .hero {
+        border-radius: 22px !important;
+    }
+
+}
