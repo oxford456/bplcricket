@@ -16792,3 +16792,189 @@ body:has(.committee-page) .committee-photo-frame img {
         font-size: 14px !important;
     }
 }
+/* =====================================================
+   🇮🇳 BPL MEET OUR LEGENDS — INDIAN TRICOLOUR CARD
+   ===================================================== */
+
+body:has(.committee-page) .committee-header {
+    position: relative !important;
+    overflow: hidden !important;
+
+    padding: 48px 28px !important;
+
+    /* Indian Tricolour Background */
+    background:
+        linear-gradient(
+            to bottom,
+            #ff9933 0%,
+            #ff9933 33.33%,
+            #ffffff 33.33%,
+            #ffffff 66.66%,
+            #138808 66.66%,
+            #138808 100%
+        ) !important;
+
+    border: 2px solid rgba(255, 255, 255, 0.85) !important;
+
+    border-radius: 30px !important;
+
+    box-shadow:
+        0 25px 65px rgba(0, 0, 0, 0.55),
+        0 0 35px rgba(255, 153, 51, 0.20),
+        0 0 35px rgba(19, 136, 8, 0.15) !important;
+}
+
+
+/* ---------- Subtle dark glass overlay ---------- */
+
+body:has(.committee-page) .committee-header::before {
+    content: "" !important;
+
+    position: absolute !important;
+    inset: 0 !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.08),
+            rgba(255, 255, 255, 0.12),
+            rgba(0, 0, 0, 0.08)
+        ) !important;
+
+    pointer-events: none !important;
+}
+
+
+/* ---------- Keep text above overlay ---------- */
+
+body:has(.committee-page) .committee-header > * {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+
+/* ---------- BPL SEASON-I ---------- */
+
+body:has(.committee-page) .committee-header .eyebrow {
+    display: inline-block !important;
+
+    padding: 8px 18px !important;
+
+    color: #ffffff !important;
+
+    background: rgba(0, 0, 0, 0.72) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.65) !important;
+
+    border-radius: 999px !important;
+
+    font-size: 13px !important;
+    font-weight: 950 !important;
+
+    letter-spacing: 2px !important;
+
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.25) !important;
+}
+
+
+/* ---------- MAIN TITLE ---------- */
+
+body:has(.committee-page) .committee-header h1 {
+    margin: 18px 0 !important;
+
+    color: #050505 !important;
+
+    font-size: clamp(32px, 5vw, 58px) !important;
+
+    font-weight: 950 !important;
+
+    line-height: 1.1 !important;
+
+    text-shadow:
+        0 2px 0 rgba(255, 255, 255, 0.65),
+        0 4px 12px rgba(0, 0, 0, 0.18) !important;
+}
+
+
+/* ---------- DESCRIPTION ---------- */
+
+body:has(.committee-page) .committee-header p {
+    max-width: 850px !important;
+
+    margin: 18px auto 0 !important;
+
+    padding: 14px 22px !important;
+
+    color: #111827 !important;
+
+    background: rgba(255, 255, 255, 0.72) !important;
+
+    border: 1px solid rgba(0, 0, 0, 0.10) !important;
+
+    border-radius: 16px !important;
+
+    font-size: 17px !important;
+
+    font-weight: 750 !important;
+
+    line-height: 1.6 !important;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.12) !important;
+}
+
+
+/* ---------- TRICOLOUR TOP/BOTTOM GLOW ---------- */
+
+body:has(.committee-page) .committee-header::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    left: 8% !important;
+    right: 8% !important;
+    bottom: 10px !important;
+
+    height: 4px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff9933 0%,
+            #ffffff 50%,
+            #138808 100%
+        ) !important;
+
+    border-radius: 999px !important;
+
+    opacity: 0.9 !important;
+
+    box-shadow:
+        0 0 12px rgba(255, 255, 255, 0.8) !important;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    body:has(.committee-page) .committee-header {
+        padding: 35px 16px !important;
+
+        border-radius: 22px !important;
+    }
+
+    body:has(.committee-page) .committee-header h1 {
+        font-size: 32px !important;
+    }
+
+    body:has(.committee-page) .committee-header p {
+        font-size: 14px !important;
+
+        padding: 12px 15px !important;
+    }
+
+}
