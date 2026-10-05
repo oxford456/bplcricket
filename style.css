@@ -16486,3 +16486,309 @@ body:has(.committee-page) .committee-photo-cell {
     vertical-align: middle !important;
     text-align: center !important;
        }
+/* =========================================================
+   BPL COMMITTEE — LEGENDS PREMIUM TABLE
+   ========================================================= */
+
+body:has(.committee-page) .committee-table-wrap {
+    padding: 16px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18, 25, 42, 0.98),
+            rgba(3, 7, 18, 0.98)
+        ) !important;
+
+    border: 1px solid rgba(251, 191, 36, 0.35) !important;
+    border-radius: 30px !important;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.65),
+        0 0 45px rgba(245, 158, 11, 0.10) !important;
+}
+
+
+/* ---------- TABLE ---------- */
+
+body:has(.committee-page) .committee-table {
+    border-collapse: separate !important;
+    border-spacing: 0 10px !important;
+
+    table-layout: fixed !important;
+}
+
+
+/* ---------- HEADER ---------- */
+
+body:has(.committee-page) .committee-table thead th {
+    padding: 19px 18px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1f2937,
+            #0b1220
+        ) !important;
+
+    color: #fbbf24 !important;
+
+    font-size: 13px !important;
+    font-weight: 950 !important;
+
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+
+    border-top: 1px solid rgba(251, 191, 36, 0.35) !important;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.30) !important;
+}
+
+
+/* Header first / last corners */
+
+body:has(.committee-page) .committee-table thead th:first-child {
+    border-radius: 16px 0 0 16px !important;
+}
+
+body:has(.committee-page) .committee-table thead th:last-child {
+    border-radius: 0 16px 16px 0 !important;
+}
+
+
+/* ---------- ROW ---------- */
+
+body:has(.committee-page) .committee-table tbody tr {
+    position: relative !important;
+
+    transition:
+        transform 0.28s ease,
+        filter 0.28s ease !important;
+}
+
+
+/* ---------- CELLS ---------- */
+
+body:has(.committee-page) .committee-table tbody td {
+    position: relative !important;
+
+    padding: 24px 20px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 23, 42, 0.98),
+            rgba(8, 15, 28, 0.98)
+        ) !important;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.045) !important;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.10) !important;
+
+    vertical-align: middle !important;
+
+    transition:
+        background 0.28s ease,
+        border-color 0.28s ease !important;
+}
+
+
+/* ---------- GOLD LEFT ACCENT ---------- */
+
+body:has(.committee-page) .committee-table tbody td:first-child {
+    border-left: 3px solid transparent !important;
+}
+
+
+/* ---------- HOVER ---------- */
+
+body:has(.committee-page) .committee-table tbody tr:hover {
+    transform: translateY(-4px) !important;
+}
+
+body:has(.committee-page) .committee-table tbody tr:hover td {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(35, 43, 62, 1),
+            rgba(12, 22, 38, 1)
+        ) !important;
+
+    border-top-color: rgba(251, 191, 36, 0.22) !important;
+    border-bottom-color: rgba(251, 191, 36, 0.28) !important;
+}
+
+body:has(.committee-page) .committee-table tbody tr:hover td:first-child {
+    border-left-color: #f59e0b !important;
+}
+
+
+/* ---------- COLUMN CORNERS ---------- */
+
+body:has(.committee-page) .committee-table tbody td:first-child {
+    border-radius: 18px 0 0 18px !important;
+}
+
+body:has(.committee-page) .committee-table tbody td:last-child {
+    border-radius: 0 18px 18px 0 !important;
+}
+
+
+/* ---------- SR NUMBER ---------- */
+
+body:has(.committee-page) .committee-number {
+    width: 46px !important;
+    height: 46px !important;
+
+    padding: 0 !important;
+
+    margin: auto !important;
+
+    color: #fbbf24 !important;
+
+    font-size: 15px !important;
+    font-weight: 950 !important;
+
+    line-height: 46px !important;
+
+    text-align: center !important;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(245, 158, 11, 0.18),
+            rgba(245, 158, 11, 0.04)
+        ) !important;
+
+    border: 1px solid rgba(245, 158, 11, 0.35) !important;
+
+    border-radius: 50% !important;
+
+    box-shadow:
+        inset 0 0 15px rgba(245, 158, 11, 0.08) !important;
+}
+
+
+/* ---------- NAME ---------- */
+
+body:has(.committee-page) .committee-name {
+    color: #ffffff !important;
+
+    font-size: 20px !important;
+    font-weight: 950 !important;
+
+    letter-spacing: 0.2px !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* ---------- OCCUPATION ---------- */
+
+body:has(.committee-page) .committee-occupation {
+    color: #fbbf24 !important;
+
+    font-size: 15px !important;
+    font-weight: 800 !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* ---------- PHOTO CELL ---------- */
+
+body:has(.committee-page) .committee-photo-cell {
+    padding: 18px !important;
+
+    text-align: center !important;
+}
+
+
+/* ---------- PHOTO FRAME ---------- */
+
+body:has(.committee-page) .committee-photo-frame {
+    width: 170px !important;
+    height: 205px !important;
+
+    padding: 6px !important;
+
+    margin: 0 auto !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff4b8,
+            #fbbf24 25%,
+            #d97706 55%,
+            #92400e 80%,
+            #fbbf24
+        ) !important;
+
+    border: 1px solid #fbbf24 !important;
+
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.55),
+        0 0 22px rgba(245, 158, 11, 0.18) !important;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+
+/* ---------- PHOTO HOVER ---------- */
+
+body:has(.committee-page) .committee-table tbody tr:hover .committee-photo-frame {
+    transform: scale(1.04) !important;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.70),
+        0 0 32px rgba(245, 158, 11, 0.32) !important;
+}
+
+
+/* ---------- IMAGE ---------- */
+
+body:has(.committee-page) .committee-photo-frame img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+
+    padding: 3px !important;
+
+    background: #020617 !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.65) !important;
+
+    border-radius: 14px !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    body:has(.committee-page) .committee-table {
+        min-width: 850px !important;
+    }
+
+    body:has(.committee-page) .committee-table-wrap {
+        border-radius: 22px !important;
+    }
+
+    body:has(.committee-page) .committee-photo-frame {
+        width: 150px !important;
+        height: 185px !important;
+    }
+
+    body:has(.committee-page) .committee-name {
+        font-size: 18px !important;
+    }
+
+    body:has(.committee-page) .committee-occupation {
+        font-size: 14px !important;
+    }
+}
